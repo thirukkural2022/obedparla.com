@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-06-12"
 categories: "books,philosophy,social-criticism"
 tags:
-coverImage: "images/Brave-New-World-POSTER-large.jpg"
+cover: "../images/Brave-New-World-POSTER-large.jpg"
 ---
 
 Imagine a world of happiness. Everyone has what they wish for, what they need, what they want. There is no need for food, shelter, security or entertainment.

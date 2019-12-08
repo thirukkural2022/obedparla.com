@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-02-18"
 categories: "human-behaviour,self-development"
 tags:
-coverImage: "images/asimov-quote.jpg"
+cover: "../images/asimov-quote.jpg"
 ---
 
 We humans are learning machines.

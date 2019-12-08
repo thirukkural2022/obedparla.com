@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-06-15"
 categories: "human-behaviour,philosophy,social-criticism"
 tags:
-coverImage: "images/intimacy.jpg"
+cover: "../images/intimacy.jpg"
 ---
 
 This was going to originally be a publication about the reason of why I don't congratulate my friends by just putting a meaningless "Happy stupid birthday" on their Facebook Walls. Ok, without the stupid word.

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-02-24"
 categories: "short-stories"
 tags:
-coverImage: "images/girl_balloon.jpg"
+cover: "../images/girl_balloon.jpg"
 ---
 
 Erase una vez una niña que no sonreía. Sin importar nada ella no sonreía. Y en su pueblo famosa era, pues no había aquel que intentarlo no hubiera.

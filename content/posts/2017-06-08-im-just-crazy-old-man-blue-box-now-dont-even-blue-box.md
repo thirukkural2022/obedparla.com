@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-06-08"
 categories: "miscellaneous"
 tags:
-coverImage: "images/bluebo.jpg"
+cover: "../images/bluebo.jpg"
 ---
 
  

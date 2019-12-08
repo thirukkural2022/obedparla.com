@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-03-04"
 categories: "philosophy,self-development"
 tags:
-coverImage: "images/confucius_sculpture_nanjing2.jpg"
+cover: "../images/confucius_sculpture_nanjing2.jpg"
 ---
 
 Confucius, one of China’s most famous philosophers once said:

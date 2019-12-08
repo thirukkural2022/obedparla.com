@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-02-10"
 categories: "thoughts"
 tags:
-coverImage: "images/chalkboard_quotes_twain.jpg"
+cover: "../images/chalkboard_quotes_twain.jpg"
 ---
 
 In 2014 I was working with a great startup and we all were a very close and cool team.

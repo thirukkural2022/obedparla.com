@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-05-10"
 categories: "thoughts,philosophy"
 tags:
-coverImage: "images/Sword1.jpg"
+cover: "../images/Sword1.jpg"
 ---
 
 There’s this interesting phrase that goes “I found myself between the sword and the wall” that I heard many times in my childhood in cartoons and comics.

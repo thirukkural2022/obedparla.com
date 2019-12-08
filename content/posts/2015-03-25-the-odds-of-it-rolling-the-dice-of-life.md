@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-03-25"
 categories: "philosophy"
 tags:
-coverImage: "images/o-matic.jpg"
+cover: "../images/o-matic.jpg"
 ---
 
 ## What are the odds of it, the odds of something happening, the odds of nothing happening?

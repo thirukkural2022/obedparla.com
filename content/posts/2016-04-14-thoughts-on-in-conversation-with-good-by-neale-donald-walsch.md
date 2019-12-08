@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-04-14"
 categories: "books,philosophy,reviews"
 tags:
-coverImage: "images/god-and-man.jpg"
+cover: "../images/god-and-man.jpg"
 ---
 
 This book is can be highly, highly controversial and the value it brings to a reader depends mostly on the already made assumptions and wisdom of such reader.

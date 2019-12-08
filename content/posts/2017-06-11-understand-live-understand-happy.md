@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-06-11"
 categories: "thoughts"
 tags:
-coverImage: "images/coffe-man.jpg"
+cover: "../images/coffe-man.jpg"
 ---
 
 The ability of self-denial and self-loathing are very human characteristics. We wouldn't think of any animal loathing itself or having self-denial issues, even though some do.

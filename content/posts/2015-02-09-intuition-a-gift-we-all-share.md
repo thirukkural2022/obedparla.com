@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-02-09"
 categories: "philosophy"
 tags:
-coverImage: "images/lighting.jpg"
+cover: "../images/lighting.jpg"
 ---
 
 There is this thing called Intuition.

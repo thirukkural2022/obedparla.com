@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-05-02"
 categories: "miscellaneous"
 tags:
-coverImage: "images/moon-upside-downpotato1.jpg"
+cover: "../images/moon-upside-downpotato1.jpg"
 ---
 
 > There is nothing to writing. All you do is sit down at a typewriter and bleed.

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-02-29"
 categories: "books,reviews,science"
 tags:
-coverImage: "images/001-h_10594563.jpg"
+cover: "../images/001-h_10594563.jpg"
 ---
 
 I’ve just finished “A Brief History Of Time” by Stephen Hawking and I feel my brain more efficient, bigger and smart just by reading this book. What an amazing journey Hawking takes you to; you’ll learn about the discoveries of Galileo, Newton, Einstein, Maxwell, Hubble, and so many other great scientist that have changed the way we see and understand the universe.

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-02-17"
 categories: "human-behaviour,science"
 tags:
-coverImage: "images/richard-feynman-profile.jpg"
+cover: "../images/richard-feynman-profile.jpg"
 ---
 
 In 2016 I stumbled upon a book called "The Pleasure Of Finding Things Out" by Richard Feynman, it was a collection of some of Feynman's best stories. The book was so good that shortly after finishing it I read "Surely you're joking, Mr Feynman", a book of a similar nature. Both of the books give glimpses into Feynman's life, his ideas, experiences and outlook on life itself.

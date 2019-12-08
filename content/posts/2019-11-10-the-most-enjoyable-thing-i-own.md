@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-11-10"
 categories: "miscellaneous"
 tags:
-coverImage: "images/Nintendo-Mario-close-up-high-quality.jpeg"
+cover: "../images/Nintendo-Mario-close-up-high-quality.jpeg"
 ---
 
 For my 6th birthday, my mom gave me an Optimus Prime robot that walked and made sounds. It was such an amazing present and I was so surprised by it that I remember falling on my back when I opened the box. I was always one for the dramatic.

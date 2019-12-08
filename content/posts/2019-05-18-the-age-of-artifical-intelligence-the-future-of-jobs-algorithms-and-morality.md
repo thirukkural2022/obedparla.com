@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-05-18"
 categories: "philosophy"
 tags:
-coverImage: "images/optimus-prime-amazing-real-statue-robot.jpg"
+cover: "../images/optimus-prime-amazing-real-statue-robot.jpg"
 ---
 
 You might have heard of [The Three Laws of Robotics,](https://obedparla.com/books/thoughts-on-i-robot-by-isaac-asimov/) they were laws proposed by Isaac Asimov on his famous book "I, Robot". Such laws would dictate every decision taken by a robot, from crossing the street to saving someone's life.

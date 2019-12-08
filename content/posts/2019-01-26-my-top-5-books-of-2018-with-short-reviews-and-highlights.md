@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-01-26"
 categories: "books,reviews"
 tags:
-coverImage: "images/woman-putting-a-book-back-in-its-shelf.jpeg"
+cover: "../images/woman-putting-a-book-back-in-its-shelf.jpeg"
 ---
 
 Reading books it's generally considered an honorable thing to do with your time. Everyone agrees that reading books it's good, even though we spent a lot more time on other less worthy things such as social media, chats, or Netflix.

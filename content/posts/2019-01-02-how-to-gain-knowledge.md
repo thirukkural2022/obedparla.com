@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-01-02"
 categories: "self-development"
 tags:
-coverImage: "images/three-wise-monkeys.jpeg"
+cover: "../images/three-wise-monkeys.jpeg"
 ---
 
 What do you think of if I ask you about the Middle Ages? I imagine most people as farmers. Images of kings, crusades, The Plague and utter poverty come to mind. The Dark Ages come to mind too. The most powerful of times for the Catholic Church.

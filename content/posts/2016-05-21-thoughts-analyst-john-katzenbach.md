@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-05-21"
 categories: "books,human-behaviour,reviews"
 tags:
-coverImage: "images/the-analyst-featured.jpg"
+cover: "../images/the-analyst-featured.jpg"
 ---
 
 I’ve been wanting to read The Analyst for years but I never quite got to it. When I recently asked on social media for suggestions of books to read next, this book was mentioned a few times, so there you go.

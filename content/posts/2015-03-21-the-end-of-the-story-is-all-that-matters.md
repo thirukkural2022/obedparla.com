@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-03-21"
 categories: "philosophy"
 tags:
-coverImage: "images/that_s_all_folks.jpg"
+cover: "../images/that_s_all_folks.jpg"
 ---
 
 Did you read the title? It is true.

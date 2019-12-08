@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-01-29"
 categories: "books,reviews"
 tags:
-coverImage: "images/whatimreading-rosieproject3.jpg"
+cover: "../images/whatimreading-rosieproject3.jpg"
 ---
 
 ### My thoughts on: "The Rosie Project" by Graeme Simsion.

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-04-08"
 categories: "short-stories"
 tags:
-coverImage: "images/2.jpg"
+cover: "../images/2.jpg"
 ---
 
 "When I thought I had forgotten you, you came back" he said to her, in tears.

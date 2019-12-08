@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-01-09"
 categories: "books"
 tags:
-coverImage: "images/imag0767.jpg"
+cover: "../images/imag0767.jpg"
 ---
 
 The description of this book is quite... incomplete.

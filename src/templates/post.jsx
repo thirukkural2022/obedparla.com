@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
@@ -15,15 +14,18 @@ import "./post.css";
 export default class PostTemplate extends React.Component {
   render() {
     const { data, pageContext } = this.props;
+    console.log("props", this.props);
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;
+
     if (!post.id) {
       post.id = slug;
     }
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
+
     return (
       <Layout>
         <div>
@@ -31,7 +33,8 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
+          <img src={post.cover} alt="" />
+          <article>
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className="post-meta">
@@ -39,9 +42,8 @@ export default class PostTemplate extends React.Component {
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <UserInfo config={config} />
-            <Disqus postNode={postNode} />
             <Footer config={config} />
-          </div>
+          </article>
         </div>
       </Layout>
     );

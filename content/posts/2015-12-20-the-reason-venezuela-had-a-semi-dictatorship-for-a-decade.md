@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-12-20"
 categories: "human-behaviour"
 tags:
-coverImage: "images/venezuela_fuel_subsidy_1.jpg"
+cover: "../images/venezuela_fuel_subsidy_1.jpg"
 ---
 
 Why Venezuelans Have Lived With A "Dictatorship" For Over 10 Years. By Obed Marquez Parlapiano.

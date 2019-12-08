@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2018-11-18"
 categories: "books,reviews"
 tags:
-coverImage: "images/fredrick-kearney-jr-burnin-book-unsplash.jpg"
+cover: "../images/fredrick-kearney-jr-burnin-book-unsplash.jpg"
 ---
 
 I’ve mentioned in the past how I tend to choose books. If they ring a bell, like [Montaigne's essays](https://obedparla.com/books/reviews/the-casual-exacerbating-philosophy-of-montaigne/), then I assume they’re good books since no one hears about _bad_ books or products in general. This was the case with Fahrenheit 451. I've heard of it so many times in the past that it was registered as one of those "must read" books, even though I had not the slightest idea of what it was about.

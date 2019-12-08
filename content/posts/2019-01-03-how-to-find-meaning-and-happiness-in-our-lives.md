@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-01-03"
 categories: "self-development"
 tags:
-coverImage: "images/passionate-cook-in-the-kitchen.jpg"
+cover: "../images/passionate-cook-in-the-kitchen.jpg"
 ---
 
 We draw meaning from anything we can find. Our titles, our possessions, our friends, our past and our possible future are all bragging rights. We shine a light upon our morals and beliefs as if to say “this is who I am, this is why I _matter!”._

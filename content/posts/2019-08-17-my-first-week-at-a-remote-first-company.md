@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-08-17"
 categories: "miscellaneous"
 tags:
-coverImage: "images/heetch-logo-with-a-jumping-man-1.jpeg"
+cover: "../images/heetch-logo-with-a-jumping-man-1.jpeg"
 ---
 
 I've wanted to work remotely for years. Being able to control my time, productivity and work habits seemed like a dream. Not to mention the lack of distractions, commuting or spending more time with my family!

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-07-19"
 categories: "short-stories"
 tags:
-coverImage: "images/sad-dog.jpg"
+cover: "../images/sad-dog.jpg"
 ---
 
 "You don't realize how lonely you are, until the person that scares away the loneliness is gone", he said to himself.

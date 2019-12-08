@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-12-26"
 categories: "books"
 tags:
-coverImage: "images/paper-1100254_1920.jpg"
+cover: "../images/paper-1100254_1920.jpg"
 ---
 
 In September 2014 I went to this particular bookshop for the first time, one that I fell in love with. It is in a nice touristic street and it has an awesome name.

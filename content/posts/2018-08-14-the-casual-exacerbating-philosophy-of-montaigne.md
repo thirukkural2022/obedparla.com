@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2018-08-14"
 categories: "books,reviews"
 tags:
-coverImage: "images/michaeldemontaigne.jpg"
+cover: "../images/michaeldemontaigne.jpg"
 ---
 
 The way I choose my books a lot of the time is the same as I and many others choose things. If the books sound familiar, it means I heard about it or about the author and that means it's probably good. Why else would I have heard about it in the first place? Remarkable works tend to move into the social subconscious.

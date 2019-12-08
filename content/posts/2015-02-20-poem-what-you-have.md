@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-02-20"
 categories: "poems"
 tags:
-coverImage: "images/red-and-black-and-white.jpg"
+cover: "../images/red-and-black-and-white.jpg"
 ---
 
 _What you have_, insight of love.

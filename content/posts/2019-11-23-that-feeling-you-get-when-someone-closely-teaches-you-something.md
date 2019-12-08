@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-11-23"
 categories: "thoughts"
 tags:
-coverImage: "images/man-with-open-book-reading-to-a-readhead-girl.jpg"
+cover: "../images/man-with-open-book-reading-to-a-readhead-girl.jpg"
 ---
 
 My daughter loves coloring. She draws and colors on any paper she can get her hands on, from clean white pages screaming to be filled with imagination to those black-outlines only figures that help kids stay within lines. She loves all of it.

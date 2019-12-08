@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-05-29"
 categories: "thoughts"
 tags:
-coverImage: "images/person-looking-at-the-horizon-by-the-sea.jpg"
+cover: "../images/person-looking-at-the-horizon-by-the-sea.jpg"
 ---
 
 The vast majority of my recent articles have been focused on books. What books I read, my thoughts on topics I read on them, reviews from great books.

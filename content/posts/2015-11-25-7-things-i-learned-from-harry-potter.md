@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-11-25"
 categories: "books,philosophy"
 tags:
-coverImage: "images/harry-potter-wallpaper-quotes-2.png"
+cover: "../images/harry-potter-wallpaper-quotes-2.png"
 ---
 
 This week I finished one of the best series of books I've ever read, the Harry Potter series.

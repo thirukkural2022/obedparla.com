@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-04-06"
 categories: "books"
 tags:
-coverImage: "images/iconic-isaac-asimov-image-drawing.jpg"
+cover: "../images/iconic-isaac-asimov-image-drawing.jpg"
 ---
 
 I discovered Asimov when I was about fourteen. I loved that we both shared a name, Isaac and that he pioneered the idea of robots and the three laws of robotics. I was struck by his genius and read a lot about him before even touching one of his books.

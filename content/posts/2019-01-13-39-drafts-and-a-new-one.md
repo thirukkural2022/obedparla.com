@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-01-13"
 categories: "miscellaneous"
 tags:
-coverImage: "images/pineapple-celebrating-with-ballons.jpg"
+cover: "../images/pineapple-celebrating-with-ballons.jpg"
 ---
 
 So many things that came pouring out of my fingers to never see the light of day. To forever leave my mind, for I have no recollection of ever writing most of them, not to enter anyone else's mind.

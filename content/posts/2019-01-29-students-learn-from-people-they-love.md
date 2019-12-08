@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-01-29"
 categories: "thoughts"
 tags:
-coverImage: "images/richard-feynman.jpg"
+cover: "../images/richard-feynman.jpg"
 ---
 
 I stumbled upon an article from The New York Times titled ["Students Learn From People They Love"](https://www.nytimes.com/2019/01/17/opinion/learning-emotion-education.html). It instantly caught my attention because hey, that sounds interesting and also right! This is an opinion article about that article, which it's worth a read! But I quote the most important parts here (highlights are mine).

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-03-20"
 categories: "philosophy"
 tags:
-coverImage: "images/clock-antique.jpg"
+cover: "../images/clock-antique.jpg"
 ---
 
 Several studies indicate that in order to become an expert, a prodigy, or even a genius, you need to practice **ten thousand hours**. You can read more about it in Malcolm  Gladwell's book "[Outliers: the story of success](http://en.wikipedia.org/wiki/Outliers_%28book%29)". And yes, that's right, **ten thousand hours**, which by the way can me translated into more than 415 days. Think about it, 415+ straight days practicing something, no eating, no sleeping, well, quite impossible right? Without mentioning boring as F.

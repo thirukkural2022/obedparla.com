@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-07-30"
 categories: "thoughts,philosophy,self-development"
 tags:
-coverImage: "images/working-man.jpg"
+cover: "../images/working-man.jpg"
 ---
 
 I was watching a movie the other day called "20th Century Women". In it, a couple of women try to teach a 15 y/o boy how to \*become\* a man at the request of his mother, since she doesn't know how to teach him herself. Not just to \*be\* a man but how to \*become\* one. There's an important difference between the two.

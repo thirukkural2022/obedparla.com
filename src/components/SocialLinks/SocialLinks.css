@@ -1,18 +1,22 @@
 .social-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 8px 0;
 }
 
 .social-links > div {
-  margin: 5px 15px;
-  cursor: pointer;
+    cursor: pointer;
+}
+
+.social-links svg {
+    height: 36px;
+    width: 36px;
 }
 
 .share-count {
-  text-align: center;
+    text-align: center;
 }

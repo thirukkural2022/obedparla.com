@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-06-19"
 categories: "poems"
 tags:
-coverImage: "images/into-the-horizon.jpg"
+cover: "../images/into-the-horizon.jpg"
 ---
 
 When there is time, we think When the rush of everyday life leaves us Then when we can afford to look into ourselves To understand who we are To look beyond automatic responses Understanding who we are, that's what we try

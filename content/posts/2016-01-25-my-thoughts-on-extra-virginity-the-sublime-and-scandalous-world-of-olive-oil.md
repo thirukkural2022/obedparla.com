@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-01-25"
 categories: "books,reviews"
 tags:
-coverImage: "images/extravirginity1.jpg"
+cover: "../images/extravirginity1.jpg"
 ---
 
 This is probably one of the books in which I've learned the most about something specific and so common as Olive Oil.

@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-08-30"
 categories: "human-behaviour,science,self-development"
 tags:
-coverImage: "images/maxresdefault.jpg"
+cover: "../images/maxresdefault.jpg"
 ---
 
 > I don’t know what’s the matter with people: they don’t learn by understanding; they learn by some other way—by rote, or something. Their knowledge is so fragile!

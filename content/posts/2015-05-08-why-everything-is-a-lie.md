@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-05-08"
 categories: "philosophy"
 tags:
-coverImage: "images/perception.jpg"
+cover: "../images/perception.jpg"
 ---
 
 Everything they have taught you is a lie.

@@ -4,7 +4,7 @@ author: "Homero Cuberos"
 date: "2017-06-22"
 categories: "poems"
 tags:
-coverImage: "images/woman-dark-lips.jpg"
+cover: "../images/woman-dark-lips.jpg"
 ---
 
 She dies a little when he says sorry. So that’s it? Another apology? Is that all you’ve got for me today? He doesn’t know any better.

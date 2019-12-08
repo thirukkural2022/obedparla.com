@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-10-09"
 categories: "philosophy"
 tags:
-coverImage: "images/mime.jpg"
+cover: "../images/mime.jpg"
 ---
 
 Waking up in the middle of the night, wondering: who are we?

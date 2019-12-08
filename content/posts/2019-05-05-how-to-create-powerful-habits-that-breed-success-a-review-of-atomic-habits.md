@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2019-05-05"
 categories: "books"
 tags:
-coverImage: "images/habits-to-be-made-neon-green-sign.jpg"
+cover: "../images/habits-to-be-made-neon-green-sign.jpg"
 ---
 
 James Clear is a fantastic writer with a great blog. He writes about self-development with a twist. Instead of talking about philosophy and what mantras you should tell yourself every morning, he approaches the idea of betterment through the power of _habits_.

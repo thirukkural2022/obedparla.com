@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-03-04"
 categories: "thoughts,philosophy,self-development"
 tags:
-coverImage: "images/matthew-henry.jpg"
+cover: "../images/matthew-henry.jpg"
 ---
 
 We're constantly bombarded by the idea that to achieve greatness all we have to do is _just _work a bit harder. Wake up earlier, do more exercise, focus more and distract yourself less, this and that. But how do we actually become better, how do we become who we want to become?

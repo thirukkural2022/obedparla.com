@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-05-04"
 categories: "short-stories"
 tags:
-coverImage: "images/3012556299cdce69d682825268483c29.jpg"
+cover: "../images/3012556299cdce69d682825268483c29.jpg"
 ---
 
 He stepped inside the room, a wooden table facing him, a shiny object on top of it.

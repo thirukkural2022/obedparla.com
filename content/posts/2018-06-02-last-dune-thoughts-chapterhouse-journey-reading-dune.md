@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2018-06-02"
 categories: "books,reviews"
 tags:
-coverImage: "images/dune_cover.jpg"
+cover: "../images/dune_cover.jpg"
 ---
 
 I started reading Dune mid-2016, and among the 50 or so books I read that year, Dune was the best one of them. A marvellous book, a fantastic story, a gorgeous and mind-blowing journey through its pages, characters and settings.

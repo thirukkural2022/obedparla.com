@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2016-04-08"
 categories: "books,human-behaviour"
 tags:
-coverImage: "images/i-robo2t.jpg"
+cover: "../images/i-robo2t.jpg"
 ---
 
 The three laws of robotics are as follows:

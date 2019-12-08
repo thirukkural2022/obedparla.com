@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-02-16"
 categories: "books,reviews"
 tags:
-coverImage: "images/sigiriya.jpg"
+cover: "../images/sigiriya.jpg"
 ---
 
 As a Hugo Award winner of 1980, The Fountains of Paradise is an interesting book.

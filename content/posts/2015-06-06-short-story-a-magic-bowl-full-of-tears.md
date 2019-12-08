@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-06-06"
 categories: "short-stories"
 tags:
-coverImage: "images/glass-bowl.jpg"
+cover: "../images/glass-bowl.jpg"
 ---
 
 [![glass bowl](https://obedparla.com/wp-content/uploads/2015/06/glass-bowl.jpg?w=660)](https://obedparla.com/wp-content/uploads/2015/06/glass-bowl.jpg)

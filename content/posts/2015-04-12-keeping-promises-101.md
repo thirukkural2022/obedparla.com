@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2015-04-12"
 categories: "philosophy"
 tags:
-coverImage: "images/lock-fresh-new-hd-wallpaper.jpg"
+cover: "../images/lock-fresh-new-hd-wallpaper.jpg"
 ---
 
 _About moi:_

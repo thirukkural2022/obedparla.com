@@ -4,7 +4,7 @@ author: "Obed Marquez Parlapiano"
 date: "2017-12-13"
 categories: "thoughts"
 tags:
-coverImage: "images/friends.jpg"
+cover: "../images/friends.jpg"
 ---
 
 As I sit alone my mind starts to think back to my past. Back to people that were once cornerstones of my life. Not just friends that shared their lives with me, but good friends, the best of friends, partners, brothers and sisters with different blood but loved as much as if we were twins. Companions.
