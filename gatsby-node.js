@@ -58,7 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               title
               tags
-              category
+              categories
               date
             }
           }
@@ -121,22 +121,30 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     }
 
-    // Generate a list of categories
-    if (edge.node.frontmatter.category) {
-      categorySet.add(edge.node.frontmatter.category);
-    }
-
     // Create post pages
     const nextID = index + 1 < postsEdges.length ? index + 1 : 0;
     const prevID = index - 1 >= 0 ? index - 1 : postsEdges.length - 1;
     const nextEdge = postsEdges[nextID];
     const prevEdge = postsEdges[prevID];
 
+    let postsSlug = edge.node.fields.slug;
+
+    // Generate a list of categories
+    if (edge.node.frontmatter.category) {
+      edge.node.frontmatter.categories.forEach(category => {
+        categorySet.add(category);
+      });
+
+      postsSlug = `${edge.node.frontmatter.categories[0]}${
+        edge.node.fields.slug
+      }`;
+    }
+
     createPage({
-      path: edge.node.fields.slug,
+      path: postsSlug,
       component: postPage,
       context: {
-        slug: edge.node.fields.slug,
+        slug: postsSlug,
         nexttitle: nextEdge.node.frontmatter.title,
         nextslug: nextEdge.node.fields.slug,
         prevtitle: prevEdge.node.frontmatter.title,

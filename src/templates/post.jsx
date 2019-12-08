@@ -10,6 +10,7 @@ import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
+import Img from "gatsby-image";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -26,6 +27,11 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID;
     }
 
+    console.log(
+      "post.cover.childImageSharp.fluid.src",
+      post.cover.childImageSharp.fluid.src
+    );
+
     return (
       <Layout>
         <div>
@@ -33,7 +39,7 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <img src={post.cover} alt="" />
+          <Img fluid={post.cover.childImageSharp.fluid} />
           <article>
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
@@ -59,9 +65,15 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover
+        cover {
+          childImageSharp {
+            fluid(maxWidth: 650, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         date
-        category
+        categories
         tags
       }
       fields {

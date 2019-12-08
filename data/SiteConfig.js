@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: "Gatsby Advanced Starter", // Site title.
+  siteTitle: "Obed M' Parlapiano", // Site title.
   siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "GatsbyJS Advanced Starter", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
@@ -13,7 +13,7 @@ const config = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  postsPerPage: 4, // Amount of posts displayed per listing page.
+  postsPerPage: 6, // Amount of posts displayed per listing page.
   userName: "Obed Marquez Parlapiano", // Username to display in the author segment.
   userEmail: "obedparla@gmail.com", // Email used for RSS feed's author segment
   userTwitter: "obedparla", // Optionally renders "Follow Me" in the UserInfo segment.

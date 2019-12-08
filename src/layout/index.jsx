@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 
 import config from "../../data/SiteConfig";
+import { Header } from "../components/Header/header";
 
 const xPadding = 1.5;
 const GlobalStyle = createGlobalStyle`
@@ -38,7 +39,7 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
           <html lang="en" />
         </Helmet>
-
+        <Header />
         {children}
       </>
     );
