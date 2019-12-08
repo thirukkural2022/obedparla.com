@@ -1,9 +1,11 @@
 ---
-title: "Why our misery and misunderstanding comes from the refusal of our instincts."
-author: "Obed Marquez Parlapiano"
-date: "2016-10-22"
-categories: "human-behaviour,philosophy"
-tags:
+title : "Why our misery and misunderstanding comes from the refusal of our instincts."
+author : "Obed Marquez Parlapiano"
+date : "2016-10-22"
+categories : 
+ - human-behaviour
+ - philosophy
+tags : ""
 ---
 
 We tend to forget, or as many people do, to consistently and stubbornly refuse the fact that we're animals. Calling someone "an animal" is a grave insult in most cultures; a "pig" is a dirty individual with a lack of morals of simply unfit for our organised and neat society. An animal is way below us in the world's hierarchy. Our mind gives us the right to be above them, to be called Human beings, a label that goes far beyond categorising our species, it puts us aside as a whole new and unique section of living creatures, beyond animal's instincts, needs and nature.

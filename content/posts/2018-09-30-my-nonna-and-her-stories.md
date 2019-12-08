@@ -1,10 +1,11 @@
 ---
-title: "My nonna and her stories."
-author: "Obed Marquez Parlapiano"
-date: "2018-09-30"
-categories: "thoughts"
-tags:
-cover: "../images/grandmother-holding-baby-finger.jpg"
+title : "My nonna and her stories."
+author : "Obed Marquez Parlapiano"
+date : "2018-09-30"
+categories : 
+ - thoughts
+tags : ""
+cover : "../images/grandmother-holding-baby-finger.jpg"
 ---
 
 My family, just like any other family out there, has some interesting history and things worth talking about and stories worth telling. I was talking with my spouse the other day about them, and I realized how much I enjoyed telling their stories, in particular, my grandmother's (nonna hereafter) stories.
@@ -31,4 +32,4 @@ When I think of family, I remember all of us, eating at Christmas, smiling.
 
 * * *
 
-![my grandfather and grandmother smiling](images/my-grandparents.jpg)
+![my grandfather and grandmother smiling](../images/my-grandparents.jpg)

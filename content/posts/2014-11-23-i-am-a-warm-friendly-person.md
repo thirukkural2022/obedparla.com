@@ -1,9 +1,10 @@
 ---
-title: "I am a warm, friendly person."
-author: "Obed Marquez Parlapiano"
-date: "2014-11-23"
-categories: "miscellaneous"
-tags:
+title : "I am a warm, friendly person."
+author : "Obed Marquez Parlapiano"
+date : "2014-11-23"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 I am a warm, friendly person who smiles just for the sake of it.

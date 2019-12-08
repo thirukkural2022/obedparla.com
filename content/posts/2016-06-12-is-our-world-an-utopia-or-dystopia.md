@@ -1,10 +1,13 @@
 ---
-title: "Imagine a perfect, happy world. Now, imagine the opposite."
-author: "Obed Marquez Parlapiano"
-date: "2016-06-12"
-categories: "books,philosophy,social-criticism"
-tags:
-cover: "../images/Brave-New-World-POSTER-large.jpg"
+title : "Imagine a perfect, happy world. Now, imagine the opposite."
+author : "Obed Marquez Parlapiano"
+date : "2016-06-12"
+categories : 
+ - books
+ - philosophy
+ - social-criticism
+tags : ""
+cover : "../images/Brave-New-World-POSTER-large.jpg"
 ---
 
 Imagine a world of happiness. Everyone has what they wish for, what they need, what they want. There is no need for food, shelter, security or entertainment.
@@ -17,7 +20,7 @@ Brave New World has to be one of the best and most unique books I've ever read a
 
 ## A Utopian or Dystopian World?
 
-![huxley vs orgell](images/huxley-vs-orgell-300x116.jpg)A Utopia, as described by the father of the idea, the Greek philosopher Sir Thomas More, is an egalitarian society which offers highly or almost perfect qualities such as justice, economic stability, prosperity and the fulfilment of needs alongside with a well-perceived freedom. Basically, a society in which its citizens are equal and live a truly good life that leaves no space to worry about a future, for it will be as bright as ever. Something similar to what 20th-century folk thought the 21st century would look like.
+![huxley vs orgell](../images/huxley-vs-orgell-300x116.jpg)A Utopia, as described by the father of the idea, the Greek philosopher Sir Thomas More, is an egalitarian society which offers highly or almost perfect qualities such as justice, economic stability, prosperity and the fulfilment of needs alongside with a well-perceived freedom. Basically, a society in which its citizens are equal and live a truly good life that leaves no space to worry about a future, for it will be as bright as ever. Something similar to what 20th-century folk thought the 21st century would look like.
 
 A Dystopia, on the other hand, is the exact opposite. A society or world full of discord, inequality, injustice and most importantly the lack of individual freedom. A dystopia offers no way out of the horrors of society, it is purposely built that way by a handful of individuals (usually the government) to control its people and offer an otherwise unthinkable power to the bearers. Exactly as portrayed in George Orwell's 1984.
 
@@ -31,7 +34,7 @@ Before conception, every to-be fetus is labelled with its "caste" and separated 
 
 If on the other hand, the fetus is to become a lesser caste, be it a Gamma, Delta or Epsilon, then they are conceived in packs of hundreds or thousands of identical twins. Every single one of the fetuses comes from the same multiplicated egg, same features and physic.
 
-\[caption id="attachment\_3583" align="aligncenter" width="650"\]![alphas and epsilons](images/alphas-and-epsilons-300x221.jpg) Each caste has their particular uniform and look.\[/caption\]
+\[caption id="attachment\_3583" align="aligncenter" width="650"\]![alphas and epsilons](../images/alphas-and-epsilons-300x221.jpg) Each caste has their particular uniform and look.\[/caption\]
 
 Every single individual, from the top Alpha caste down to semi-moron Epsilons, are heavily conditioned, from it's conception up to their early adulthood. The conditioning is done in certain ways and using a multitude of methods, the end result is to have citizens that live by certain ideas and morals that instead of being developed freely through the experimentation and experience are ingrained in their brains. No one is really able to challenge this ideas or morals, "we all live for each other", "society goes first", "for the greater good" are some good examples of widespread conditioning. This goes on and on, from hate to nature, love to objects and consumption, up to the blind acceptance of a drug called Soma.
 
@@ -53,7 +56,7 @@ As an exchange, you could say the whole of society has given up the power to run
 
 Who runs this? World controllers. Their job is to ensure that society's gears continue turning, that everyone is happy and no one challenges how things work. As you find out later in the book, Alphas, due to their high intellects and uniqueness can sometimes challenge these ideas and the status quo, looking for answers or freedom of self. When this happens they are simply granted their wish for freedom and sent to islands around the globe where they can coexist with other free-natured Alphas. Everyone wins, everyone's happy.
 
-![huxley vs orwell 4](images/huxley-vs-orwell-4-300x174.jpg)
+![huxley vs orwell 4](../images/huxley-vs-orwell-4-300x174.jpg)
 
 Having sex, or simply "having" someone is second nature. It is expected for everyone to share themselves to others, egoism is not acceptable. Anything you want you will eventually have. Loneliness is fiercely fought as to avoid people having meditative time, entertainment is everywhere as to distract people and bring them constant joy. This sounds like a Utopia to me. Everyone is happy and their lives are taken care of.
 
@@ -69,7 +72,7 @@ Everyone seems to relate Orwell's 1984 with our current society. Reading Huxley'
 
 Am I saying this is a big conspiracy and we're all being controlled? Of course not. Our nature is to look at shiny objects and what's more shiny that social acceptance and connection? No matter how false it is.
 
-![huxley vs orwell 3](images/huxley-vs-orwell-3-186x300.jpg)
+![huxley vs orwell 3](../images/huxley-vs-orwell-3-186x300.jpg)
 
 ## Do we live in a Dystopia or a Utopia?
 
@@ -101,7 +104,7 @@ This conversation goes on and on, tackling subjects such as Religion, Marriage a
 
 "Civilization has absolutely no need of nobility or heroism. These things are symptoms of political inefficiency. In a properly organized society like ours, nobody has any opportunities for being noble or heroic. Conditions have got to be thoroughly unstable before the occasion can arise. Where there are wars, where there are divided allegiances, where there are temptations to be resisted, objects of love to be fought for or defended-there, obviously, nobility and heroism have some sense"
 
-![huxley vs orwell 5](images/huxley-vs-orwell-5-300x216.jpg)
+![huxley vs orwell 5](../images/huxley-vs-orwell-5-300x216.jpg)
 
 ### A Utopia? A Dystopia? Both.
 
@@ -121,4 +124,4 @@ It's all about perspectives, what is good for you might be bad for someone else.
 
 We're not hard-conditioned, the possibilities of changing and improving are always there. Let's be better and make the world a better place, it can't be that hard, can it?
 
-![Rip Huxley - you were right](images/Summary_RipHuxley_BraveNewWorld-300x173.png)
+![Rip Huxley - you were right](../images/Summary_RipHuxley_BraveNewWorld-300x173.png)

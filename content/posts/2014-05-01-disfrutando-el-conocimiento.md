@@ -1,9 +1,10 @@
 ---
-title: "Disfrutando el conocimiento."
-author: "Obed Marquez Parlapiano"
-date: "2014-05-01"
-categories: "philosophy"
-tags:
+title : "Disfrutando el conocimiento."
+author : "Obed Marquez Parlapiano"
+date : "2014-05-01"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 [![Transformers-Movie-transformers-71312_1920_806](../images/transformers-movie-transformers-71312_1920_8063.jpg)](https://obedparla.com/wp-content/uploads/2014/05/transformers-movie-transformers-71312_1920_8063.jpg)

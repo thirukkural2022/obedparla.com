@@ -1,10 +1,11 @@
 ---
-title: "Isaac Asimov, The Quintessential Writer."
-author: "Obed Marquez Parlapiano"
-date: "2019-04-06"
-categories: "books"
-tags:
-cover: "../images/iconic-isaac-asimov-image-drawing.jpg"
+title : "Isaac Asimov, The Quintessential Writer."
+author : "Obed Marquez Parlapiano"
+date : "2019-04-06"
+categories : 
+ - books
+tags : ""
+cover : "../images/iconic-isaac-asimov-image-drawing.jpg"
 ---
 
 I discovered Asimov when I was about fourteen. I loved that we both shared a name, Isaac and that he pioneered the idea of robots and the three laws of robotics. I was struck by his genius and read a lot about him before even touching one of his books.
@@ -19,7 +20,7 @@ Perhaps that's the quintessential writer, one that can make people feel connecte
 
 If Isaac Asimov was known for his short stories then the Foundation trilogy made him outright famous. The first and second books were first written as a set of short stories and later put together as books.
 
-![isaac asimov the foundation trilogy cover art](images/isaac-asimov-the-foundation-trilogy-cover-art.jpg)
+![isaac asimov the foundation trilogy cover art](../images/isaac-asimov-the-foundation-trilogy-cover-art.jpg)
 
 The Foundation trilogy cover art
 
@@ -46,7 +47,7 @@ I love the ending of the short story:
 
 ## Nightfall
 
-![Nightfall isaac asimov book paperback cover](images/Nightfall-paperbook-cover.jpg)
+![Nightfall isaac asimov book paperback cover](../images/Nightfall-paperbook-cover.jpg)
 
 Asimov was an extremely prolific writer as well, with more than 300 books written and more than 400 pinned by him, he wrote about education, history, religion, chemistry, science and more. He wouldn't be a great writer if he had only dwelled in science fiction.
 
@@ -84,7 +85,7 @@ What laws can govern the behavior of robots, so that by following a set of simpl
 > 
 > Isaac Asimov's Three Laws Of Robotics
 
-![three laws of robotics joke](images/three-laws-of-robotics-joke.jpg)
+![three laws of robotics joke](../images/three-laws-of-robotics-joke.jpg)
 
 Credit to [Arnold Zwicky](https://arnoldzwicky.org/2013/06/10/rosenbergs-laws-of-robotics/)
 
@@ -94,7 +95,7 @@ Although these rules can look simplistic, and even obvious after reading them, t
 
 ## I, Robot
 
-![isaac asimov I robot paperback cover book](images/I-robot-paperback-cover-book.jpg)
+![isaac asimov I robot paperback cover book](../images/I-robot-paperback-cover-book.jpg)
 
 Asimov first introduces the world to the Three Laws in his "I, Robot" book, which was a collection of short stories exploring the Three Laws and its consequences. [I Robot it's an amazing book](https://obedparla.com/books/thoughts-on-i-robot-by-isaac-asimov/) on its own right.
 
@@ -114,7 +115,7 @@ The Zeroth Law also allowed Asimov to connect many of his, so far, unconnected u
 
 ## The Foundatio, humanity and money.
 
-![](images/isaac-asimov-opus-100-book-cover-paperback.jpg)
+![](../images/isaac-asimov-opus-100-book-cover-paperback.jpg)
 
 Out of the hundreds of books Asimov wrote, none became as famous as The Foundation Trilogy. It became Asimov's most iconic work. Fans and publishers loved the story, and after years of pressure to release a new Foundation book, he finally published the 4th instalment in the series, more than 25 years after the Trilogy was originally written!
 

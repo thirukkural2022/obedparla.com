@@ -1,10 +1,12 @@
 ---
-title: "My Top 5 Books of 2018. With Short Reviews and Highlights."
-author: "Obed Marquez Parlapiano"
-date: "2019-01-26"
-categories: "books,reviews"
-tags:
-cover: "../images/woman-putting-a-book-back-in-its-shelf.jpeg"
+title : "My Top 5 Books of 2018. With Short Reviews and Highlights."
+author : "Obed Marquez Parlapiano"
+date : "2019-01-26"
+categories : 
+ - books
+ - reviews
+tags : ""
+cover : "../images/woman-putting-a-book-back-in-its-shelf.jpeg"
 ---
 
 Reading books it's generally considered an honorable thing to do with your time. Everyone agrees that reading books it's good, even though we spent a lot more time on other less worthy things such as social media, chats, or Netflix.

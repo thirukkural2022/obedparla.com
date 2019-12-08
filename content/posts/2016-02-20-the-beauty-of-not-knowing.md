@@ -1,9 +1,10 @@
 ---
-title: "The beauty of the unkown"
-author: "Obed Marquez Parlapiano"
-date: "2016-02-20"
-categories: "thoughts"
-tags:
+title : "The beauty of the unkown"
+author : "Obed Marquez Parlapiano"
+date : "2016-02-20"
+categories : 
+ - thoughts
+tags : ""
 ---
 
 I’m not myself when I’m writing yet I’m lost when I do.

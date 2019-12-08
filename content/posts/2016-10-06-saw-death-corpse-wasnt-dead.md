@@ -1,10 +1,12 @@
 ---
-title: "I saw a death corpse that wasn't dead."
-author: "Obed Marquez Parlapiano"
-date: "2016-10-06"
-categories: "human-behaviour,thoughts"
-tags:
-cover: "../images/conciousness-e1475785734925.jpg"
+title : "I saw a death corpse that wasn't dead."
+author : "Obed Marquez Parlapiano"
+date : "2016-10-06"
+categories : 
+ - human-behaviour
+ - thoughts
+tags : ""
+cover : "../images/conciousness-e1475785734925.jpg"
 ---
 
 The bus was packed with people. I was standing, ignoring the other tens of commuters dealing with traffic on their own, personal ways. As for me, I was doing what I usually do in traffic, listen to an audio book; "The Selfish Gene" by Richard Dawkins was the one.

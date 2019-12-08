@@ -1,9 +1,10 @@
 ---
-title: "Ideas: Nuestras herederas y tickets al firmamento."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-24"
-categories: "philosophy"
-tags:
+title : "Ideas: Nuestras herederas y tickets al firmamento."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-24"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 * * *

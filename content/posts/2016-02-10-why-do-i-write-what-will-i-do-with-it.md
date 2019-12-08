@@ -1,10 +1,11 @@
 ---
-title: "Why Do I Write? What Will I Do With It?"
-author: "Obed Marquez Parlapiano"
-date: "2016-02-10"
-categories: "thoughts"
-tags:
-cover: "../images/chalkboard_quotes_twain.jpg"
+title : "Why Do I Write? What Will I Do With It?"
+author : "Obed Marquez Parlapiano"
+date : "2016-02-10"
+categories : 
+ - thoughts
+tags : ""
+cover : "../images/chalkboard_quotes_twain.jpg"
 ---
 
 In 2014 I was working with a great startup and we all were a very close and cool team.
@@ -47,7 +48,7 @@ I expect myself to be satisfied with what I write, to know that I poured my very
 
 Even if, like many other writers, I expect nothing from the outside world, the joy that a tweet praising my work brings is beyond words. Someone enjoyed and even found _inspiring_ a piece _I created._
 
-![CSNSBk4UEAAOMVx](images/csnsbk4ueaaomvx.jpg)
+![CSNSBk4UEAAOMVx](../images/csnsbk4ueaaomvx.jpg)
 
 I expect my writing to be a part of my that I will again be. I want it to provoke emotions in other and to make me a better writer, artist, human.
 

@@ -1,9 +1,11 @@
 ---
-title: "A better view on success for the 21st century."
-author: "Obed Marquez Parlapiano"
-date: "2016-01-24"
-categories: "human-behaviour,philosophy"
-tags:
+title : "A better view on success for the 21st century."
+author : "Obed Marquez Parlapiano"
+date : "2016-01-24"
+categories : 
+ - human-behaviour
+ - philosophy
+tags : ""
 ---
 
 ## And how to achieve long lasting happiness.
@@ -48,7 +50,7 @@ The only thing that bring true happiness is to live life. Not _to be alive_, but
 
 ### Novelty is the worst enemy of happiness.
 
-\[caption id="" align="aligncenter" width="600"\]![We pine for newness / no matter how good the old. / Slaves to novelty.](images/1*HLUNAT2LXi_SGybFxmJnuA.jpeg) From a great Courtney Symons Medium post\[/caption\]
+\[caption id="" align="aligncenter" width="600"\]![We pine for newness / no matter how good the old. / Slaves to novelty.](../images/1*HLUNAT2LXi_SGybFxmJnuA.jpeg) From a great Courtney Symons Medium post\[/caption\]
 
 We all desire to travel the world discovering our beautiful planet and ever-evolving history, but the only reason we want to do it is because of that _almost_ authentic happiness that fills our hearts when we find ourselves in new places, surrounded by all sort of new scenarios that makes our mind wonder in a day dream.
 

@@ -1,10 +1,11 @@
 ---
-title: "Best quotes from "21 lessons for the 21st century" by Yuval Noah Harari"
-author: "Obed Marquez Parlapiano"
-date: "2019-04-20"
-categories: "quotes"
-tags:
-cover: "../images/21-lessons-for-the-21st-century-questions-in-an-image.jpg"
+title : "Best quotes from "21 lessons for the 21st century" by Yuval Noah Harari"
+author : "Obed Marquez Parlapiano"
+date : "2019-04-20"
+categories : 
+ - quotes
+tags : ""
+cover : "../images/21-lessons-for-the-21st-century-questions-in-an-image.jpg"
 ---
 
 Anyone you talk to will readily admit that the world it's facing many challenges. Each society needs to deal with its own issues, but we also have very pressing global problems. How are we to arm ourselves in order to have a voice in such discussions? Who's going to make the decisions that will affect not only our children but maybe the fate of humanity?

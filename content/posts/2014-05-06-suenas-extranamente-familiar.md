@@ -1,9 +1,10 @@
 ---
-title: "Suenas extrañamente familiar..."
-author: "Obed Marquez Parlapiano"
-date: "2014-05-06"
-categories: "miscellaneous"
-tags:
+title : "Suenas extrañamente familiar..."
+author : "Obed Marquez Parlapiano"
+date : "2014-05-06"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 [![under_a_different_sun_by_tylercreatesworlds-d7h6xf12222](../images/under_a_different_sun_by_tylercreatesworlds-d7h6xf12222.jpg)](https://obedparla.com/wp-content/uploads/2014/05/under_a_different_sun_by_tylercreatesworlds-d7h6xf12222.jpg)

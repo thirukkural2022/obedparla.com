@@ -1,9 +1,10 @@
 ---
-title: "Una aventura largamente esperada."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-21"
-categories: "short-stories"
-tags:
+title : "Una aventura largamente esperada."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-21"
+categories : 
+ - short-stories
+tags : ""
 ---
 
  

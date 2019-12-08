@@ -1,10 +1,11 @@
 ---
-title: "How to read 52 books in a year, or a book a week. And why?"
-author: "Obed Marquez Parlapiano"
-date: "2015-12-26"
-categories: "books"
-tags:
-cover: "../images/paper-1100254_1920.jpg"
+title : "How to read 52 books in a year, or a book a week. And why?"
+author : "Obed Marquez Parlapiano"
+date : "2015-12-26"
+categories : 
+ - books
+tags : ""
+cover : "../images/paper-1100254_1920.jpg"
 ---
 
 In September 2014 I went to this particular bookshop for the first time, one that I fell in love with. It is in a nice touristic street and it has an awesome name.

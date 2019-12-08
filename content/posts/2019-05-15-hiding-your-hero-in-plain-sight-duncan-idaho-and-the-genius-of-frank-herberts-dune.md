@@ -1,10 +1,11 @@
 ---
-title: "Hiding your hero in plain sight: Duncan Idaho and the genius of Frank Herbert's Dune"
-author: "Obed Marquez Parlapiano"
-date: "2019-05-15"
-categories: "books"
-tags:
-cover: "../images/dune-fan-art-with-fremen-in-desert-overlooking-a-sandworm.jpg"
+title : "Hiding your hero in plain sight: Duncan Idaho and the genius of Frank Herbert's Dune"
+author : "Obed Marquez Parlapiano"
+date : "2019-05-15"
+categories : 
+ - books
+tags : ""
+cover : "../images/dune-fan-art-with-fremen-in-desert-overlooking-a-sandworm.jpg"
 ---
 
   
@@ -19,7 +20,7 @@ It's an almost impossible feat without some trickery and mind-blowingly good wri
 
 ## Legendary Storytelling: How To Keep The Reader's Sense Of Continuity For Thousands Of Years.
 
-![fremen walking towards city in dune desset](images/fremen-walking-towards-city-in-dune-desset-1024x441.jpg)
+![fremen walking towards city in dune desset](../images/fremen-walking-towards-city-in-dune-desset-1024x441.jpg)
 
 The answer hit me one day like a brick: Fran Herbert managed to do it by giving the reader a focal point, a horizon, something for the reader to feel familiar with while discovering brand new worlds. But what can remain the same during thousands of years of war, plotting and an ever-changing universe?
 
@@ -37,7 +38,7 @@ Feeling confused? The six Dune books aren't a walk in the park, believe me. They
 
 ## Dune's Real Hero
 
-![paul atreides fan art with arrakis in the horizon](images/paul-atreides-fan-art-with-arrakis-in-the-horizon-1024x436.jpg)
+![paul atreides fan art with arrakis in the horizon](../images/paul-atreides-fan-art-with-arrakis-in-the-horizon-1024x436.jpg)
 
 How do you connect all these characters? They're all House Atreides descendants, but you can't keep bringing that up every second page. Well, you create the perfect character: **Duncan Idaho**.
 
@@ -57,7 +58,7 @@ Leto II was also a tyrant, slowly becoming an immortal but non-sentient being th
 
 ## With Honour Comes Responsibility.
 
-![fremen walking into a building dune arrakis](images/fremen-walking-into-a-building-dune-arrakis-1024x441.jpg)
+![fremen walking into a building dune arrakis](../images/fremen-walking-into-a-building-dune-arrakis-1024x441.jpg)
 
 Idaho is a troubled man, with terrible and burdensome memories, living in different eras that don't welcome him and finding himself lost every new life. He's the presentation of what humans could become: good in nature yet ready to kill. Honourable, intelligent, skilful and wise but full of hatred for his oppressors and his family's murderers. Even after millennia, his heart wishes for revenge to those that did him harm. Duncan is more human than anyone else in Dune because he has the truest emotions.
 
@@ -69,7 +70,7 @@ In Chapterhouse: dune, the last book in the series, Frank Herbert finally unleas
 
 Finally, we see Duncan's worth, the curtain falls down and we're left with a wise, powerful man that nevertheless manages to retain his humanity. All men in the Dune series given such power so far have turned out to be or become, somewhat monsters, to be miserable and unable to escape their self-created peril. All except for our one true hero.
 
-![arraken city dune at night fan art](images/arraken-city-dune-at-night-fan-art-1024x610.jpg)
+![arraken city dune at night fan art](../images/arraken-city-dune-at-night-fan-art-1024x610.jpg)
 
 It might sound like Duncan Idaho is the obvious main character of the Dune series all along, but imagine you've been reading six books, all of which have intricate plot lines. They all have their protagonists, heroes and villains and Idaho is always portrayed as a secondary character. He never achieves anything as extraordinary as his contemporaries, he's even portrayed as trying to live a normal life multiple times.
 

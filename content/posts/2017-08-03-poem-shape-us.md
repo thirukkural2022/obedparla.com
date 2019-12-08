@@ -1,10 +1,11 @@
 ---
-title: "Poem: The Shape Of Us."
-author: "Obed Marquez Parlapiano"
-date: "2017-08-03"
-categories: "poems"
-tags:
-cover: "../images/colorful-woman.jpg"
+title : "Poem: The Shape Of Us."
+author : "Obed Marquez Parlapiano"
+date : "2017-08-03"
+categories : 
+ - poems
+tags : ""
+cover : "../images/colorful-woman.jpg"
 ---
 
 As the wind that washes the shore Corroding the tallest mountains As it whistles songs of love That the trained ear can hear

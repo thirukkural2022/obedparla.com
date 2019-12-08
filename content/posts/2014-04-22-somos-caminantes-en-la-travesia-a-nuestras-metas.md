@@ -1,9 +1,10 @@
 ---
-title: "Somos caminantes en la travesía a nuestras metas."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-22"
-categories: "philosophy"
-tags:
+title : "Somos caminantes en la travesía a nuestras metas."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-22"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 * * *

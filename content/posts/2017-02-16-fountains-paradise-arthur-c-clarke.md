@@ -1,10 +1,12 @@
 ---
-title: "The Fountains of Paradise  by Arthur C. Clarke"
-author: "Obed Marquez Parlapiano"
-date: "2017-02-16"
-categories: "books,reviews"
-tags:
-cover: "../images/sigiriya.jpg"
+title : "The Fountains of Paradise  by Arthur C. Clarke"
+author : "Obed Marquez Parlapiano"
+date : "2017-02-16"
+categories : 
+ - books
+ - reviews
+tags : ""
+cover : "../images/sigiriya.jpg"
 ---
 
 As a Hugo Award winner of 1980, The Fountains of Paradise is an interesting book.

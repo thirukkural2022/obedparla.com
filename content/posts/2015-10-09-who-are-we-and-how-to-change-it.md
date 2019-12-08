@@ -1,10 +1,11 @@
 ---
-title: "Who Are We? And How To Change It."
-author: "Obed Marquez Parlapiano"
-date: "2015-10-09"
-categories: "philosophy"
-tags:
-cover: "../images/mime.jpg"
+title : "Who Are We? And How To Change It."
+author : "Obed Marquez Parlapiano"
+date : "2015-10-09"
+categories : 
+ - philosophy
+tags : ""
+cover : "../images/mime.jpg"
 ---
 
 Waking up in the middle of the night, wondering: who are we?

@@ -1,10 +1,11 @@
 ---
-title: "I'm just a crazy old man on a blue box! And now I don't even have the blue box!"
-author: "Obed Marquez Parlapiano"
-date: "2017-06-08"
-categories: "miscellaneous"
-tags:
-cover: "../images/bluebo.jpg"
+title : "I'm just a crazy old man on a blue box! And now I don't even have the blue box!"
+author : "Obed Marquez Parlapiano"
+date : "2017-06-08"
+categories : 
+ - miscellaneous
+tags : ""
+cover : "../images/bluebo.jpg"
 ---
 
  

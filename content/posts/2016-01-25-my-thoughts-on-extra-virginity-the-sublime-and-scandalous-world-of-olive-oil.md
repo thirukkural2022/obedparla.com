@@ -1,10 +1,12 @@
 ---
-title: "My thoughts on Extra Virginity: The Sublime and Scandalous World of Olive Oil"
-author: "Obed Marquez Parlapiano"
-date: "2016-01-25"
-categories: "books,reviews"
-tags:
-cover: "../images/extravirginity1.jpg"
+title : "My thoughts on Extra Virginity: The Sublime and Scandalous World of Olive Oil"
+author : "Obed Marquez Parlapiano"
+date : "2016-01-25"
+categories : 
+ - books
+ - reviews
+tags : ""
+cover : "../images/extravirginity1.jpg"
 ---
 
 This is probably one of the books in which I've learned the most about something specific and so common as Olive Oil.

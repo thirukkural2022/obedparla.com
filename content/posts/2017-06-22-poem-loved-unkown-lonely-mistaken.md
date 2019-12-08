@@ -1,10 +1,11 @@
 ---
-title: "Poem: Loved. Unknown. Lonely. Mistaken."
-author: "Homero Cuberos"
-date: "2017-06-22"
-categories: "poems"
-tags:
-cover: "../images/woman-dark-lips.jpg"
+title : "Poem: Loved. Unknown. Lonely. Mistaken."
+author : "Homero Cuberos"
+date : "2017-06-22"
+categories : 
+ - poems
+tags : ""
+cover : "../images/woman-dark-lips.jpg"
 ---
 
 She dies a little when he says sorry. So that’s it? Another apology? Is that all you’ve got for me today? He doesn’t know any better.

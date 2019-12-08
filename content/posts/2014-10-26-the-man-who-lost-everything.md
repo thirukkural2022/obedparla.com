@@ -1,9 +1,10 @@
 ---
-title: "The Man Who Lost Everything"
-author: "Obed Marquez Parlapiano"
-date: "2014-10-26"
-categories: "short-stories"
-tags:
+title : "The Man Who Lost Everything"
+author : "Obed Marquez Parlapiano"
+date : "2014-10-26"
+categories : 
+ - short-stories
+tags : ""
 ---
 
 As the time passed, he lost what he never thought could be lost.

@@ -1,10 +1,11 @@
 ---
-title: "The Age Of Artifical Intelligence: the future of jobs, algorithms and morality."
-author: "Obed Marquez Parlapiano"
-date: "2019-05-18"
-categories: "philosophy"
-tags:
-cover: "../images/optimus-prime-amazing-real-statue-robot.jpg"
+title : "The Age Of Artifical Intelligence: the future of jobs, algorithms and morality."
+author : "Obed Marquez Parlapiano"
+date : "2019-05-18"
+categories : 
+ - philosophy
+tags : ""
+cover : "../images/optimus-prime-amazing-real-statue-robot.jpg"
 ---
 
 You might have heard of [The Three Laws of Robotics,](https://obedparla.com/books/thoughts-on-i-robot-by-isaac-asimov/) they were laws proposed by Isaac Asimov on his famous book "I, Robot". Such laws would dictate every decision taken by a robot, from crossing the street to saving someone's life.
@@ -23,7 +24,7 @@ Algorithms are unbiased, or so we think, and having them on our side creates a b
 
 Asimov envisioned a future with intelligent as well as conscious robots. Hyper-advanced AIs such as Google's Deep Mind have proven that [computers can beat humans at anything](https://www.newscientist.com/article/2132086-deepminds-ai-beats-worlds-best-go-player-in-latest-face-off/) without having a conscience, all you need are the right algorithms and machine learning techniques.
 
-![3 laws of robotics-protect obey survive](images/3-laws-of-robotics-protect-obey-survive.png)
+![3 laws of robotics-protect obey survive](../images/3-laws-of-robotics-protect-obey-survive.png)
 
 The laws of robotics as proposed by Asimov gave robots a moral compass, they always knew what to do based on such laws, but thinking that simple rules can guide behaviour indicates that the robots were capable of analysing situations the way a human would.
 
@@ -54,7 +55,7 @@ Perhaps it's time to start asking ourselves, should we hardwire some moral princ
 
 The big difference is that machines back then were _stupid. _We're dealing with smarter-than-your-dad computers now! They literally have the potential to do anything you can do but better, faster and cheaper. And something history has proven is that no matter how unhappy it makes people to lose their jobs, [economics always wins.](https://www.history.com/news/industrial-revolution-luddites-workers)
 
-![luddites destroying a machine in a riot](images/luddites-destroying-a-machine-in-a-riot-1024x538.jpg)
+![luddites destroying a machine in a riot](../images/luddites-destroying-a-machine-in-a-riot-1024x538.jpg)
 
 Luddites was a movement of people opposing new tech during the industrial revolution. They lost.
 
@@ -84,7 +85,7 @@ We're able to make computers that beat the best of us at chess, Go, or almost an
 
 Morality is simply far too complex for our algorithms to have right now. In order for a computer to know what's "the right thing to do" we need to make them conscious, having full-blown artificial intelligence, and that comes with a whole new set of problems!
 
-![skynet robot terminator](images/skynet-robot-terminator-1024x576.jpg)
+![skynet robot terminator](../images/skynet-robot-terminator-1024x576.jpg)
 
 Skynet is watching  
   

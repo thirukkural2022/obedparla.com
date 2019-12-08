@@ -1,9 +1,10 @@
 ---
-title: "The question that ended everything."
-author: "Obed Marquez Parlapiano"
-date: "2014-11-17"
-categories: "short-stories"
-tags:
+title : "The question that ended everything."
+author : "Obed Marquez Parlapiano"
+date : "2014-11-17"
+categories : 
+ - short-stories
+tags : ""
 ---
 
 * * *

@@ -1,10 +1,12 @@
 ---
-title: "I will never be able to love my fellow men as I love my daughter, but I can learn to respect them in their differences."
-author: "Obed Marquez Parlapiano"
-date: "2016-04-29"
-categories: "thoughts,philosophy"
-tags:
-cover: "../images/photo-1439920120577-eb3a83c16dd7.jpg"
+title : "I will never be able to love my fellow men as I love my daughter, but I can learn to respect them in their differences."
+author : "Obed Marquez Parlapiano"
+date : "2016-04-29"
+categories : 
+ - thoughts
+ - philosophy
+tags : ""
+cover : "../images/photo-1439920120577-eb3a83c16dd7.jpg"
 ---
 
 Today I read this:

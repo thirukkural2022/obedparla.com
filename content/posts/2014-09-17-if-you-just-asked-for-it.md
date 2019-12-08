@@ -1,9 +1,10 @@
 ---
-title: "If you just asked for it."
-author: "Obed Marquez Parlapiano"
-date: "2014-09-17"
-categories: "miscellaneous"
-tags:
+title : "If you just asked for it."
+author : "Obed Marquez Parlapiano"
+date : "2014-09-17"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 I have grown cold, no, not cold. I am as warm as ever, because i now know how to love, more like, i have grown to expect less, that way i can be safe of disappointment, while i am still able to enjoy good surprises.

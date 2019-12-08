@@ -1,10 +1,12 @@
 ---
-title: "Our endless journey to achieve self importance."
-author: "Obed Marquez Parlapiano"
-date: "2016-02-21"
-categories: "philosophy,self-development"
-tags:
-cover: "../images/photo-1439792675105-701e6a4ab6f0.jpg"
+title : "Our endless journey to achieve self importance."
+author : "Obed Marquez Parlapiano"
+date : "2016-02-21"
+categories : 
+ - philosophy
+ - self-development
+tags : ""
+cover : "../images/photo-1439792675105-701e6a4ab6f0.jpg"
 ---
 
 ### The feeling of importance is one of human being’s most desired feelings.

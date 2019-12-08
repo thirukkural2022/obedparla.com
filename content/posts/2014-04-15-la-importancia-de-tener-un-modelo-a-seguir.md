@@ -1,9 +1,10 @@
 ---
-title: "La importancia de tener un modelo a seguir."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-15"
-categories: "miscellaneous"
-tags:
+title : "La importancia de tener un modelo a seguir."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-15"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 * * *

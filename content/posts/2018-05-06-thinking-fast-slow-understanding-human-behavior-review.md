@@ -1,10 +1,13 @@
 ---
-title: "Thinking Fast and Slow. Understanding Human Behavior. A Review."
-author: "Obed Marquez Parlapiano"
-date: "2018-05-06"
-categories: "books,human-behaviour,reviews"
-tags:
-cover: "../images/thinking_fast_and_slow_book_cover.jpg"
+title : "Thinking Fast and Slow. Understanding Human Behavior. A Review."
+author : "Obed Marquez Parlapiano"
+date : "2018-05-06"
+categories : 
+ - books
+ - human-behaviour
+ - reviews
+tags : ""
+cover : "../images/thinking_fast_and_slow_book_cover.jpg"
 ---
 
 Reviewing books as complex and important as this one is hard. It took me almost 5 months to get through this book. I read about 10 other books in the meantime. Thinking Fast and Slow is such a heavy book to read, the amount of information it contains is astonishingly high, and the information astonishingly useful! As one of the reviews in the back of my edition read: "Buy it fast, read it slow". On point. Rarely have I seen a review/quote that describes a book so accurately.

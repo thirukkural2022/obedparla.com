@@ -1,10 +1,11 @@
 ---
-title: "Keeping promises 101."
-author: "Obed Marquez Parlapiano"
-date: "2015-04-12"
-categories: "philosophy"
-tags:
-cover: "../images/lock-fresh-new-hd-wallpaper.jpg"
+title : "Keeping promises 101."
+author : "Obed Marquez Parlapiano"
+date : "2015-04-12"
+categories : 
+ - philosophy
+tags : ""
+cover : "../images/lock-fresh-new-hd-wallpaper.jpg"
 ---
 
 _About moi:_

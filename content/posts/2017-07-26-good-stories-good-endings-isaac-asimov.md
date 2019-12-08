@@ -1,10 +1,12 @@
 ---
-title: "On Good Stories, Good Endings and Isaac Asimov."
-author: "Obed Marquez Parlapiano"
-date: "2017-07-26"
-categories: "books,thoughts"
-tags:
-cover: "../images/hand-writing-1.jpg"
+title : "On Good Stories, Good Endings and Isaac Asimov."
+author : "Obed Marquez Parlapiano"
+date : "2017-07-26"
+categories : 
+ - books
+ - thoughts
+tags : ""
+cover : "../images/hand-writing-1.jpg"
 ---
 
 Jeff Goins in his book "You are a Writer" explains that, regardless of how much you write and how good you are at it, you \*are\* a writer as long as you \*write\*. I believe there's a certain truth in it.

@@ -1,10 +1,12 @@
 ---
-title: "7 Things I learned from Harry Potter."
-author: "Obed Marquez Parlapiano"
-date: "2015-11-25"
-categories: "books,philosophy"
-tags:
-cover: "../images/harry-potter-wallpaper-quotes-2.png"
+title : "7 Things I learned from Harry Potter."
+author : "Obed Marquez Parlapiano"
+date : "2015-11-25"
+categories : 
+ - books
+ - philosophy
+tags : ""
+cover : "../images/harry-potter-wallpaper-quotes-2.png"
 ---
 
 This week I finished one of the best series of books I've ever read, the Harry Potter series.

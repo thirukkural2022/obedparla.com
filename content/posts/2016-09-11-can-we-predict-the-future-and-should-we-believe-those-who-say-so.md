@@ -1,10 +1,12 @@
 ---
-title: "Can we predict the future? And should we believe those who say so?"
-author: "Obed Marquez Parlapiano"
-date: "2016-09-11"
-categories: "human-behaviour,science"
-tags:
-cover: "../images/predicting-the-future.jpg"
+title : "Can we predict the future? And should we believe those who say so?"
+author : "Obed Marquez Parlapiano"
+date : "2016-09-11"
+categories : 
+ - human-behaviour
+ - science
+tags : ""
+cover : "../images/predicting-the-future.jpg"
 ---
 
 Imagine you can choose to have a special mental ability. Predicting the future and influencing other's behaviour might be two of the best ones out there. Ditching the behaviour one out, how possible is it for humans to predict the future to any extent, and if it's not possible, why are there so many people talking about "what's going to happen" so often?

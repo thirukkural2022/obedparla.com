@@ -1,9 +1,10 @@
 ---
-title: "What would you answer if someone asks you in your deathbed 'How was it to live in earth?'"
-author: "Obed Marquez Parlapiano"
-date: "2014-12-09"
-categories: "miscellaneous"
-tags:
+title : "What would you answer if someone asks you in your deathbed 'How was it to live in earth?'"
+author : "Obed Marquez Parlapiano"
+date : "2014-12-09"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 * * *

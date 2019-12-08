@@ -1,10 +1,12 @@
 ---
-title: "On Movies vs Books and Emotionally Rewarding Activities."
-author: "Obed Marquez Parlapiano"
-date: "2018-12-24"
-categories: "books,thoughts"
-tags:
-cover: "../images/way-of-kings-e1545621148512.jpg"
+title : "On Movies vs Books and Emotionally Rewarding Activities."
+author : "Obed Marquez Parlapiano"
+date : "2018-12-24"
+categories : 
+ - books
+ - thoughts
+tags : ""
+cover : "../images/way-of-kings-e1545621148512.jpg"
 ---
 
 Imagine you're watching a fantastic movie. One of your favorites or one you've never seen before; imagine that surge of expectation, the feeling of elation as you wait for something to happen, as you slowly understand the plot the movie has been trying to build, that moment when understanding washes over you and you feel as if everything makes sense!

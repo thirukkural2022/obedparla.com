@@ -1,10 +1,11 @@
 ---
-title: "Demise of Tears — Short Story."
-author: "Obed Marquez Parlapiano"
-date: "2015-04-08"
-categories: "short-stories"
-tags:
-cover: "../images/2.jpg"
+title : "Demise of Tears — Short Story."
+author : "Obed Marquez Parlapiano"
+date : "2015-04-08"
+categories : 
+ - short-stories
+tags : ""
+cover : "../images/2.jpg"
 ---
 
 "When I thought I had forgotten you, you came back" he said to her, in tears.

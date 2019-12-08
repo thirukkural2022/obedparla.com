@@ -1,10 +1,11 @@
 ---
-title: "The joy of coding: why I love being a programmer."
-author: "Obed Marquez Parlapiano"
-date: "2019-04-13"
-categories: "coding"
-tags:
-cover: "../images/happy-people-sitting-in-front-of-a-macbook-laptop.jpeg"
+title : "The joy of coding: why I love being a programmer."
+author : "Obed Marquez Parlapiano"
+date : "2019-04-13"
+categories : 
+ - coding
+tags : ""
+cover : "../images/happy-people-sitting-in-front-of-a-macbook-laptop.jpeg"
 ---
 
 I read a book on the history of early programmers, the ones that came to be known as "hackers" and that lay the foundation for modern technologies and _the internet_. There's a quote on it and struck me and it's forever engraved in my memory:

@@ -1,10 +1,12 @@
 ---
-title: "A thank you note to the universe."
-author: "Obed Marquez Parlapiano"
-date: "2017-08-15"
-categories: "human-behaviour,thoughts"
-tags:
-cover: "../images/thank-you-image.jpg"
+title : "A thank you note to the universe."
+author : "Obed Marquez Parlapiano"
+date : "2017-08-15"
+categories : 
+ - human-behaviour
+ - thoughts
+tags : ""
+cover : "../images/thank-you-image.jpg"
 ---
 
 There are [studies](https://www.forbes.com/sites/amymorin/2014/11/23/7-scientifically-proven-benefits-of-gratitude-that-will-motivate-you-to-give-thanks-year-round/#246015b8183c), and a [hell of a lot of self-help books](https://www.amazon.com/s/ref=sr_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A4739%2Ck%3Agratitude&keywords=gratitude&ie=UTF8&qid=1502778280&rnid=1000) that make emphasis on how being grateful will improve your happiness, health and well being. Being grateful is said to be one of those "one pill cures all" sort of techniques/behaviours.

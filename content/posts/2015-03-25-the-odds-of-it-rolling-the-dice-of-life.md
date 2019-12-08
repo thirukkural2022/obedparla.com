@@ -1,10 +1,11 @@
 ---
-title: "The odds of it, rolling the dice of life."
-author: "Obed Marquez Parlapiano"
-date: "2015-03-25"
-categories: "philosophy"
-tags:
-cover: "../images/o-matic.jpg"
+title : "The odds of it, rolling the dice of life."
+author : "Obed Marquez Parlapiano"
+date : "2015-03-25"
+categories : 
+ - philosophy
+tags : ""
+cover : "../images/o-matic.jpg"
 ---
 
 ## What are the odds of it, the odds of something happening, the odds of nothing happening?

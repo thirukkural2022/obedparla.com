@@ -1,10 +1,11 @@
 ---
-title: "On world building, Twenty One Pilot's Trench, and creativity."
-author: "Obed Marquez Parlapiano"
-date: "2018-11-05"
-categories: "thoughts"
-tags:
-cover: "../images/twenty-one-pilots-trench-logo.jpg"
+title : "On world building, Twenty One Pilot's Trench, and creativity."
+author : "Obed Marquez Parlapiano"
+date : "2018-11-05"
+categories : 
+ - thoughts
+tags : ""
+cover : "../images/twenty-one-pilots-trench-logo.jpg"
 ---
 
 I've been listening to this one album for more than a month now. I usually listen to music while coding, and whenever I want to play music I just press play on my Spotify, and since I've been listening to the same album for so long, I simply keep listening to it. Right now, for example, I'm listening to it. I connected my headphones to my phone, opened Spotify, clicked play and there it was, the very common, somewhat soothing music my ears have come to expect.

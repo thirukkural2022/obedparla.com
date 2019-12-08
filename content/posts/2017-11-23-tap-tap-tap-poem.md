@@ -1,10 +1,11 @@
 ---
-title: "Tap. Tap. Tap. – Poem"
-author: "Obed Marquez Parlapiano"
-date: "2017-11-23"
-categories: "poems"
-tags:
-cover: "../images/freezing-sad.jpg"
+title : "Tap. Tap. Tap. – Poem"
+author : "Obed Marquez Parlapiano"
+date : "2017-11-23"
+categories : 
+ - poems
+tags : ""
+cover : "../images/freezing-sad.jpg"
 ---
 
 I sit alone on the couch. Holding more computer power that ever thought possible. Hugging bits and bytes. Pixels and pretty animations. Finding relief in the warmth of a screen. Losing myself in seemingly endless, mindless distraction. Busy mind, quiet heart.

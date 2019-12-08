@@ -1,10 +1,12 @@
 ---
-title: "Why I loved "The Rosie Project""
-author: "Obed Marquez Parlapiano"
-date: "2016-01-29"
-categories: "books,reviews"
-tags:
-cover: "../images/whatimreading-rosieproject3.jpg"
+title : "Why I loved "The Rosie Project""
+author : "Obed Marquez Parlapiano"
+date : "2016-01-29"
+categories : 
+ - books
+ - reviews
+tags : ""
+cover : "../images/whatimreading-rosieproject3.jpg"
 ---
 
 ### My thoughts on: "The Rosie Project" by Graeme Simsion.

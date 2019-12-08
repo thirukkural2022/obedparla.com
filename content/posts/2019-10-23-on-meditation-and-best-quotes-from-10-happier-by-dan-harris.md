@@ -1,10 +1,12 @@
 ---
-title: "On Meditation and Best quotes from "10% Happier" by Dan Harris"
-author: "Obed Marquez Parlapiano"
-date: "2019-10-23"
-categories: "quotes,thoughts"
-tags:
-cover: "../images/woman-sitting-by-the-beach-with-nice-tattoo.jpeg"
+title : "On Meditation and Best quotes from "10% Happier" by Dan Harris"
+author : "Obed Marquez Parlapiano"
+date : "2019-10-23"
+categories : 
+ - quotes
+ - thoughts
+tags : ""
+cover : "../images/woman-sitting-by-the-beach-with-nice-tattoo.jpeg"
 ---
 
 I've been meditating on-and-off for a couple of years but I have never been able to make it stick. My longest streak was while using Headspace and meditating on my 2-hour-long commute. I always wanted to give meditation a more serious try though.

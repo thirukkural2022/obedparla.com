@@ -1,9 +1,10 @@
 ---
-title: "Lo atractivo de lo desconocido."
-author: "Obed Marquez Parlapiano"
-date: "2014-05-12"
-categories: "miscellaneous"
-tags:
+title : "Lo atractivo de lo desconocido."
+author : "Obed Marquez Parlapiano"
+date : "2014-05-12"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 [![1235](../images/1235-e1399867220845.jpg)](http://obedmarquezp.files.wordpress.com/2014/05/1235-e1399867220845.jpg)

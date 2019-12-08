@@ -1,10 +1,11 @@
 ---
-title: "Why everything is a lie."
-author: "Obed Marquez Parlapiano"
-date: "2015-05-08"
-categories: "philosophy"
-tags:
-cover: "../images/perception.jpg"
+title : "Why everything is a lie."
+author : "Obed Marquez Parlapiano"
+date : "2015-05-08"
+categories : 
+ - philosophy
+tags : ""
+cover : "../images/perception.jpg"
 ---
 
 Everything they have taught you is a lie.

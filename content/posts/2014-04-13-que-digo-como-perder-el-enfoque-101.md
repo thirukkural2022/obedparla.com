@@ -1,9 +1,10 @@
 ---
-title: "Que digo: como perder el enfoque 101."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-13"
-categories: "philosophy"
-tags:
+title : "Que digo: como perder el enfoque 101."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-13"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 * * *

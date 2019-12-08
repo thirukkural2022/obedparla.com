@@ -1,10 +1,13 @@
 ---
-title: "Becoming who you are. From an irresponsible student to a 6 am waking up dad."
-author: "Obed Marquez Parlapiano"
-date: "2017-03-04"
-categories: "thoughts,philosophy,self-development"
-tags:
-cover: "../images/matthew-henry.jpg"
+title : "Becoming who you are. From an irresponsible student to a 6 am waking up dad."
+author : "Obed Marquez Parlapiano"
+date : "2017-03-04"
+categories : 
+ - thoughts
+ - philosophy
+ - self-development
+tags : ""
+cover : "../images/matthew-henry.jpg"
 ---
 
 We're constantly bombarded by the idea that to achieve greatness all we have to do is _just _work a bit harder. Wake up earlier, do more exercise, focus more and distract yourself less, this and that. But how do we actually become better, how do we become who we want to become?
@@ -19,7 +22,7 @@ Most people wouldn't call 4 years a very long time. If you think about it, how m
 
 At beginnings of 2013, I was studying Computer Engineering in one of the best universities of Venezuela (totally biased here, though), I was irresponsible, didn't study hard enough, didn't take my career as seriously as I should have. I flunked Mathematics multiple times as well as one of the most interesting (I didn't know it at the time) classes in the career, Data Structures, in some cases for just a few points missing in an exam or project. Points I could have had by being a bit more careful with my code and organisational skills.
 
-![coder working](images/working-2-300x300.gif)Don't get me wrong, whenever I studied I passed easily, I was (and I continue to be) quite good at this coding stuff (I'm biased here as well, obviously), and that's the main reason I flunked so much. Overconfidence. I always believed I could achieve what I wanted if _only_ my effort was _just_ enough. I still hold this belief, but I don't sit on my ass waiting for good stuff to happen anymore, you gotta do the work.
+![coder working](../images/working-2-300x300.gif)Don't get me wrong, whenever I studied I passed easily, I was (and I continue to be) quite good at this coding stuff (I'm biased here as well, obviously), and that's the main reason I flunked so much. Overconfidence. I always believed I could achieve what I wanted if _only_ my effort was _just_ enough. I still hold this belief, but I don't sit on my ass waiting for good stuff to happen anymore, you gotta do the work.
 
 In the summer of 2014 after leaving an amazing company I was working for, I took a plane to Italy. Convinced to leave my country and to move somewhere offering a brighter future. I ended up in a small but prosperous island called Malta, with good people, nice sun and a _lot_ of cats.
 

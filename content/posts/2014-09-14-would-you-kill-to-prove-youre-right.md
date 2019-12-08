@@ -1,9 +1,10 @@
 ---
-title: "Would you kill to prove you're right?"
-author: "Obed Marquez Parlapiano"
-date: "2014-09-14"
-categories: "miscellaneous"
-tags:
+title : "Would you kill to prove you're right?"
+author : "Obed Marquez Parlapiano"
+date : "2014-09-14"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 ### Would you? Kill.

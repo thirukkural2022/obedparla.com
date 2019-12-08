@@ -1,10 +1,12 @@
 ---
-title: "Thoughts on "I, Robot" by Isaac Asimov."
-author: "Obed Marquez Parlapiano"
-date: "2016-04-08"
-categories: "books,human-behaviour"
-tags:
-cover: "../images/i-robo2t.jpg"
+title : "Thoughts on "I, Robot" by Isaac Asimov."
+author : "Obed Marquez Parlapiano"
+date : "2016-04-08"
+categories : 
+ - books
+ - human-behaviour
+tags : ""
+cover : "../images/i-robo2t.jpg"
 ---
 
 The three laws of robotics are as follows:

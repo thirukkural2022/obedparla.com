@@ -1,10 +1,12 @@
 ---
-title: "Review: Work Rules!: Insights from Inside Google That Will Transform How You Live and Lead"
-author: "Obed Marquez Parlapiano"
-date: "2017-08-12"
-categories: "books,reviews"
-tags:
-cover: "../images/Bock_WorkRulesHC.jpg"
+title : "Review: Work Rules!: Insights from Inside Google That Will Transform How You Live and Lead"
+author : "Obed Marquez Parlapiano"
+date : "2017-08-12"
+categories : 
+ - books
+ - reviews
+tags : ""
+cover : "../images/Bock_WorkRulesHC.jpg"
 ---
 
 # My thoughts on: Work Rules! By Laszlo Bock.

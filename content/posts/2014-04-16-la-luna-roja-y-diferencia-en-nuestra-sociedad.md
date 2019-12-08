@@ -1,9 +1,10 @@
 ---
-title: "La luna roja con respecto a nuestra sociedad."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-16"
-categories: "philosophy"
-tags:
+title : "La luna roja con respecto a nuestra sociedad."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-16"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 * * *

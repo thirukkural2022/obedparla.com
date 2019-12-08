@@ -1,9 +1,10 @@
 ---
-title: "I want you. He said."
-author: "Obed Marquez Parlapiano"
-date: "2014-11-17"
-categories: "short-stories"
-tags:
+title : "I want you. He said."
+author : "Obed Marquez Parlapiano"
+date : "2014-11-17"
+categories : 
+ - short-stories
+tags : ""
 ---
 
 \- 'I want you' _—_ He said _—_.

@@ -1,10 +1,11 @@
 ---
-title: "Mumbling and bleeding. Bleeding and mumbling."
-author: "Obed Marquez Parlapiano"
-date: "2016-05-02"
-categories: "miscellaneous"
-tags:
-cover: "../images/moon-upside-downpotato1.jpg"
+title : "Mumbling and bleeding. Bleeding and mumbling."
+author : "Obed Marquez Parlapiano"
+date : "2016-05-02"
+categories : 
+ - miscellaneous
+tags : ""
+cover : "../images/moon-upside-downpotato1.jpg"
 ---
 
 > There is nothing to writing. All you do is sit down at a typewriter and bleed.

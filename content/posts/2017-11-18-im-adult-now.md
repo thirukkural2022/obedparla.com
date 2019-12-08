@@ -1,10 +1,11 @@
 ---
-title: "Wait, I'm an adult now. When did that happen?"
-author: "Obed Marquez Parlapiano"
-date: "2017-11-18"
-categories: "miscellaneous"
-tags:
-cover: "../images/crazy-guy.jpg"
+title : "Wait, I'm an adult now. When did that happen?"
+author : "Obed Marquez Parlapiano"
+date : "2017-11-18"
+categories : 
+ - miscellaneous
+tags : ""
+cover : "../images/crazy-guy.jpg"
 ---
 
 You're walking down the street or driving your car, or going back to work from a cigarette break when suddenly it hits you: you're an adult now. When did that happen? When did you grow old, when did you leave behind your younger, naive and innocent self? You're supposed to be a grown up now, but suddenly you don't feel like one. Suddenly you feel like you're not supposed to be here, like the world played a game on you, you pressed auto-pilot and it brought you here, without your consent and all you can do now is play along.

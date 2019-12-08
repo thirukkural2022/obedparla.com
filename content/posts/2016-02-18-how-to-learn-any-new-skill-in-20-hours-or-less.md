@@ -1,10 +1,12 @@
 ---
-title: "How to learn any new skill in 20 hours or less."
-author: "Obed Marquez Parlapiano"
-date: "2016-02-18"
-categories: "human-behaviour,self-development"
-tags:
-cover: "../images/asimov-quote.jpg"
+title : "How to learn any new skill in 20 hours or less."
+author : "Obed Marquez Parlapiano"
+date : "2016-02-18"
+categories : 
+ - human-behaviour
+ - self-development
+tags : ""
+cover : "../images/asimov-quote.jpg"
 ---
 
 We humans are learning machines.
@@ -41,7 +43,7 @@ If you start by choosing a too-wide topic, like "writing", "dancing" or "learnin
 
 **A perfect example of this is people wanting to learn to code.** There are dozens of in-demand programming languages and wanting to "learn to code" will only get you jammed into choosing "the perfect programming language". You will never find it because it doesn't exist.
 
-\[caption id="attachment\_3074" align="alignnone" width="2000"\]![Which language to learn infographic](images/which-language.png) This might help you.\[/caption\]
+\[caption id="attachment\_3074" align="alignnone" width="2000"\]![Which language to learn infographic](../images/which-language.png) This might help you.\[/caption\]
 
 However! If you choose a specific topic, say, learning to dance Salsa, to write short stories, to read faster or learn to play specific guitar songs; then you have chosen your playing field. Everything will be much clearer after that.
 
@@ -89,7 +91,7 @@ Maybe learning Salsa from YouTube is not your thing, try to find a class near yo
 
 Use this break to stop and ask yourself: "am my moving at the right speed? Is there something I can change to improve my learning experience?". It's likely there will be; this is the time to adjust your direction and continue at a higher speed than ever.
 
-![keep learning mural](images/wall-837313_1920.jpg)
+![keep learning mural](../images/wall-837313_1920.jpg)
 
 While learning to juggle I started with bouncing balls. Every time they fell I had to run after them. Once I changed for non-bouncing balls my learning improved dramatically.
 

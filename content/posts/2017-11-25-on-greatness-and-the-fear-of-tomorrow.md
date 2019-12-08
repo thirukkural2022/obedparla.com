@@ -1,10 +1,12 @@
 ---
-title: "On Greatness And The Fear Of Tomorrow."
-author: "Obed Marquez Parlapiano"
-date: "2017-11-25"
-categories: "thoughts,self-development"
-tags:
-cover: "../images/greatness-blogpost.jpg"
+title : "On Greatness And The Fear Of Tomorrow."
+author : "Obed Marquez Parlapiano"
+date : "2017-11-25"
+categories : 
+ - thoughts
+ - self-development
+tags : ""
+cover : "../images/greatness-blogpost.jpg"
 ---
 
 I believe humans have a tendency to fear the future, to stay away from the thought of what's to come, the possibilities of it. They're simply so endless and so impossibly unknowable that it makes our minds feel small, the same way you feel minimized when thinking of the immensity of the universe and how little you can do to really change anything.

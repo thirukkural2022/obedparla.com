@@ -1,10 +1,11 @@
 ---
-title: "When Time became our God, and anxiety our companion."
-author: "Obed Marquez Parlapiano"
-date: "2019-01-05"
-categories: "thoughts"
-tags:
-cover: "../images/black-sand-hourglass-standing-on-rocks-at-the-beach.jpg"
+title : "When Time became our God, and anxiety our companion."
+author : "Obed Marquez Parlapiano"
+date : "2019-01-05"
+categories : 
+ - thoughts
+tags : ""
+cover : "../images/black-sand-hourglass-standing-on-rocks-at-the-beach.jpg"
 ---
 
 The time is so scarce, it is somewhat frustrating. To let go of things you love, just to make some space for the things you might have a lesser love for, but that has more value in general.

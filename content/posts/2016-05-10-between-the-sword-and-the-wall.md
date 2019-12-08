@@ -1,10 +1,12 @@
 ---
-title: "I found myself between the sword and the wall. Should I be brave or wise?"
-author: "Obed Marquez Parlapiano"
-date: "2016-05-10"
-categories: "thoughts,philosophy"
-tags:
-cover: "../images/Sword1.jpg"
+title : "I found myself between the sword and the wall. Should I be brave or wise?"
+author : "Obed Marquez Parlapiano"
+date : "2016-05-10"
+categories : 
+ - thoughts
+ - philosophy
+tags : ""
+cover : "../images/Sword1.jpg"
 ---
 
 There’s this interesting phrase that goes “I found myself between the sword and the wall” that I heard many times in my childhood in cartoons and comics.

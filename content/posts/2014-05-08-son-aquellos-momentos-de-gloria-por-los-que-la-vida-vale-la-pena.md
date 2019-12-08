@@ -1,9 +1,10 @@
 ---
-title: "Son aquellos momentos de gloria por los que la vida vale la pena."
-author: "Obed Marquez Parlapiano"
-date: "2014-05-08"
-categories: "philosophy"
-tags:
+title : "Son aquellos momentos de gloria por los que la vida vale la pena."
+author : "Obed Marquez Parlapiano"
+date : "2014-05-08"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 [![girl-enjoy-summer-sun](http://obedmarquezp.files.wordpress.com/2014/05/girl-enjoy-summer-sun-e1399513792103.jpg?w=676)](https://obedparla.com/wp-content/uploads/2014/05/girl-enjoy-summer-sun-e1399513792103.jpg)

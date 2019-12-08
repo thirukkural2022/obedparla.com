@@ -1,10 +1,11 @@
 ---
-title: "The most enjoyable thing I currently own: The Nintendo Switch."
-author: "Obed Marquez Parlapiano"
-date: "2019-11-10"
-categories: "miscellaneous"
-tags:
-cover: "../images/Nintendo-Mario-close-up-high-quality.jpeg"
+title : "The most enjoyable thing I currently own: The Nintendo Switch."
+author : "Obed Marquez Parlapiano"
+date : "2019-11-10"
+categories : 
+ - miscellaneous
+tags : ""
+cover : "../images/Nintendo-Mario-close-up-high-quality.jpeg"
 ---
 
 For my 6th birthday, my mom gave me an Optimus Prime robot that walked and made sounds. It was such an amazing present and I was so surprised by it that I remember falling on my back when I opened the box. I was always one for the dramatic.
@@ -25,7 +26,7 @@ The Joycons are a masterpiece of engineering. Being able to "attach" them to the
 
 It's easy to forget our world is physical rather than digital. Our phones can do so much but they're a black-box of circuits. Same for your laptop, camera and even some watches. Everything is _a single thing_ that magically does _many things_. The Switch can be _many things_ while being a cohesive unit, intuitive and most importantly: _fun._
 
-![overcooked loading screen switch controllers use](images/overcooked-loading-screen-switch-controllers-use-1024x576.jpg)
+![overcooked loading screen switch controllers use](../images/overcooked-loading-screen-switch-controllers-use-1024x576.jpg)
 
 Overcooked loading screen shows you the multiple ways you can play with. This ignored the "controllers connected to the switch" layout.
 
@@ -33,6 +34,6 @@ I've played video games since my first SNES when I was about 4 years old, but ga
 
 I can only imagine the amount of genius, design, redesign, and testing that was necessary to create such an elegant yet simple piece of engineering. I love it and I wish there were more such devices out there that focused as much on what users can be done with them in the real world as in the digital one.
 
-![three boys playing on a single switch in the street](images/three-boys-playing-on-a-single-switch-in-the-street-1-955x1024.jpg)
+![three boys playing on a single switch in the street](../images/three-boys-playing-on-a-single-switch-in-the-street-1-955x1024.jpg)
 
 Three boys playing on a single switch in the street

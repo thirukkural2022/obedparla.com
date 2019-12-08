@@ -1,10 +1,11 @@
 ---
-title: "The Meeting — Conexus Part I"
-author: "Obed Marquez Parlapiano"
-date: "2015-12-05"
-categories: "short-stories"
-tags:
-cover: "../images/gray-wolf-in-snow-hd.jpg"
+title : "The Meeting — Conexus Part I"
+author : "Obed Marquez Parlapiano"
+date : "2015-12-05"
+categories : 
+ - short-stories
+tags : ""
+cover : "../images/gray-wolf-in-snow-hd.jpg"
 ---
 
 The wolf approached the man as it usually did, appearing out of nowhere after sensing his presence from far away, seeing the man walk towards him, appearing lost and somewhat weak. He approached trying to appear as docile as an alpha wolf could ever be.

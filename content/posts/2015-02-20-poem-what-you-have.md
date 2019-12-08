@@ -1,10 +1,11 @@
 ---
-title: "Poem: What you have"
-author: "Obed Marquez Parlapiano"
-date: "2015-02-20"
-categories: "poems"
-tags:
-cover: "../images/red-and-black-and-white.jpg"
+title : "Poem: What you have"
+author : "Obed Marquez Parlapiano"
+date : "2015-02-20"
+categories : 
+ - poems
+tags : ""
+cover : "../images/red-and-black-and-white.jpg"
 ---
 
 _What you have_, insight of love.

@@ -1,10 +1,12 @@
 ---
-title: "Playing with toy scissors"
-author: "Obed Marquez Parlapiano"
-date: "2017-10-10"
-categories: "human-behaviour,thoughts"
-tags:
-cover: "../images/baby-water.jpg"
+title : "Playing with toy scissors"
+author : "Obed Marquez Parlapiano"
+date : "2017-10-10"
+categories : 
+ - human-behaviour
+ - thoughts
+tags : ""
+cover : "../images/baby-water.jpg"
 ---
 
 My daughter came to me with plastic toy scissors and started to play with them, as I'm sitting down on the sofa in front of her she takes the two parts of the toy apart by mistake alongside an expression of surprise in seeing the toy breaking apart.

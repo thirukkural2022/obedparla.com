@@ -1,9 +1,10 @@
 ---
-title: "Cuando una idea es mas fuerte que la realidad."
-author: "Obed Marquez Parlapiano"
-date: "2014-04-09"
-categories: "philosophy"
-tags:
+title : "Cuando una idea es mas fuerte que la realidad."
+author : "Obed Marquez Parlapiano"
+date : "2014-04-09"
+categories : 
+ - philosophy
+tags : ""
 ---
 
 * * *

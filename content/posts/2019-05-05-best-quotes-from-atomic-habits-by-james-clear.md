@@ -1,9 +1,10 @@
 ---
-title: "Best quotes from "Atomic Habits" by James Clear"
-author: "Obed Marquez Parlapiano"
-date: "2019-05-05"
-categories: "quotes"
-tags:
+title : "Best quotes from "Atomic Habits" by James Clear"
+author : "Obed Marquez Parlapiano"
+date : "2019-05-05"
+categories : 
+ - quotes
+tags : ""
 ---
 
 I loved this book, it offers a fantastic, usable framework to create new habits and to change old ones. You can find my in-depth review of it with a lot of the main ideas of the book explained.

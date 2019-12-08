@@ -1,10 +1,11 @@
 ---
-title: "How do you gain knowledge? And how do we avoid losing it?"
-author: "Obed Marquez Parlapiano"
-date: "2019-01-02"
-categories: "self-development"
-tags:
-cover: "../images/three-wise-monkeys.jpeg"
+title : "How do you gain knowledge? And how do we avoid losing it?"
+author : "Obed Marquez Parlapiano"
+date : "2019-01-02"
+categories : 
+ - self-development
+tags : ""
+cover : "../images/three-wise-monkeys.jpeg"
 ---
 
 What do you think of if I ask you about the Middle Ages? I imagine most people as farmers. Images of kings, crusades, The Plague and utter poverty come to mind. The Dark Ages come to mind too. The most powerful of times for the Catholic Church.
@@ -25,7 +26,7 @@ It took hundreds of years to advanced past the middle ages. Less than two hundre
 
 Humanity has managed to gather and use knowledge at an increasingly faster rate. If we don’t make sure to pass along that knowledge from one generation to the next, it will eventually be lost and will need to be re-gained or perhaps [lost forever](https://en.wikipedia.org/wiki/Damascus_steel).
 
-\[caption id="attachment\_3860" align="alignleft" width="247"\]![](images/rosetta_stone-247x300.jpg) The Rosetta Stone, the key to decipher the hieroglyphs.\[/caption\]
+\[caption id="attachment\_3860" align="alignleft" width="247"\]![](../images/rosetta_stone-247x300.jpg) The Rosetta Stone, the key to decipher the hieroglyphs.\[/caption\]
 
 Think of the Egyptian hieroglyphs. Once a living and thriving language, inscribed in every important Egyptian tomb, learned by priests and sages and used by one of the most advanced civilizations of its time, was lost when the Egyptian gods and temples were banned in the 4th century by the Roman Emperor [Theodosius I](https://en.wikipedia.org/wiki/Theodosius_I "Theodosius I"). In just two generations no one could read or write hieroglyphs anymore.
 
@@ -51,7 +52,7 @@ How do you do then, when you want to learn something drastically new? We already
 
 It's important to keep in mind how gathering all types of knowledge can prove useful when acquiring new skills. We all know a wise person that seems to know a bit about everything, and if they don't have knowledge about it, they can somehow reach correct conclusions by thinking about the problem. This is a characteristic of a well-nurtured mind. The more _correct _knowledgewe gather, the better our ability to reach good conclusions.
 
-\[caption id="attachment\_3863" align="aligncenter" width="770"\][![](images/World_illiteracy_1970-2010-1024x602.png)](https://en.wikipedia.org/wiki/Literacy) World illiteracy has halved between 1970 and 2015\[/caption\]
+\[caption id="attachment\_3863" align="aligncenter" width="770"\][![](../images/World_illiteracy_1970-2010-1024x602.png)](https://en.wikipedia.org/wiki/Literacy) World illiteracy has halved between 1970 and 2015\[/caption\]
 
 Everything in human society is somehow connected. There's a minimum threshold of people that must keep a strand of knowledge alive, lest it's forgotten. Think of the Aztec language, no one speaks it anymore, and even when we can understand parts of it through the study of their history, it's not enough for anyone to be fluent on it. Even if knowledge survives in one mind or in a few, it might not be enough to avoid it from dying off.
 

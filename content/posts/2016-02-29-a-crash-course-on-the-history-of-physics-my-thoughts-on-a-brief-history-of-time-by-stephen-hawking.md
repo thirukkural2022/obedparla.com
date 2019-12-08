@@ -1,10 +1,13 @@
 ---
-title: "A crash course on the history of physics. My thoughts on “A Brief History Of Time” by Stephen Hawking."
-author: "Obed Marquez Parlapiano"
-date: "2016-02-29"
-categories: "books,reviews,science"
-tags:
-cover: "../images/001-h_10594563.jpg"
+title : "A crash course on the history of physics. My thoughts on “A Brief History Of Time” by Stephen Hawking."
+author : "Obed Marquez Parlapiano"
+date : "2016-02-29"
+categories : 
+ - books
+ - reviews
+ - science
+tags : ""
+cover : "../images/001-h_10594563.jpg"
 ---
 
 I’ve just finished “A Brief History Of Time” by Stephen Hawking and I feel my brain more efficient, bigger and smart just by reading this book. What an amazing journey Hawking takes you to; you’ll learn about the discoveries of Galileo, Newton, Einstein, Maxwell, Hubble, and so many other great scientist that have changed the way we see and understand the universe.
@@ -21,7 +24,7 @@ But the more we learn and the more complex and mind blowing the theories get, th
 
 We’ve come far as a specie. We are able to build giant, complex structures like the CERN or LIGO. Machines that most people don’t know exist, let alone understand. We create complex simulations of the universe in order to get closer to finally “understand the universe”.
 
-![cern](images/cern.jpg)
+![cern](../images/cern.jpg)
 
 Hawkin rarely discusses the findings or theories from his personal point of view but from the broader scientific angle. What a discovery meant for a theory, why one theory gained popularity while another was discarded. The book has so much detail you will end up being several magnitudes more literate on the matters of science after finishing it.
 

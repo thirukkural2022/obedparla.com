@@ -1,10 +1,11 @@
 ---
-title: "My first week at a remote-first company"
-author: "Obed Marquez Parlapiano"
-date: "2019-08-17"
-categories: "miscellaneous"
-tags:
-cover: "../images/heetch-logo-with-a-jumping-man-1.jpeg"
+title : "My first week at a remote-first company"
+author : "Obed Marquez Parlapiano"
+date : "2019-08-17"
+categories : 
+ - miscellaneous
+tags : ""
+cover : "../images/heetch-logo-with-a-jumping-man-1.jpeg"
 ---
 
 I've wanted to work remotely for years. Being able to control my time, productivity and work habits seemed like a dream. Not to mention the lack of distractions, commuting or spending more time with my family!

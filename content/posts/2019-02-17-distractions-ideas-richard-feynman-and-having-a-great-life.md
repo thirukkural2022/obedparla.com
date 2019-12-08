@@ -1,10 +1,12 @@
 ---
-title: "On Distractions, Ideas, Richard Feynman and having a great life."
-author: "Obed Marquez Parlapiano"
-date: "2019-02-17"
-categories: "human-behaviour,science"
-tags:
-cover: "../images/richard-feynman-profile.jpg"
+title : "On Distractions, Ideas, Richard Feynman and having a great life."
+author : "Obed Marquez Parlapiano"
+date : "2019-02-17"
+categories : 
+ - human-behaviour
+ - science
+tags : ""
+cover : "../images/richard-feynman-profile.jpg"
 ---
 
 In 2016 I stumbled upon a book called "The Pleasure Of Finding Things Out" by Richard Feynman, it was a collection of some of Feynman's best stories. The book was so good that shortly after finishing it I read "Surely you're joking, Mr Feynman", a book of a similar nature. Both of the books give glimpses into Feynman's life, his ideas, experiences and outlook on life itself.
@@ -43,7 +45,7 @@ But since we only have 4 memory slots, we have to be careful what we use them fo
 
 Our mind is great at "chunking" information down, connecting dots and recognising patterns, that's why it's so much easier to remember stories rather than historical dates. I can tell you about Genghis Khan's empire and his conquests, but not the dates in which any of it happened.
 
-![richard feynman in class](images/richard-feynman-in-class.jpg)
+![richard feynman in class](../images/richard-feynman-in-class.jpg)
 
 How did Feynman manage his memory slots? By connecting his distractions to his work. He used the nonsense in his life as a way of doing heavy work.
 

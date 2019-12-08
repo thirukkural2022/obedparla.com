@@ -1,9 +1,10 @@
 ---
-title: "El jodido conformismo que mata la prosperidad."
-author: "Obed Marquez Parlapiano"
-date: "2014-05-26"
-categories: "miscellaneous"
-tags:
+title : "El jodido conformismo que mata la prosperidad."
+author : "Obed Marquez Parlapiano"
+date : "2014-05-26"
+categories : 
+ - miscellaneous
+tags : ""
 ---
 
 ##### [![3fc8e7d8f6be76b407484858aad07b9d-d42b28m](../images/3fc8e7d8f6be76b407484858aad07b9d-d42b28m.jpg)](https://obedparla.com/wp-content/uploads/2014/05/3fc8e7d8f6be76b407484858aad07b9d-d42b28m.jpg)Ese momento en el que piensas _"bueno, es mejor que nada_", porque obtuviste una calificación "decente", porque compraste un producto parecido al que deseabas, porque la oferta es peor de lo que esperabas, **pero**... _"Es mejor que nada"._

@@ -1,10 +1,13 @@
 ---
-title: "Thoughts on "In Conversation With God" by Neale Donald Walsch."
-author: "Obed Marquez Parlapiano"
-date: "2016-04-14"
-categories: "books,philosophy,reviews"
-tags:
-cover: "../images/god-and-man.jpg"
+title : "Thoughts on "In Conversation With God" by Neale Donald Walsch."
+author : "Obed Marquez Parlapiano"
+date : "2016-04-14"
+categories : 
+ - books
+ - philosophy
+ - reviews
+tags : ""
+cover : "../images/god-and-man.jpg"
 ---
 
 This book is can be highly, highly controversial and the value it brings to a reader depends mostly on the already made assumptions and wisdom of such reader.

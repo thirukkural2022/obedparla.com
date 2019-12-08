@@ -1,10 +1,13 @@
 ---
-title: "On distractions, memory and ideas."
-author: "Obed Marquez Parlapiano"
-date: "2016-08-30"
-categories: "human-behaviour,science,self-development"
-tags:
-cover: "../images/maxresdefault.jpg"
+title : "On distractions, memory and ideas."
+author : "Obed Marquez Parlapiano"
+date : "2016-08-30"
+categories : 
+ - human-behaviour
+ - science
+ - self-development
+tags : ""
+cover : "../images/maxresdefault.jpg"
 ---
 
 > I don’t know what’s the matter with people: they don’t learn by understanding; they learn by some other way—by rote, or something. Their knowledge is so fragile!
@@ -19,7 +22,7 @@ Master of what, you say? Well, of living curiously, more specifically of living 
 
 Richard Feynman had many cool stories to tell, most of those are not about his theories and the way he created the equations that allow quantum physics to bla bla bla... No, most of them are about that time he got distracted (and quite obsessed) by or with something, from picking on locks and opening safes while being the best at it, to counting the time on his mind while doing all sort of other stuff to check if the inner clock could be tricked. Really, that guy had a million of super interesting distractions, but that never stopped him from doing his work.
 
-![feynman](images/feynman-300x260.jpg)
+![feynman](../images/feynman-300x260.jpg)
 
 In "A Mind for Numbers: How to Excel at Math and Science" by Barbara Oakley, she explains that some studies strongly suggest that we have 4 working memory slots or "storages", these storages are used to keep information readily available while our brain saved that into long term memory. The storages are in the middle of short-term and long-term memory, easier to access than long term and more time enduring than short term.
 
