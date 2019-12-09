@@ -23,6 +23,12 @@ module.exports = {
     "gatsby-plugin-lodash",
     "gatsby-plugin-styled-components",
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",

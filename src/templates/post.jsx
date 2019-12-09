@@ -1,6 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
+
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 import PostTags from "../components/PostTags/PostTags";
@@ -10,7 +12,6 @@ import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
-import Img from "gatsby-image";
 
 export default class PostTemplate extends React.Component {
   render() {
