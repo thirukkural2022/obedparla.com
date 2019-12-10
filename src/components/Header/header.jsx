@@ -11,6 +11,4 @@ export const Header = props => (
   </nav>
 );
 
-Header.propTypes = {
-  children: PropTypes.node.isRequired
-};
+Header.propTypes = {};

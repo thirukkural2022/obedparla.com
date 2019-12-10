@@ -1,15 +1,8 @@
 import { createGlobalStyle, css } from "styled-components";
 
-const xPadding = 1.5;
 const styles = css`
   :root {
-    --textLink: green;
-  }
-  body {
-    max-width: 650px;
-    padding: 0 ${xPadding}rem;
-    margin-left: auto;
-    margin-right: auto;
+    --container-space: 1.5rem;
   }
 
   .anchor,
@@ -21,8 +14,8 @@ const styles = css`
     width: 100%;
   }
   p > img {
-    width: calc(100% + ${xPadding * 2}rem);
-    margin-left: -${xPadding}rem;
+    width: calc(100% + (var(--container-space) * 2));
+    margin-left: -var(--container-space);
   }
 
   .gatsby-image-wrapper {

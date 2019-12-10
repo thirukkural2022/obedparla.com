@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 import { Header } from "../components/Header/header";
 import GlobalStyle from "./globalStyles";
+import { Container } from "./components/container";
 
 export default class MainLayout extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class MainLayout extends React.Component {
           <html lang="en" />
         </Helmet>
         <Header />
-        {children}
+        <Container>{children}</Container>
       </>
     );
   }

@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 
-import Layout from "../layout";
+import Layout from "../layout/Layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
@@ -27,11 +27,6 @@ export default class PostTemplate extends React.Component {
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
-
-    console.log(
-      "post.cover.childImageSharp.fluid.src",
-      post.cover.childImageSharp.fluid.src
-    );
 
     return (
       <Layout>
