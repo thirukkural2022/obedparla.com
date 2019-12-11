@@ -16,7 +16,6 @@ import "./post.css";
 export default class PostTemplate extends React.Component {
   render() {
     const { data, pageContext } = this.props;
-    console.log("props", this.props);
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;

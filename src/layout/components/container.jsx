@@ -8,6 +8,7 @@ export const Container = props => (
       padding: 0 var(--container-space);
       margin-left: auto;
       margin-right: auto;
+      background: ${({ theme }) => theme.backgroundColor};
     `}
   >
     {props.children}

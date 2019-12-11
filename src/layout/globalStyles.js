@@ -1,6 +1,6 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-const styles = css`
+const GlobalStyles = createGlobalStyle`
   :root {
     --container-space: 1.5rem;
   }
@@ -22,6 +22,11 @@ const styles = css`
     margin-left: -1.5rem;
     width: calc(100% + 3rem);
   }
+  
+  body.light {
+    --bg: #fff;
+  }
+
   //
   //blockquote {
   //  font-style: italic;
@@ -43,10 +48,4 @@ const styles = css`
   //  }
   //}
 `;
-
-// eslint-disable-next-line import/prefer-default-export
-const globalStyles = createGlobalStyle`
-  ${styles}
-`;
-
-export default globalStyles;
+export default GlobalStyles;
