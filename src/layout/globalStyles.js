@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { Global } from "@emotion/core";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = Global`
   :root {
     --container-space: 1.5rem;
   }

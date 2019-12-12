@@ -1,5 +1,10 @@
 const theme = {
-  backgroundColor: "blue"
+  dark: {
+    backgroundColor: "blue"
+  },
+  light: {
+    backgroundColor: "red"
+  }
 };
 
 export default theme;

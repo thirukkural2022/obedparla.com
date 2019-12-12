@@ -1,11 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "emotion-theming";
 
 import config from "../../data/SiteConfig";
 import { Header } from "../components/Header/header";
 import { Container } from "./components/container";
 import { ThemeContext, ThemeContextProvider } from "../theming/ThemeContext";
+import { css } from "@emotion/core";
 
 const ToggleTheme = () => {
   const themeContext = React.useContext(ThemeContext);
@@ -13,7 +14,7 @@ const ToggleTheme = () => {
   return (
     <button
       type="button"
-      css={`
+      css={css`
         padding: 10px 20px;
         position: fixed;
         top: 20px;

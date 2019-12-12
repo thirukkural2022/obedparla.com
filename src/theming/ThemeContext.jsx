@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "emotion-theming";
 
 import theme from "./theme";
 
@@ -18,7 +18,11 @@ export const ThemeContextProvider = ({ children }) => {
   console.log("darkMode", darkMode);
   return (
     <ThemeContext.Provider value={contextValue}>
-      <ThemeProvider theme={contextValue.theme}>{children}</ThemeProvider>
+      <ThemeProvider
+        theme={darkMode ? contextValue.theme.dark : contextValue.theme.light}
+      >
+        {children}
+      </ThemeProvider>
     </ThemeContext.Provider>
   );
 };
