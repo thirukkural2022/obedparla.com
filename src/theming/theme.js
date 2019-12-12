@@ -1,9 +1,10 @@
+const commonsStyles = {};
 const theme = {
   dark: {
-    backgroundColor: "blue"
+    backgroundColor: "#1f1f1f"
   },
   light: {
-    backgroundColor: "red"
+    backgroundColor: "#FFF"
   }
 };
 

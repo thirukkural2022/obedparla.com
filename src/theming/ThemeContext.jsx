@@ -15,7 +15,6 @@ export const ThemeContextProvider = ({ children }) => {
     }
   };
 
-  console.log("darkMode", darkMode);
   return (
     <ThemeContext.Provider value={contextValue}>
       <ThemeProvider

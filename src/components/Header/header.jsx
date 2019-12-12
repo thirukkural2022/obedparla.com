@@ -8,7 +8,6 @@ const StyledHeader = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background: ${({ theme }) => theme.backgroundColor};
 `;
 
 export const Header = props => (
