@@ -15,6 +15,10 @@ const GlobalStyles = () => {
           background: ${theme.backgroundColor};
         }
 
+        :focus {
+          outline: ${theme.highlightColor} auto 3px;
+        }
+
         .anchor,
         .gatsby-resp-image-link {
           box-shadow: none;
