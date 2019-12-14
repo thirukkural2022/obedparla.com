@@ -46,9 +46,10 @@ const Nav = styled.nav`
   ${props =>
     props.sticky &&
     css`
+      height: 60px;
+      background: #fff;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
-      transition: background 250ms ease-in-out 0s,
-        box-shadow 250ms ease-in-out 0s;
+      transition: all 250ms ease-in-out 0s;
     `}
 `;
 
@@ -64,21 +65,33 @@ const LinksContainer = styled.div`
   }
 `;
 
-export const Header = props => (
-  <Nav>
-    <StyledHeader>
-      <Logo href='/'>{config.siteTitle}</Logo>
-      <LinksContainer>
-        <HeaderLink href='/blog'>Blog</HeaderLink>
-        <HeaderLink href='/categories'>Categories</HeaderLink>
-        <HeaderLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
-          Bookshelf
-        </HeaderLink>
-        <ToggleTheme />
-      </LinksContainer>
-    </StyledHeader>
-  </Nav>
-);
+export const Header = props => {
+  const [isSticky, setIsSticky] = React.useState(false);
+  const handleScrolll = () => {
+    setIsSticky(window.scrollY > 0);
+  };
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScrolll);
+
+    return () => window.removeEventListener('scroll', handleScrolll);
+  }, []);
+
+  return (
+    <Nav sticky={isSticky}>
+      <StyledHeader>
+        <Logo href='/'>{config.siteTitle}</Logo>
+        <LinksContainer>
+          <HeaderLink href='/blog'>Blog</HeaderLink>
+          <HeaderLink href='/categories'>Categories</HeaderLink>
+          <HeaderLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
+            Bookshelf
+          </HeaderLink>
+          <ToggleTheme />
+        </LinksContainer>
+      </StyledHeader>
+    </Nav>
+  );
+};
 
 const ToggleTheme = () => {
   const themeContext = React.useContext(ThemeContext);
