@@ -22,19 +22,14 @@ const GlobalStyles = () => {
 
         img {
           width: 100%;
+
+          @media (${theme.media.desktop}) {
+            border-radius: 5px;
+          }
         }
         p > img {
           width: calc(100% + (var(--container-space) * 2));
           margin-left: -var(--container-space);
-        }
-
-        .gatsby-image-wrapper {
-          margin-left: -1.5rem;
-          width: calc(100% + 3rem);
-        }
-
-        body.light {
-          --bg: #fff;
         }
       `}
     />

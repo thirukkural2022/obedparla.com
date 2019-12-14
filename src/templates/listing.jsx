@@ -74,13 +74,6 @@ export const listingQuery = graphql`
           frontmatter {
             title
             tags
-            cover {
-              childImageSharp {
-                fixed(width: 150, height: 150) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
             date
           }
         }

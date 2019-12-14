@@ -1,6 +1,7 @@
 import Typography from "typography";
 import parnassusTheme from "typography-theme-parnassus";
 
+parnassusTheme.baseFontSize = "16px;";
 const typography = new Typography(parnassusTheme);
 
 // Export helper functions

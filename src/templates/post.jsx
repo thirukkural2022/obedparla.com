@@ -12,6 +12,7 @@ import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
+import styled from "@emotion/styled";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -34,8 +35,8 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <Img fluid={post.cover.childImageSharp.fluid} />
-          <article>
+          <Article>
+            <Img fluid={post.cover.childImageSharp.fluid} />
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className="post-meta">
@@ -44,12 +45,19 @@ export default class PostTemplate extends React.Component {
             </div>
             <UserInfo config={config} />
             <Footer config={config} />
-          </article>
+          </Article>
         </div>
       </Layout>
     );
   }
 }
+
+const Article = styled.article`
+  .gatsby-image-wrapper {
+    margin-left: -1.5rem;
+    width: calc(100% + 3rem);
+  }
+`;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
