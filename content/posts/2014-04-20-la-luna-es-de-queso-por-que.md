@@ -3,7 +3,7 @@ title : "La luna es de queso. ¿Por que?"
 author : "Obed Marquez Parlapiano"
 date : "2014-04-20"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

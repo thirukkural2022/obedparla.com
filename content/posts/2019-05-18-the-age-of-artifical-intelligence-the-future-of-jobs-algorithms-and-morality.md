@@ -3,7 +3,7 @@ title : "The Age Of Artifical Intelligence: the future of jobs, algorithms and m
 author : "Obed Marquez Parlapiano"
 date : "2019-05-18"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/optimus-prime-amazing-real-statue-robot.jpg"
 ---

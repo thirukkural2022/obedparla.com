@@ -3,7 +3,7 @@ title : "Observar, mirar, y ver. La diferencia entre verdad y creencia."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-14"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

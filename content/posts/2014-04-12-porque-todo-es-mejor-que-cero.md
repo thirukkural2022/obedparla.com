@@ -3,7 +3,7 @@ title : "Porque todo es mejor que cero."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-12"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

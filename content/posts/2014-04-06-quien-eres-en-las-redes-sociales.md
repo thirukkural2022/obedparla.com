@@ -3,7 +3,7 @@ title : "¿Quien eres en las redes sociales?"
 author : "Obed Marquez Parlapiano"
 date : "2014-04-06"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

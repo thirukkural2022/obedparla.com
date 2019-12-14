@@ -3,7 +3,7 @@ title : "Keeping promises 101."
 author : "Obed Marquez Parlapiano"
 date : "2015-04-12"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/lock-fresh-new-hd-wallpaper.jpg"
 ---

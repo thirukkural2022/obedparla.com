@@ -3,7 +3,7 @@ title : "Doubt. Nature’s most poisonous paralyzer."
 author : "Obed Marquez Parlapiano"
 date : "2016-03-04"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/confucius_sculpture_nanjing2.jpg"
 ---

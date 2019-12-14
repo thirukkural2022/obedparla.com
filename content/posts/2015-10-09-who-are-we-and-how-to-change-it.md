@@ -3,7 +3,7 @@ title : "Who Are We? And How To Change It."
 author : "Obed Marquez Parlapiano"
 date : "2015-10-09"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/mime.jpg"
 ---

@@ -3,7 +3,7 @@ title : "The end of the story is all that matters."
 author : "Obed Marquez Parlapiano"
 date : "2015-03-21"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/that_s_all_folks.jpg"
 ---

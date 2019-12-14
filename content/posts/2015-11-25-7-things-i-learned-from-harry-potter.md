@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2015-11-25"
 categories : 
  - books
- - philosophy
 tags : ""
 cover : "../images/harry-potter-wallpaper-quotes-2.png"
 ---

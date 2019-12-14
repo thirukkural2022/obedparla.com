@@ -4,7 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2015-06-15"
 categories : 
  - human-behaviour
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/intimacy.jpg"
 ---

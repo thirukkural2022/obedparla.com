@@ -3,7 +3,7 @@ title : "Son aquellos momentos de gloria por los que la vida vale la pena."
 author : "Obed Marquez Parlapiano"
 date : "2014-05-08"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

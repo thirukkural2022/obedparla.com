@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2017-03-04"
 categories : 
  - thoughts
- - philosophy
 tags : ""
 cover : "../images/matthew-henry.jpg"
 ---

@@ -3,7 +3,7 @@ title : "Our endless journey to achieve self importance."
 author : "Obed Marquez Parlapiano"
 date : "2016-02-21"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/photo-1439792675105-701e6a4ab6f0.jpg"
 ---

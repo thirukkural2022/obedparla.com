@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-05-10"
 categories : 
  - thoughts
- - philosophy
 tags : ""
 cover : "../images/Sword1.jpg"
 ---

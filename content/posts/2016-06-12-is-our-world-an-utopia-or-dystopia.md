@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-06-12"
 categories : 
  - books
- - philosophy
 tags : ""
 cover : "../images/Brave-New-World-POSTER-large.jpg"
 ---

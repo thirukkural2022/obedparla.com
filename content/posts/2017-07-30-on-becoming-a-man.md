@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2017-07-30"
 categories : 
  - thoughts
- - philosophy
 tags : ""
 cover : "../images/working-man.jpg"
 ---

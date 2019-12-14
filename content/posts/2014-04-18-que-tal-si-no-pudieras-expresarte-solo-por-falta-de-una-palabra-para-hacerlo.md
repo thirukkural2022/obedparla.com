@@ -3,7 +3,7 @@ title : "¿Que tal si no pudieras expresarte solo por falta de una palabra para 
 author : "Obed Marquez Parlapiano"
 date : "2014-04-18"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

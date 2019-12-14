@@ -3,7 +3,7 @@ title : "Tic toc, canta el reloj. Tic toc."
 author : "Obed Marquez Parlapiano"
 date : "2014-05-04"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

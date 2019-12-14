@@ -3,7 +3,7 @@ title : "Disfrutando el conocimiento."
 author : "Obed Marquez Parlapiano"
 date : "2014-05-01"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

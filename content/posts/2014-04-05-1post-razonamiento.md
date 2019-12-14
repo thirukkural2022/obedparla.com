@@ -3,7 +3,7 @@ title : "Razonamiento de un tiempo que no esperaba libre."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-05"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

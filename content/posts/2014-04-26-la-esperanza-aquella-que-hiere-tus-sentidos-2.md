@@ -3,7 +3,7 @@ title : "La esperanza, aquella que hiere tus sentidos."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-26"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

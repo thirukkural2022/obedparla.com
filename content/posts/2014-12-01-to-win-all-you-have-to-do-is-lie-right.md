@@ -3,7 +3,7 @@ title : "To win all you have to do is Lie. . . Right? . ."
 author : "Obed Marquez Parlapiano"
 date : "2014-12-01"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

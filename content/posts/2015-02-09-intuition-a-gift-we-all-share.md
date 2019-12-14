@@ -3,7 +3,7 @@ title : "Intuition. A gift we all share."
 author : "Obed Marquez Parlapiano"
 date : "2015-02-09"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/lighting.jpg"
 ---

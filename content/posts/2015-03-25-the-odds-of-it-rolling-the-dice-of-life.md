@@ -3,7 +3,7 @@ title : "The odds of it, rolling the dice of life."
 author : "Obed Marquez Parlapiano"
 date : "2015-03-25"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/o-matic.jpg"
 ---

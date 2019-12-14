@@ -4,7 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2016-01-24"
 categories : 
  - human-behaviour
- - philosophy
+ - thoughts
 tags : ""
 ---
 

@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-04-14"
 categories : 
  - books
- - philosophy
  - reviews
 tags : ""
 cover : "../images/god-and-man.jpg"

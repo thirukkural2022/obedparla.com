@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-04-29"
 categories : 
  - thoughts
- - philosophy
 tags : ""
 cover : "../images/photo-1439920120577-eb3a83c16dd7.jpg"
 ---

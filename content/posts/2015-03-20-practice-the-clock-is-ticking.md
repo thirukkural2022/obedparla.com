@@ -3,7 +3,7 @@ title : "Practice: The Clock is Ticking"
 author : "Obed Marquez Parlapiano"
 date : "2015-03-20"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/clock-antique.jpg"
 ---

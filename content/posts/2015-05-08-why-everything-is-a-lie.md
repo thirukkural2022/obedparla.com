@@ -3,7 +3,7 @@ title : "Why everything is a lie."
 author : "Obed Marquez Parlapiano"
 date : "2015-05-08"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 cover : "../images/perception.jpg"
 ---

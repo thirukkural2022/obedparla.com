@@ -3,7 +3,7 @@ title : "Todos somos Storytellers."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-08"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 

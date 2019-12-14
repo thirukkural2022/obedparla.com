@@ -3,7 +3,7 @@ title : "Somos un brillante grano de arena entre masas fácilmente controlables.
 author : "Obed Marquez Parlapiano"
 date : "2014-04-10"
 categories : 
- - philosophy
+ - thoughts
 tags : ""
 ---
 
