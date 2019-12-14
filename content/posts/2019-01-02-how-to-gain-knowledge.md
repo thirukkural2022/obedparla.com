@@ -3,7 +3,7 @@ title : "How do you gain knowledge? And how do we avoid losing it?"
 author : "Obed Marquez Parlapiano"
 date : "2019-01-02"
 categories : 
- - self-development
+ - thoughts
 tags : ""
 cover : "../images/three-wise-monkeys.jpeg"
 ---

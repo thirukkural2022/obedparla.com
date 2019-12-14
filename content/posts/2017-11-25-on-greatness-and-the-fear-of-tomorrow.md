@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2017-11-25"
 categories : 
  - thoughts
- - self-development
 tags : ""
 cover : "../images/greatness-blogpost.jpg"
 ---

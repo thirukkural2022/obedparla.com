@@ -4,8 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-08-30"
 categories : 
  - human-behaviour
- - science
- - self-development
 tags : ""
 cover : "../images/maxresdefault.jpg"
 ---

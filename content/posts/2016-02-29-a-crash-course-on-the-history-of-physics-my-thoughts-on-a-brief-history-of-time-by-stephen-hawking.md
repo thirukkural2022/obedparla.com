@@ -5,7 +5,6 @@ date : "2016-02-29"
 categories : 
  - books
  - reviews
- - science
 tags : ""
 cover : "../images/001-h_10594563.jpg"
 ---

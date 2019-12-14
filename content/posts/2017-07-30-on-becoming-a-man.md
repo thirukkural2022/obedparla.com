@@ -5,7 +5,6 @@ date : "2017-07-30"
 categories : 
  - thoughts
  - philosophy
- - self-development
 tags : ""
 cover : "../images/working-man.jpg"
 ---

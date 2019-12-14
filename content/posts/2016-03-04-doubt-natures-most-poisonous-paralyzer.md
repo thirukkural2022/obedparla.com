@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-03-04"
 categories : 
  - philosophy
- - self-development
 tags : ""
 cover : "../images/confucius_sculpture_nanjing2.jpg"
 ---

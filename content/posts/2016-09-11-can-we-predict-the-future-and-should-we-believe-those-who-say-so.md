@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-09-11"
 categories : 
  - human-behaviour
- - science
 tags : ""
 cover : "../images/predicting-the-future.jpg"
 ---

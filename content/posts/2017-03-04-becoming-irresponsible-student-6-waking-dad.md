@@ -5,7 +5,6 @@ date : "2017-03-04"
 categories : 
  - thoughts
  - philosophy
- - self-development
 tags : ""
 cover : "../images/matthew-henry.jpg"
 ---

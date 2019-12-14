@@ -3,7 +3,7 @@ title : "How to find meaning and happiness in our lives."
 author : "Obed Marquez Parlapiano"
 date : "2019-01-03"
 categories : 
- - self-development
+ - thoughts
 tags : ""
 cover : "../images/passionate-cook-in-the-kitchen.jpg"
 ---

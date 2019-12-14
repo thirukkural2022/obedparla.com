@@ -5,7 +5,6 @@ date : "2016-06-12"
 categories : 
  - books
  - philosophy
- - social-criticism
 tags : ""
 cover : "../images/Brave-New-World-POSTER-large.jpg"
 ---
