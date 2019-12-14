@@ -1,20 +1,33 @@
-import React from "react";
-import PropTypes from "prop-types";
-import config from "../../../data/SiteConfig";
-import styled from "@emotion/styled";
-import { css } from "@emotion/core";
+import React from 'react';
+
+import config from '../../../data/SiteConfig';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import { ThemeContext } from '../../theming/ThemeContext';
 
 const StyledHeader = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
-  max-width: 800px;
+  max-width: ${({ theme }) => theme.containerSize};
   margin: 0 auto;
+  padding: 0 var(--container-space);
+
+  @media (${({ theme }) => theme.media.mobile}) {
+    justify-content: center;
+  }
 
   a {
     box-shadow: none;
-    padding: 20px;
   }
+`;
+
+const HeaderLink = styled.a`
+  margin: 0 12px;
+  color: ${({ theme }) => theme.textColor};
+  font-size: 1.15rem;
+  opacity: 0.8;
 `;
 
 const Nav = styled.nav`
@@ -25,6 +38,11 @@ const Nav = styled.nav`
   background: ${({ theme }) => theme.backgroundColor};
   z-index: 10;
 
+  @media (${({ theme }) => theme.media.mobile}) {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+    height: 60px;
+  }
+
   ${props =>
     props.sticky &&
     css`
@@ -34,13 +52,49 @@ const Nav = styled.nav`
     `}
 `;
 
+const Logo = styled.a`
+  color: ${({ theme }) => theme.textColor};
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+`;
+
+const LinksContainer = styled.div`
+  @media (${({ theme }) => theme.media.mobile}) {
+    display: none;
+  }
+`;
+
 export const Header = props => (
   <Nav>
     <StyledHeader>
-      <a href="/">{config.siteTitle}</a>
-      <a href="/blog">Blog</a>
+      <Logo href='/'>{config.siteTitle}</Logo>
+      <LinksContainer>
+        <HeaderLink href='/blog'>Blog</HeaderLink>
+        <HeaderLink href='/categories'>Categories</HeaderLink>
+        <HeaderLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
+          Bookshelf
+        </HeaderLink>
+        <ToggleTheme />
+      </LinksContainer>
     </StyledHeader>
   </Nav>
 );
 
-Header.propTypes = {};
+const ToggleTheme = () => {
+  const themeContext = React.useContext(ThemeContext);
+
+  return (
+    <button
+      type='button'
+      css={css`
+        padding: 10px 20px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      `}
+      onClick={themeContext.toggleDarkMode}
+    >
+      Dark Mode
+    </button>
+  );
+};

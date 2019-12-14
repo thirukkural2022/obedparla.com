@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: "Obed M' Parlapiano", // Site title.
+  siteTitle: "Obed Parlapiano", // Site title.
   siteTitleShort: "Obedparla", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Obed M' Parlapiano's Blog", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.

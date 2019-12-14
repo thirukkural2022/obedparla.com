@@ -23,7 +23,6 @@ class PostListing extends React.Component {
 
   render() {
     const postList = this.getPostList();
-    console.log("postList", postList);
     return (
       <PostListContainer>
         {postList.map(post => (

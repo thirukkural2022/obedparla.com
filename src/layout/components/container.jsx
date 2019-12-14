@@ -1,9 +1,10 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  max-width: 650px;
-  padding: 0 var(--container-space);
+  max-width: ${({ theme }) => theme.containerSize};
+  padding: calc(${({ theme }) => theme.containerSpace} * 2)
+    ${({ theme }) => theme.containerSpace};
   margin-left: auto;
   margin-right: auto;
 `;

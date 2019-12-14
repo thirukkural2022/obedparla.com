@@ -1,6 +1,6 @@
-import React from "react";
-import { Global, css } from "@emotion/core";
-import { useTheme } from "emotion-theming";
+import React from 'react';
+import { Global, css } from '@emotion/core';
+import { useTheme } from 'emotion-theming';
 
 const GlobalStyles = () => {
   const theme = useTheme();
@@ -27,9 +27,17 @@ const GlobalStyles = () => {
             border-radius: 5px;
           }
         }
+
+        @media (${theme.media.mobile}) {
+          .gatsby-image-wrapper {
+            margin-left: -1.5rem;
+            width: calc(100% + 3rem);
+          }
+        }
+
         p > img {
-          width: calc(100% + (var(--container-space) * 2));
-          margin-left: -var(--container-space);
+          width: calc(100% + (${theme.containerSpace} * 2));
+          margin-left: -${theme.containerSpace};
         }
       `}
     />
