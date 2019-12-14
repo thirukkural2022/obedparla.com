@@ -3,7 +3,7 @@ title : "The Ring — Short Story."
 author : "Obed Marquez Parlapiano"
 date : "2015-05-04"
 categories : 
- - short-stories
+ - stories
 tags : ""
 cover : "../images/3012556299cdce69d682825268483c29.jpg"
 ---

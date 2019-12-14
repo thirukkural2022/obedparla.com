@@ -3,7 +3,7 @@ title : "Poem: What you have"
 author : "Obed Marquez Parlapiano"
 date : "2015-02-20"
 categories : 
- - poems
+ - stories
 tags : ""
 cover : "../images/red-and-black-and-white.jpg"
 ---

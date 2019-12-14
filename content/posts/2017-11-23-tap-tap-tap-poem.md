@@ -3,7 +3,7 @@ title : "Tap. Tap. Tap. – Poem"
 author : "Obed Marquez Parlapiano"
 date : "2017-11-23"
 categories : 
- - poems
+ - stories
 tags : ""
 cover : "../images/freezing-sad.jpg"
 ---

@@ -3,7 +3,7 @@ title : "A lonely wolf"
 author : "Obed Marquez Parlapiano"
 date : "2017-07-19"
 categories : 
- - short-stories
+ - stories
 tags : ""
 cover : "../images/sad-dog.jpg"
 ---

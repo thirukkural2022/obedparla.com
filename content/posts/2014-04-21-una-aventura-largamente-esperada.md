@@ -3,7 +3,7 @@ title : "Una aventura largamente esperada."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-21"
 categories : 
- - short-stories
+ - stories
 tags : ""
 ---
 

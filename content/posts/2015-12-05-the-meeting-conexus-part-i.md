@@ -3,7 +3,7 @@ title : "The Meeting — Conexus Part I"
 author : "Obed Marquez Parlapiano"
 date : "2015-12-05"
 categories : 
- - short-stories
+ - stories
 tags : ""
 cover : "../images/gray-wolf-in-snow-hd.jpg"
 ---

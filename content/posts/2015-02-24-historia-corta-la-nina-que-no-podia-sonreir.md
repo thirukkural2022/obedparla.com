@@ -3,7 +3,7 @@ title : "Historia corta: La niña que no podia sonreir."
 author : "Obed Marquez Parlapiano"
 date : "2015-02-24"
 categories : 
- - short-stories
+ - stories
 tags : ""
 cover : "../images/girl_balloon.jpg"
 ---

@@ -3,7 +3,7 @@ title : "Poem: Ourselves."
 author : "Obed Marquez Parlapiano"
 date : "2017-06-19"
 categories : 
- - poems
+ - stories
 tags : ""
 cover : "../images/into-the-horizon.jpg"
 ---

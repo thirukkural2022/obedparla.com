@@ -3,7 +3,7 @@ title : "Short Story: A Magic Bowl Full Of Tears."
 author : "Obed Marquez Parlapiano"
 date : "2015-06-06"
 categories : 
- - short-stories
+ - stories
 tags : ""
 cover : "../images/glass-bowl.jpg"
 ---

@@ -3,7 +3,7 @@ title : "Demise of Tears — Short Story."
 author : "Obed Marquez Parlapiano"
 date : "2015-04-08"
 categories : 
- - short-stories
+ - stories
 tags : ""
 cover : "../images/2.jpg"
 ---

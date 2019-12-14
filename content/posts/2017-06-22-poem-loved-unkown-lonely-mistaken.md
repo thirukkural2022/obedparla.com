@@ -3,7 +3,7 @@ title : "Poem: Loved. Unknown. Lonely. Mistaken."
 author : "Homero Cuberos"
 date : "2017-06-22"
 categories : 
- - poems
+ - stories
 tags : ""
 cover : "../images/woman-dark-lips.jpg"
 ---

@@ -3,7 +3,7 @@ title : "The Man Who Lost Everything"
 author : "Obed Marquez Parlapiano"
 date : "2014-10-26"
 categories : 
- - short-stories
+ - stories
 tags : ""
 ---
 

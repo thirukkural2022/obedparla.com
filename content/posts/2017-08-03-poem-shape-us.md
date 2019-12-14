@@ -3,7 +3,7 @@ title : "Poem: The Shape Of Us."
 author : "Obed Marquez Parlapiano"
 date : "2017-08-03"
 categories : 
- - poems
+ - stories
 tags : ""
 cover : "../images/colorful-woman.jpg"
 ---
