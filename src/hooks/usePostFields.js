@@ -3,8 +3,6 @@ import React from 'react';
 export const usePostFields = postEdges =>
   React.useMemo(() => {
     const postList = [];
-    console.log('Rendering post fields');
-
     if (postEdges) {
       postEdges.forEach(postEdge => {
         postList.push({
