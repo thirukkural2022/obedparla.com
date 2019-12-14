@@ -3,7 +3,7 @@ title : "On distractions, memory and ideas."
 author : "Obed Marquez Parlapiano"
 date : "2016-08-30"
 categories : 
- - human-behaviour
+ - thoughts
 tags : ""
 cover : "../images/maxresdefault.jpg"
 ---

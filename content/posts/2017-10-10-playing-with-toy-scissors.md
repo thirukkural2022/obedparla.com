@@ -3,7 +3,6 @@ title : "Playing with toy scissors"
 author : "Obed Marquez Parlapiano"
 date : "2017-10-10"
 categories : 
- - human-behaviour
  - thoughts
 tags : ""
 cover : "../images/baby-water.jpg"

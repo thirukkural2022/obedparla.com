@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-04-08"
 categories : 
  - books
- - human-behaviour
 tags : ""
 cover : "../images/i-robo2t.jpg"
 ---

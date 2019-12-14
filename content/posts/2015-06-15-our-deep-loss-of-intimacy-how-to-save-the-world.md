@@ -3,7 +3,6 @@ title : "Our Deep Loss Of Intimacy & How To Save The World."
 author : "Obed Marquez Parlapiano"
 date : "2015-06-15"
 categories : 
- - human-behaviour
  - thoughts
 tags : ""
 cover : "../images/intimacy.jpg"

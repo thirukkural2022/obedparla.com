@@ -3,7 +3,6 @@ title : "A thank you note to the universe."
 author : "Obed Marquez Parlapiano"
 date : "2017-08-15"
 categories : 
- - human-behaviour
  - thoughts
 tags : ""
 cover : "../images/thank-you-image.jpg"

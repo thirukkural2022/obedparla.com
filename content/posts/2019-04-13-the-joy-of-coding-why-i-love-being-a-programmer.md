@@ -3,7 +3,7 @@ title : "The joy of coding: why I love being a programmer."
 author : "Obed Marquez Parlapiano"
 date : "2019-04-13"
 categories : 
- - coding
+ - code
 tags : ""
 cover : "../images/happy-people-sitting-in-front-of-a-macbook-laptop.jpeg"
 ---

@@ -3,7 +3,7 @@ title : "Can we predict the future? And should we believe those who say so?"
 author : "Obed Marquez Parlapiano"
 date : "2016-09-11"
 categories : 
- - human-behaviour
+ - thoughts
 tags : ""
 cover : "../images/predicting-the-future.jpg"
 ---

@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2019-10-23"
 categories : 
  - quotes
- - thoughts
 tags : ""
 cover : "../images/woman-sitting-by-the-beach-with-nice-tattoo.jpeg"
 ---

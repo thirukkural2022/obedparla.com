@@ -3,7 +3,6 @@ title : "Why our misery and misunderstanding comes from the refusal of our insti
 author : "Obed Marquez Parlapiano"
 date : "2016-10-22"
 categories : 
- - human-behaviour
  - thoughts
 tags : ""
 ---

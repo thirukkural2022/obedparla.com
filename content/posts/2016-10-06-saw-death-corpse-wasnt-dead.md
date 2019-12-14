@@ -3,7 +3,6 @@ title : "I saw a death corpse that wasn't dead."
 author : "Obed Marquez Parlapiano"
 date : "2016-10-06"
 categories : 
- - human-behaviour
  - thoughts
 tags : ""
 cover : "../images/conciousness-e1475785734925.jpg"

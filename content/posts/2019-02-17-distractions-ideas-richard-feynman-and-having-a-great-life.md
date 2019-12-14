@@ -3,7 +3,7 @@ title : "On Distractions, Ideas, Richard Feynman and having a great life."
 author : "Obed Marquez Parlapiano"
 date : "2019-02-17"
 categories : 
- - human-behaviour
+ - books
 tags : ""
 cover : "../images/richard-feynman-profile.jpg"
 ---

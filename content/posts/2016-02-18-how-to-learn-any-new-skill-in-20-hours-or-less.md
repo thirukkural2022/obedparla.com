@@ -3,7 +3,7 @@ title : "How to learn any new skill in 20 hours or less."
 author : "Obed Marquez Parlapiano"
 date : "2016-02-18"
 categories : 
- - human-behaviour
+ - thoughts
 tags : ""
 cover : "../images/asimov-quote.jpg"
 ---

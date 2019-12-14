@@ -3,7 +3,6 @@ title : "A better view on success for the 21st century."
 author : "Obed Marquez Parlapiano"
 date : "2016-01-24"
 categories : 
- - human-behaviour
  - thoughts
 tags : ""
 ---

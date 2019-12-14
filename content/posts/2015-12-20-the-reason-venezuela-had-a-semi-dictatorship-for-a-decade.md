@@ -3,7 +3,7 @@ title : "The Reason Venezuela Had a Semi-Dictatorship For A Decade"
 author : "Obed Marquez Parlapiano"
 date : "2015-12-20"
 categories : 
- - human-behaviour
+ - thoughts
 tags : ""
 cover : "../images/venezuela_fuel_subsidy_1.jpg"
 ---
