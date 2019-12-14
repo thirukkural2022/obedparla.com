@@ -3,7 +3,7 @@ title : "Wait, I'm an adult now. When did that happen?"
 author : "Obed Marquez Parlapiano"
 date : "2017-11-18"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 cover : "../images/crazy-guy.jpg"
 ---

@@ -3,7 +3,7 @@ title : "If you just asked for it."
 author : "Obed Marquez Parlapiano"
 date : "2014-09-17"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

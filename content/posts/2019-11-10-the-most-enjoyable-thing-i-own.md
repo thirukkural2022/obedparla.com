@@ -3,7 +3,7 @@ title : "The most enjoyable thing I currently own: The Nintendo Switch."
 author : "Obed Marquez Parlapiano"
 date : "2019-11-10"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 cover : "../images/Nintendo-Mario-close-up-high-quality.jpeg"
 ---

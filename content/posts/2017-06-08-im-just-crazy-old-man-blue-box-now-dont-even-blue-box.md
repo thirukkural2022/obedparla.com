@@ -3,7 +3,7 @@ title : "I'm just a crazy old man on a blue box! And now I don't even have the b
 author : "Obed Marquez Parlapiano"
 date : "2017-06-08"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 cover : "../images/bluebo.jpg"
 ---

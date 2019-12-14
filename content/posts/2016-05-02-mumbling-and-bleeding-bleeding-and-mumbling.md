@@ -3,7 +3,7 @@ title : "Mumbling and bleeding. Bleeding and mumbling."
 author : "Obed Marquez Parlapiano"
 date : "2016-05-02"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 cover : "../images/moon-upside-downpotato1.jpg"
 ---

@@ -3,7 +3,7 @@ title : "Juntos y desconocidos."
 author : "Obed Marquez Parlapiano"
 date : "2014-06-29"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

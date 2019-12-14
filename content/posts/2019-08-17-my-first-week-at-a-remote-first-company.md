@@ -3,7 +3,7 @@ title : "My first week at a remote-first company"
 author : "Obed Marquez Parlapiano"
 date : "2019-08-17"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 cover : "../images/heetch-logo-with-a-jumping-man-1.jpeg"
 ---

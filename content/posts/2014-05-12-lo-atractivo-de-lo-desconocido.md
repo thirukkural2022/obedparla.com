@@ -3,7 +3,7 @@ title : "Lo atractivo de lo desconocido."
 author : "Obed Marquez Parlapiano"
 date : "2014-05-12"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

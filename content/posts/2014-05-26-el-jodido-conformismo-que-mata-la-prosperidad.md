@@ -3,7 +3,7 @@ title : "El jodido conformismo que mata la prosperidad."
 author : "Obed Marquez Parlapiano"
 date : "2014-05-26"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

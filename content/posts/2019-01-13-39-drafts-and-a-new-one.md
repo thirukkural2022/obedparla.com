@@ -3,7 +3,7 @@ title : "I had 39 fully written but unpublished blog posts. So I wrote another o
 author : "Obed Marquez Parlapiano"
 date : "2019-01-13"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 cover : "../images/pineapple-celebrating-with-ballons.jpg"
 ---

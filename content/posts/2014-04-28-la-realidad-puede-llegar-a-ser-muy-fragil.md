@@ -3,7 +3,7 @@ title : "La realidad puede llegar a ser muy fragil."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-28"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

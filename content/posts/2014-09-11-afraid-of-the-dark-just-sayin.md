@@ -3,7 +3,7 @@ title : "Afraid of the Dark, just sayin."
 author : "Obed Marquez Parlapiano"
 date : "2014-09-11"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

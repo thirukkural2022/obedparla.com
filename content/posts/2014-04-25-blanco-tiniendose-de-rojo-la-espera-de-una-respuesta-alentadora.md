@@ -3,7 +3,7 @@ title : "Blanco tiñiendose de rojo: la espera de una respuesta alentadora."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-25"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

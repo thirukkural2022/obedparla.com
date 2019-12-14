@@ -3,7 +3,7 @@ title : "I am a warm, friendly person."
 author : "Obed Marquez Parlapiano"
 date : "2014-11-23"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

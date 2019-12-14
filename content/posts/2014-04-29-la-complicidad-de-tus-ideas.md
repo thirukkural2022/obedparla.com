@@ -3,7 +3,7 @@ title : "La complicidad de tus ideas."
 author : "Obed Marquez Parlapiano"
 date : "2014-04-29"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 

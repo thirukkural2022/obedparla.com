@@ -3,7 +3,7 @@ title : "Esperanza en el vivir de mis sueños."
 author : "Obed Marquez Parlapiano"
 date : "2014-06-23"
 categories : 
- - miscellaneous
+ - thoughts
 tags : ""
 ---
 
