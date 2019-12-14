@@ -135,9 +135,9 @@ const BlogPage = props => {
 
       <div className='listing-container'>
         <div className='posts-container'>
-          <Helmet title={config.siteTitle} />
+          <Helmet title={`Articles - ${config.siteTitle}`} />
           <SEO />
-          <PostListing postList={allPosts} />
+          <PostListing postList={allPosts} isBig />
         </div>
       </div>
     </Layout>

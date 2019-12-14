@@ -79,7 +79,7 @@ export const Header = props => {
   return (
     <Nav sticky={isSticky}>
       <StyledHeader>
-        <Logo href='/'>{config.siteTitle}</Logo>
+        <Logo href='/'>Obed Parlapiano</Logo>
         <LinksContainer>
           <HeaderLink href='/blog'>Blog</HeaderLink>
           <HeaderLink href='/categories'>Categories</HeaderLink>
