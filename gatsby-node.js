@@ -1,50 +1,50 @@
 /* eslint "no-console": "off" */
 
-const path = require("path");
-const _ = require("lodash");
-const moment = require("moment");
-const siteConfig = require("./data/SiteConfig");
+const path = require('path');
+const _ = require('lodash');
+const moment = require('moment');
+const siteConfig = require('./data/SiteConfig');
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   let slug;
-  if (node.internal.type === "MarkdownRemark") {
+  if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.title)}`;
-    } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
+    } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-    } else if (parsedFilePath.dir === "") {
+    } else if (parsedFilePath.dir === '') {
       slug = `/${parsedFilePath.name}/`;
     } else {
       slug = `/${parsedFilePath.dir}/`;
     }
 
-    if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
+    if (Object.prototype.hasOwnProperty.call(node, 'frontmatter')) {
+      if (Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug'))
         slug = `/${_.kebabCase(node.frontmatter.slug)}`;
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
+      if (Object.prototype.hasOwnProperty.call(node.frontmatter, 'date')) {
         const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
         if (!date.isValid)
           console.warn(`WARNING: Invalid date.`, node.frontmatter);
 
-        createNodeField({ node, name: "date", value: date.toISOString() });
+        createNodeField({ node, name: 'date', value: date.toISOString() });
       }
     }
-    createNodeField({ node, name: "slug", value: slug });
+    createNodeField({ node, name: 'slug', value: slug });
   }
 };
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const postPage = path.resolve("src/templates/post.jsx");
-  const tagPage = path.resolve("src/templates/tag.jsx");
-  const categoryPage = path.resolve("src/templates/category.jsx");
-  const listingPage = path.resolve("./src/templates/listing.jsx");
+  const postPage = path.resolve('src/templates/post.jsx');
+  const tagPage = path.resolve('src/templates/tag.jsx');
+  const categoryPage = path.resolve('src/templates/category.jsx');
+  const listingPage = path.resolve('./src/templates/listing.jsx');
 
   // Get a full list of markdown posts
   const markdownQueryResult = await graphql(`
@@ -81,12 +81,12 @@ exports.createPages = async ({ graphql, actions }) => {
   postsEdges.sort((postA, postB) => {
     const dateA = moment(
       postA.node.frontmatter.date,
-      siteConfig.dateFromFormat
+      siteConfig.dateFromFormat,
     );
 
     const dateB = moment(
       postB.node.frontmatter.date,
-      siteConfig.dateFromFormat
+      siteConfig.dateFromFormat,
     );
 
     if (dateA.isBefore(dateB)) return 1;
@@ -107,8 +107,8 @@ exports.createPages = async ({ graphql, actions }) => {
         limit: postsPerPage,
         skip: pageNum * postsPerPage,
         pageCount,
-        currentPageNum: pageNum + 1
-      }
+        currentPageNum: pageNum + 1,
+      },
     });
   });
 
@@ -130,7 +130,7 @@ exports.createPages = async ({ graphql, actions }) => {
     let postsSlug = edge.node.fields.slug;
 
     // Generate a list of categories
-    if (edge.node.frontmatter.category) {
+    if (edge.node.frontmatter.categories.length > 0) {
       edge.node.frontmatter.categories.forEach(category => {
         categorySet.add(category);
       });
@@ -148,8 +148,8 @@ exports.createPages = async ({ graphql, actions }) => {
         nexttitle: nextEdge.node.frontmatter.title,
         nextslug: nextEdge.node.fields.slug,
         prevtitle: prevEdge.node.frontmatter.title,
-        prevslug: prevEdge.node.fields.slug
-      }
+        prevslug: prevEdge.node.fields.slug,
+      },
     });
   });
 
@@ -158,7 +158,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `/tags/${_.kebabCase(tag)}/`,
       component: tagPage,
-      context: { tag }
+      context: { tag },
     });
   });
 
@@ -167,7 +167,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `/categories/${_.kebabCase(category)}/`,
       component: categoryPage,
-      context: { category }
+      context: { category },
     });
   });
 };
