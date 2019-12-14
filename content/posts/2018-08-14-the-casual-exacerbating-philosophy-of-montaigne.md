@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2018-08-14"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/michaeldemontaigne.jpg"
 ---

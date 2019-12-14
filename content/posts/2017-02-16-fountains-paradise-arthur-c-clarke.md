@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2017-02-16"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/sigiriya.jpg"
 ---

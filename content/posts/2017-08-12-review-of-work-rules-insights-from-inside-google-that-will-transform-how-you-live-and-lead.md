@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2017-08-12"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/Bock_WorkRulesHC.jpg"
 ---

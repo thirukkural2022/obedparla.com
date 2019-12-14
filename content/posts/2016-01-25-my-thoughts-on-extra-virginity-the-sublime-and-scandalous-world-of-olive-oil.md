@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-01-25"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/extravirginity1.jpg"
 ---

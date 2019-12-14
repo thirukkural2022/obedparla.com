@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2018-06-02"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/dune_cover.jpg"
 ---

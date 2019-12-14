@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2018-05-06"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/thinking_fast_and_slow_book_cover.jpg"
 ---

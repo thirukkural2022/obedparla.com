@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-05-21"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/the-analyst-featured.jpg"
 ---

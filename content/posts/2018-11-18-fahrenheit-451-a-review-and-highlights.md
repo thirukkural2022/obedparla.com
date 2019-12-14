@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2018-11-18"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/fredrick-kearney-jr-burnin-book-unsplash.jpg"
 ---

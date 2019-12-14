@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2017-07-26"
 categories : 
  - books
- - thoughts
 tags : ""
 cover : "../images/hand-writing-1.jpg"
 ---

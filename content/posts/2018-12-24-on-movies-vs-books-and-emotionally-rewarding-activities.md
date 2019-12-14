@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2018-12-24"
 categories : 
  - books
- - thoughts
 tags : ""
 cover : "../images/way-of-kings-e1545621148512.jpg"
 ---

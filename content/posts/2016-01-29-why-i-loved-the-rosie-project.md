@@ -4,7 +4,6 @@ author : "Obed Marquez Parlapiano"
 date : "2016-01-29"
 categories : 
  - books
- - reviews
 tags : ""
 cover : "../images/whatimreading-rosieproject3.jpg"
 ---
