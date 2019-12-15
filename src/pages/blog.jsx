@@ -153,8 +153,8 @@ export const listingQuery = graphql`
       edges {
         node {
           fields {
-            slug
             date
+            slug
           }
           excerpt
           timeToRead

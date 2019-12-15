@@ -7,8 +7,11 @@ import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
+import { css } from '@emotion/core';
+import { useRandomEmoji } from '../hooks/useRandomEmoji';
 
 const IndexPage = props => {
+  const emoji = useRandomEmoji();
   const postEdges = props.data.allMarkdownRemark.edges;
   const postFields = usePostFields(postEdges);
 
@@ -18,6 +21,27 @@ const IndexPage = props => {
         <div className='posts-container'>
           <Helmet title={config.siteTitle} />
           <SEO />
+          <h1>Hey, I'm Obed! {emoji}</h1>
+          <p
+            css={css`
+              margin-bottom: 4px;
+            `}
+          >
+            I'm JavaScript engineer, a bookworm and an attempt at a writer.
+            Welcome to my mostly-polished dumpster of ideas, where you'll find
+            my thoughts about books, life's questions, and hopefully good
+            stories.
+          </p>
+          <Link to='/about'>
+            <small
+              css={css`
+                margin: 0;
+              `}
+            >
+              Who are you, again?
+            </small>
+          </Link>
+          <h2>Latest articles</h2>
           <PostListing postList={postFields} />
         </div>
       </div>
@@ -42,6 +66,7 @@ export const listingQuery = graphql`
           }
           timeToRead
           frontmatter {
+            categories
             cover {
               childImageSharp {
                 fixed(width: 100, height: 100) {
@@ -50,7 +75,6 @@ export const listingQuery = graphql`
               }
             }
             title
-            date
           }
         }
       }

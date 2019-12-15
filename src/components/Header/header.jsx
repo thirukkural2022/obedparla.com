@@ -1,6 +1,6 @@
 import React from 'react';
 
-import config from '../../../data/SiteConfig';
+import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { ThemeContext } from '../../theming/ThemeContext';
@@ -23,7 +23,7 @@ const StyledHeader = styled.div`
   }
 `;
 
-const HeaderLink = styled.a`
+const HeaderLink = styled(Link)`
   margin: 0 12px;
   color: ${({ theme }) => theme.textColor};
   font-size: 1.15rem;
@@ -81,7 +81,8 @@ export const Header = props => {
       <StyledHeader>
         <Logo href='/'>Obed Parlapiano</Logo>
         <LinksContainer>
-          <HeaderLink href='/blog'>Blog</HeaderLink>
+          <HeaderLink to='/blog'>Blog</HeaderLink>
+          <HeaderLink to='/about'>About</HeaderLink>
           <HeaderLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
             Bookshelf
           </HeaderLink>
