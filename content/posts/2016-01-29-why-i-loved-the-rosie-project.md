@@ -1,7 +1,7 @@
 ---
-title : "Why I loved "The Rosie Project""
+title : 'Why I loved "The Rosie Project"'
 author : "Obed Marquez Parlapiano"
-date : "2016-01-29"
+date : "2016-01-24"
 categories : 
  - books
 tags : ""

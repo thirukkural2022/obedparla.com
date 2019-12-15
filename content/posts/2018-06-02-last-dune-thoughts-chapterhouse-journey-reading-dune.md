@@ -1,5 +1,5 @@
 ---
-title : "The last of Dune. Thoughts on "Chapterhouse" and the journey of reading Dune."
+title : 'The last of Dune. Thoughts on "Chapterhouse" and the journey of reading Dune.'
 author : "Obed Marquez Parlapiano"
 date : "2018-06-02"
 categories : 

@@ -1,8 +1,8 @@
 ---
-title : "My thoughts on "Lost Stars" by Claudia Gray"
+title : 'My thoughts on "Lost Stars" by Claudia Gray'
 author : "Obed Marquez Parlapiano"
-date : "2016-01-09"
-categories : 
+date : "2016-01-24"
+categories :
  - books
 tags : ""
 cover : "../images/imag0767.jpg"

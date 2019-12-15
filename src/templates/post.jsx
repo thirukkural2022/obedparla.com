@@ -35,7 +35,7 @@ export default class PostTemplate extends React.Component {
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
           <Article>
-            <Img fluid={post.cover.childImageSharp.fluid} />
+            {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className='post-meta'>

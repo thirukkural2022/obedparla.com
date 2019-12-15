@@ -1,5 +1,5 @@
 ---
-title : "On Meditation and Best quotes from "10% Happier" by Dan Harris"
+title : 'On Meditation and Best quotes from "10% Happier" by Dan Harris'
 author : "Obed Marquez Parlapiano"
 date : "2019-10-23"
 categories : 

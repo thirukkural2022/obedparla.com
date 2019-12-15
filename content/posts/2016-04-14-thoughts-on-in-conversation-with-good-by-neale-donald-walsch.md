@@ -1,5 +1,5 @@
 ---
-title : "Thoughts on "In Conversation With God" by Neale Donald Walsch."
+title : 'Thoughts on "In Conversation With God" by Neale Donald Walsch.'
 author : "Obed Marquez Parlapiano"
 date : "2016-04-14"
 categories : 

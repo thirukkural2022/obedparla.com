@@ -1,5 +1,5 @@
 ---
-title : "Thoughts on "I, Robot" by Isaac Asimov."
+title : 'Thoughts on "I, Robot" by Isaac Asimov.'
 author : "Obed Marquez Parlapiano"
 date : "2016-04-08"
 categories : 

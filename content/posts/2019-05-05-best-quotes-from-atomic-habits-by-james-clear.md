@@ -1,5 +1,5 @@
 ---
-title : "Best quotes from "Atomic Habits" by James Clear"
+title : 'Best quotes from "Atomic Habits" by James Clear'
 author : "Obed Marquez Parlapiano"
 date : "2019-05-05"
 categories : 

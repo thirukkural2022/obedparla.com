@@ -1,5 +1,5 @@
 ---
-title : "Best quotes from "21 lessons for the 21st century" by Yuval Noah Harari"
+title : 'Best quotes from "21 lessons for the 21st century" by Yuval Noah Harari' 
 author : "Obed Marquez Parlapiano"
 date : "2019-04-20"
 categories : 
