@@ -55,6 +55,12 @@ const Article = styled.article`
   .gatsby-image-wrapper {
     margin-left: -1.5rem;
     width: calc(100% + 3rem);
+
+    @media (${({ theme }) => theme.media.mobile}) {
+      img {
+        border-radius: 0;
+      }
+    }
   }
 `;
 

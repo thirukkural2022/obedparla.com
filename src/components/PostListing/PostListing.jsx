@@ -45,11 +45,12 @@ const StyledLink = styled(Link)`
   color: inherit;
   box-shadow: none;
   display: block;
-  margin-right: ${props => (props.isBig ? '0' : '20px')};
+  margin-right: ${props => (props.isBig ? '0' : props.theme.containerSpace)};
 `;
 
 const PostItem = styled.div`
-  margin-bottom: ${props => (props.isBig ? '50px' : '20px')};
+  margin-bottom: ${props =>
+    props.isBig ? '30px' : props.theme.containerSpace};
   display: flex;
 `;
 

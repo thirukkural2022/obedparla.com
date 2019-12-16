@@ -13,13 +13,17 @@ const theme = {
     isDark: false,
     ...commonsStyles,
     backgroundColor: '#fafafa',
+    lightBackground: '#e5e5e5',
     textColor: 'hsla(0,0%,0%,0.8)',
+    colorNegative: '#f1f1f1',
   },
   dark: {
     isDark: true,
     ...commonsStyles,
     backgroundColor: '#1f1f1f',
+    lightBackground: '#181818',
     textColor: '#f1f1f1',
+    colorNegative: '#f1f1f1',
   },
 };
 

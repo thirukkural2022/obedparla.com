@@ -9,6 +9,10 @@ const GlobalStyles = () => {
       styles={css`
         :root {
           --container-space: 1.5rem;
+
+          @media (${theme.media.mobile}) {
+            --container-space: 1.125rem;
+          }
         }
 
         html {
@@ -26,17 +30,7 @@ const GlobalStyles = () => {
 
         img {
           width: 100%;
-
-          @media (${theme.media.desktop}) {
-            border-radius: 5px;
-          }
-        }
-
-        @media (${theme.media.mobile}) {
-          .gatsby-image-wrapper {
-            margin-left: -1.5rem;
-            width: calc(100% + 3rem);
-          }
+          border-radius: 5px;
         }
 
         p > img {

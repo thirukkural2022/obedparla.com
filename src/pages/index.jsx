@@ -1,13 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
-import Layout from '../layout/Layout';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+import tinycolor from 'tinycolor2';
 
+import Layout from '../layout/Layout';
 import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
-import { css } from '@emotion/core';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
 
 const IndexPage = props => {
@@ -27,10 +29,10 @@ const IndexPage = props => {
               margin-bottom: 4px;
             `}
           >
-            I'm JavaScript engineer, a bookworm and an attempt at a writer.
-            Welcome to my mostly-polished dumpster of ideas, where you'll find
-            my thoughts about books, life's questions, and hopefully good
-            stories.
+            I'm JavaScript engineer & mentor, a bookworm and an attempt at a
+            writer. Welcome to my mostly-polished dumpster of ideas, where
+            you'll find my thoughts about books, life's questions, and hopefully
+            good stories.
           </p>
           <Link to='/about'>
             <small
@@ -41,7 +43,18 @@ const IndexPage = props => {
               Who are you, again?
             </small>
           </Link>
-          <h2>Latest articles</h2>
+          <div>
+            <h2
+              css={css`
+                display: inline-block;
+              `}
+            >
+              Latest articles
+            </h2>
+            <ViewAll as='button' to='/blog'>
+              View all
+            </ViewAll>
+          </div>
           <PostListing postList={postFields} />
         </div>
       </div>
@@ -50,6 +63,37 @@ const IndexPage = props => {
 };
 
 export default IndexPage;
+
+const ViewAll = styled(Link)`
+  display: inline-block;
+  background: ${({ theme }) => theme.lightBackground};
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 3px;
+  margin-left: 30px;
+  color: ${({ theme }) => theme.textColor};
+  opacity: 0.8;
+
+  &:hover {
+    background: ${({ theme }) =>
+      tinycolor(theme.lightBackground)
+        .darken(10)
+        .toString()};
+  }
+
+  &:active {
+    background: ${({ theme }) =>
+      tinycolor(theme.lightBackground)
+        .darken(40)
+        .toString()};
+    color: ${({ theme }) => theme.colorNegative};
+  }
+`;
 
 /* eslint no-undef: "off" */
 export const listingQuery = graphql`
