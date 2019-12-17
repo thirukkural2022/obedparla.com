@@ -41,7 +41,7 @@ class SEO extends Component {
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
       {
-        '@context': 'http://schema.org',
+        '@context': 'https://schema.org',
         '@type': 'WebSite',
         url: blogURL,
         name: title,
@@ -51,7 +51,7 @@ class SEO extends Component {
     if (postSEO) {
       schemaOrgJSONLD.push(
         {
-          '@context': 'http://schema.org',
+          '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
             {
@@ -66,7 +66,7 @@ class SEO extends Component {
           ],
         },
         {
-          '@context': 'http://schema.org',
+          '@context': 'https://schema.org',
           '@type': 'BlogPosting',
           url: blogURL,
           name: title,

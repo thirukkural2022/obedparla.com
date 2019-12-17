@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { ThemeContext } from '../../theming/ThemeContext';
+import { MobileHamburguer } from './components/MobileHamburguer';
 
 const StyledHeader = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const StyledHeader = styled.div`
   }
 `;
 
-const HeaderLink = styled(Link)`
+const HeaderLink = styled.a`
   margin: 0 12px;
   color: ${({ theme }) => theme.textColor};
   font-size: 1.15rem;
@@ -48,9 +49,15 @@ const Nav = styled.nav`
     css`
       height: 60px;
       background: #fff;
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px 0;
       transition: all 250ms ease-in-out 0s;
     `}
+`;
+
+const MobileHeaderLink = styled(HeaderLink)`
+  @media (${({ theme }) => theme.media.desktop}) {
+    display: none;
+  }
 `;
 
 const Logo = styled.a`
@@ -60,13 +67,33 @@ const Logo = styled.a`
 `;
 
 const LinksContainer = styled.div`
-  @media (${({ theme }) => theme.media.mobile}) {
-    display: none;
-  }
+  display: block;
+  ${props => css`
+    @media (${props.theme.media.mobile}) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: ${props.theme.backgroundColor};
+      display: ${props.hidden ? 'flex' : 'none'};
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: ${props.theme.containerSpace};
+
+      ${HeaderLink}, ${MobileHeaderLink} {
+        padding-bottom: 40px;
+        font-size: 1.8rem;
+      }
+    }
+  `}
 `;
 
 export const Header = props => {
   const [isSticky, setIsSticky] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
   const handleScrolll = () => {
     setIsSticky(window.scrollY > 0);
   };
@@ -80,14 +107,28 @@ export const Header = props => {
     <Nav sticky={isSticky}>
       <StyledHeader>
         <Logo href='/'>Obed Parlapiano</Logo>
-        <LinksContainer>
-          <HeaderLink to='/blog'>Blog</HeaderLink>
-          <HeaderLink to='/about'>About</HeaderLink>
+        <LinksContainer hidden={menuOpen}>
+          <MobileHeaderLink as={Link} to='/'>
+            Home
+          </MobileHeaderLink>
+          <HeaderLink as={Link} to='/blog'>
+            Blog
+          </HeaderLink>
+          <HeaderLink as={Link} to='/about'>
+            About
+          </HeaderLink>
           <HeaderLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
             Bookshelf
           </HeaderLink>
+          <MobileHeaderLink href='https://twitter.com/obedparla'>
+            @obedparla
+          </MobileHeaderLink>
           <ToggleTheme />
         </LinksContainer>
+        <MobileHamburguer
+          setMenuOpen={() => setMenuOpen(!menuOpen)}
+          menuOpen={menuOpen}
+        />
       </StyledHeader>
     </Nav>
   );
