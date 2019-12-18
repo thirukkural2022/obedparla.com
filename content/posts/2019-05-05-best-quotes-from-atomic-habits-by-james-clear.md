@@ -6,6 +6,7 @@ categories :
  - quotes
  - popular
 tags : ""
+cover : "../images/habits-to-be-made-neon-green-sign.jpg"
 ---
 
 I loved this book, it offers a fantastic, usable framework to create new habits and to change old ones. You can find my in-depth review of it with a lot of the main ideas of the book explained.

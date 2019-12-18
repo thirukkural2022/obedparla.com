@@ -31,11 +31,7 @@ const GlobalStyles = () => {
         img {
           width: 100%;
           border-radius: 5px;
-        }
-
-        p > img {
-          width: calc(100% + (${theme.containerSpace} * 2));
-          margin-left: -${theme.containerSpace};
+          margin: 0;
         }
       `}
     />

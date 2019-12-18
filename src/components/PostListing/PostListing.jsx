@@ -20,7 +20,9 @@ const PostListing = ({ postList, isBig }) => {
                 {post.cover && post.cover.childImageSharp.fluid && (
                   <Img fluid={post.cover.childImageSharp.fluid} />
                 )}
-                <ListItemHeader isBig={isBig}>{post.title}</ListItemHeader>
+                <ListItemHeader as={isBig ? 'h2' : 'h3'} isBig={isBig}>
+                  {post.title}
+                </ListItemHeader>
               </StyledLink>
               {post.excerpt && <Excerpt>{post.excerpt}</Excerpt>}
               <small>
@@ -45,21 +47,21 @@ const StyledLink = styled(Link)`
   color: inherit;
   box-shadow: none;
   display: block;
-  margin-right: ${props => (props.isBig ? '0' : props.theme.containerSpace)};
+  margin-right: ${props => (props.isBig ? '0' : '1.125rem')};
 `;
 
 const PostItem = styled.div`
-  margin-bottom: ${props =>
-    props.isBig ? '30px' : props.theme.containerSpace};
+  margin-bottom: ${props => (props.isBig ? '30px' : '1.125rem')};
   display: flex;
 `;
 
 const PostListContainer = styled.section``;
 
-const ListItemHeader = styled.div`
+const ListItemHeader = styled.h2`
   font-weight: bold;
-  margin-top: ${props => (props.isBig ? '10px' : '0')};
-  font-size: 20px;
+  margin-top: ${props => (props.isBig ? '0.625rem' : '0')};
+  margin-bottom: ${props => !props.isBig && '0'};
+  font-size: ${props => !props.isBig && '1.25rem'};
 `;
 
 export default PostListing;

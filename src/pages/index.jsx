@@ -14,8 +14,11 @@ import { useRandomEmoji } from '../hooks/useRandomEmoji';
 
 const IndexPage = props => {
   const emoji = useRandomEmoji();
-  const postEdges = props.data.allMarkdownRemark.edges;
-  const postFields = usePostFields(postEdges);
+  const latestPostsEdges = props.data.latest.edges;
+  const latestPosts = usePostFields(latestPostsEdges);
+
+  const popularPostEdges = props.data.popular.edges;
+  const popularPosts = usePostFields(popularPostEdges);
 
   return (
     <Layout>
@@ -43,17 +46,34 @@ const IndexPage = props => {
               Who are you, again?
             </small>
           </Link>
-          <div>
-            <h2
-              css={css`
-                display: inline-block;
-              `}
-            >
-              Latest articles
-            </h2>
-            <ViewAll to='/blog'>View all</ViewAll>
-          </div>
-          <PostListing postList={postFields} />
+
+          <section>
+            <div>
+              <h2
+                css={css`
+                  display: inline-block;
+                `}
+              >
+                Latest articles
+              </h2>
+              <ViewAll to='/blog'>View all</ViewAll>
+            </div>
+            <PostListing postList={latestPosts} />
+          </section>
+
+          <section>
+            <div>
+              <h2
+                css={css`
+                  display: inline-block;
+                `}
+              >
+                Popular articles
+              </h2>
+              <ViewAll to='/blog'>View all</ViewAll>
+            </div>
+            <PostListing postList={popularPosts} />
+          </section>
         </div>
       </div>
     </Layout>
@@ -96,7 +116,7 @@ const ViewAll = styled(Link)`
 /* eslint no-undef: "off" */
 export const listingQuery = graphql`
   query ListingQuery {
-    allMarkdownRemark(
+    latest: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       limit: 6
     ) {
@@ -111,7 +131,33 @@ export const listingQuery = graphql`
             categories
             cover {
               childImageSharp {
-                fixed(width: 100, height: 100) {
+                fixed(width: 80, height: 80) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            title
+          }
+        }
+      }
+    }
+    popular: allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      limit: 6
+      filter: { frontmatter: { categories: { eq: "popular" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          timeToRead
+          frontmatter {
+            categories
+            cover {
+              childImageSharp {
+                fixed(width: 80, height: 80) {
                   ...GatsbyImageSharpFixed
                 }
               }
