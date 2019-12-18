@@ -20,23 +20,7 @@ const config = {
   userTwitter: 'obedparla', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'Budapest & Remote', // User location to display in the author segment.
   userAvatar: 'https://api.adorable.io/avatars/150/test.png', // User avatar to display in the author segment.
-  userDescription:
-    "Hi! I'm Obed Marquez Parlapiano, I'm a software engineer, book lover and writer", // User description to display in the author segment.
-  // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
-    {
-      label: 'Twitter',
-      url: 'https://twitter.com/obedparla',
-      iconClassName: 'fa fa-twitter',
-    },
-    {
-      label: 'Email',
-      url: 'obedparla@gmail.com',
-      iconClassName: 'fa fa-envelope',
-    },
-  ],
-  copyright: `Created with <3. OSS`,
-  themeColor: '#c62828', // Used for setting manifest and progress theme colors.
+  themeColor: '#f55a32', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0', // Used for setting manifest background color.
 };
 

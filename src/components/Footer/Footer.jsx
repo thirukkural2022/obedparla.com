@@ -1,25 +1,33 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
-import UserLinks from "../UserLinks/UserLinks";
-import "./Footer.css";
-
-class Footer extends Component {
-  render() {
-    const { config } = this.props;
-    const url = config.siteRss;
-    const { copyright } = config;
-    if (!copyright) {
-      return null;
-    }
-    return (
-      <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container">
-          <h4>{copyright}</h4>
-        </div>
-      </footer>
-    );
-  }
-}
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import config from '../../../data/SiteConfig';
+import { Container } from '../../layout/components/container';
+import styled from '@emotion/styled';
+const Footer = () => (
+  <footer>
+    <FooterContainer>
+      <Container>
+        <FooterLink href='https://twitter.com/obedparla'>
+          Follow me on Twitter
+        </FooterLink>
+        <FooterLink href='https://github.com/obedparla'>
+          View site's source on Github
+        </FooterLink>
+        <FooterLink href={config.siteRss}>Follow the RSS feed</FooterLink>
+      </Container>
+    </FooterContainer>
+  </footer>
+);
 
 export default Footer;
+
+export const FooterContainer = styled.div`
+  background: ${({ theme }) => theme.highContrastBg};
+  border-top: 1px solid ${({ theme }) => theme.lightBackground};
+`;
+export const FooterLink = styled.a`
+  display: block;
+  text-decoration: none;
+  box-shadow: none;
+  color: ${({ theme }) => theme.textColor};
+`;

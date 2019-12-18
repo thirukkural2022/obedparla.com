@@ -1,13 +1,12 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { ThemeProvider } from "emotion-theming";
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import config from "../../data/SiteConfig";
-import { Header } from "../components/Header/header";
-import { Container } from "./components/container";
-import { ThemeContext, ThemeContextProvider } from "../theming/ThemeContext";
-import { css } from "@emotion/core";
-import GlobalStyles from "./globalStyles";
+import config from '../../data/SiteConfig';
+import { Header } from '../components/Header/header';
+import { Container } from './components/container';
+import { ThemeContextProvider } from '../theming/ThemeContext';
+import GlobalStyles from './globalStyles';
+import Footer from '../components/Footer/Footer';
 
 export default class MainLayout extends React.Component {
   render() {
@@ -16,12 +15,12 @@ export default class MainLayout extends React.Component {
       <ThemeContextProvider>
         <GlobalStyles />
         <Helmet>
-          <meta name="description" content={config.siteDescription} />
-          <html lang="en" />
+          <meta name='description' content={config.siteDescription} />
+          <html lang='en' />
         </Helmet>
-
         <Header />
         <Container>{children}</Container>
+        <Footer />
       </ThemeContextProvider>
     );
   }

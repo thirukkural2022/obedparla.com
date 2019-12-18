@@ -48,28 +48,16 @@ const IndexPage = props => {
           </Link>
 
           <section>
-            <div>
-              <h2
-                css={css`
-                  display: inline-block;
-                `}
-              >
-                Latest articles
-              </h2>
+            <div css={{ marginBottom: '18px' }}>
+              <h2 css={{ display: 'inline-block' }}>Latest articles</h2>
               <ViewAll to='/blog'>View all</ViewAll>
             </div>
             <PostListing postList={latestPosts} />
           </section>
 
           <section>
-            <div>
-              <h2
-                css={css`
-                  display: inline-block;
-                `}
-              >
-                Popular articles
-              </h2>
+            <div css={{ marginBottom: '18px' }}>
+              <h2 css={{ display: 'inline-block' }}>Popular articles</h2>
               <ViewAll to='/blog'>View all</ViewAll>
             </div>
             <PostListing postList={popularPosts} />
