@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2014-04-15"
 categories : 
  - thoughts
+ - popular
 tags : ""
 ---
 

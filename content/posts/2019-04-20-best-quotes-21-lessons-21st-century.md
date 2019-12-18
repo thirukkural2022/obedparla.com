@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2019-04-20"
 categories : 
  - quotes
+ - popular
 tags : ""
 cover : "../images/21-lessons-for-the-21st-century-questions-in-an-image.jpg"
 ---

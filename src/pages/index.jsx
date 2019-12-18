@@ -29,7 +29,7 @@ const IndexPage = props => {
               margin-bottom: 4px;
             `}
           >
-            I'm JavaScript engineer & mentor, a bookworm and an attempt at a
+            I'm JavaScript engineer & mentor, bookworm and an attempt at a
             writer. Welcome to my mostly-polished dumpster of ideas, where
             you'll find my thoughts about books, life's questions, and hopefully
             good stories.
@@ -51,9 +51,7 @@ const IndexPage = props => {
             >
               Latest articles
             </h2>
-            <ViewAll as='button' to='/blog'>
-              View all
-            </ViewAll>
+            <ViewAll to='/blog'>View all</ViewAll>
           </div>
           <PostListing postList={postFields} />
         </div>

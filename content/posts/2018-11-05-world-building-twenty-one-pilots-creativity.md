@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2018-11-05"
 categories : 
  - thoughts
+ - popular
 tags : ""
 cover : "../images/twenty-one-pilots-trench-logo.jpg"
 ---

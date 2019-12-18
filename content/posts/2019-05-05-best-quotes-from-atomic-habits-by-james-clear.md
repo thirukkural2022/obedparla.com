@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2019-05-05"
 categories : 
  - quotes
+ - popular
 tags : ""
 ---
 

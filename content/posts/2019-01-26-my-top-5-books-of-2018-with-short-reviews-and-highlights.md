@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2019-01-26"
 categories : 
  - books
+ - popular
 tags : ""
 cover : "../images/woman-putting-a-book-back-in-its-shelf.jpeg"
 ---

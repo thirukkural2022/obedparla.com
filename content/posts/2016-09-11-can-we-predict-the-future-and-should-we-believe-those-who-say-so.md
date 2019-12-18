@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2016-09-11"
 categories : 
  - thoughts
+ - popular
 tags : ""
 cover : "../images/predicting-the-future.jpg"
 ---

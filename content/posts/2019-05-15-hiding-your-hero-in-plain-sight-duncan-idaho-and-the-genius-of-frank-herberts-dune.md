@@ -4,6 +4,7 @@ author : "Obed Marquez Parlapiano"
 date : "2019-05-15"
 categories : 
  - books
+ - popular
 tags : ""
 cover : "../images/dune-fan-art-with-fremen-in-desert-overlooking-a-sandworm.jpg"
 ---
