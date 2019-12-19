@@ -7,7 +7,7 @@ categories :
 tags : ""
 ---
 
-[![girl-enjoy-summer-sun](http://obedmarquezp.files.wordpress.com/2014/05/girl-enjoy-summer-sun-e1399513792103.jpg?w=676)](https://obedparla.com/wp-content/uploads/2014/05/girl-enjoy-summer-sun-e1399513792103.jpg)
+[![girl-enjoy-summer-sun](https://obedmarquezp.files.wordpress.com/2014/05/girl-enjoy-summer-sun-e1399513792103.jpg?w=676)](https://obedparla.com/wp-content/uploads/2014/05/girl-enjoy-summer-sun-e1399513792103.jpg)
 
 * * *
 

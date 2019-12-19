@@ -6,10 +6,8 @@ import styled from '@emotion/styled';
 
 import Layout from '../layout/Layout';
 import UserInfo from '../components/UserInfo/UserInfo';
-import PostTags from '../components/PostTags/PostTags';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 import SEO from '../components/SEO/SEO';
-import Footer from '../components/Footer/Footer';
 import config from '../../data/SiteConfig';
 import './b16-tomorrow-dark.css';
 

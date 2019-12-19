@@ -1,4 +1,5 @@
 import React from 'react';
+import Toggle from 'react-toggle';
 
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
@@ -52,7 +53,7 @@ const Nav = styled.nav`
     props.sticky &&
     css`
       height: 60px;
-      background: ${props.theme.stickyHeaderBg};
+      background: ${props.theme.navigationBg};
       box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px 0;
       transition: all 250ms ease-in-out 0s;
     `}
@@ -71,7 +72,9 @@ const Logo = styled.a`
 `;
 
 const LinksContainer = styled.div`
-  display: block;
+  display: flex;
+  align-items: center;
+
   ${props => css`
     @media (${props.theme.media.mobile}) {
       position: fixed;
@@ -143,17 +146,10 @@ const ToggleTheme = () => {
   const themeContext = React.useContext(ThemeContext);
 
   return (
-    <button
-      type='button'
-      css={css`
-        padding: 10px 20px;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-      `}
-      onClick={themeContext.toggleDarkMode}
-    >
-      Dark Mode
-    </button>
+    <Toggle
+      defaultChecked={themeContext.darkMode}
+      aria-label='No label tag'
+      onChange={themeContext.toggleDarkMode}
+    />
   );
 };

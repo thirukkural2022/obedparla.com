@@ -32,11 +32,12 @@ const Footer = () => (
 export default Footer;
 
 export const FooterContainer = styled.div`
-  background: ${({ theme }) => theme.highContrastBg};
+  background: ${({ theme }) => theme.navigationBg};
   border-top: 1px solid ${({ theme }) => theme.lightBackground};
 
   svg {
     margin-right: 10px;
+    stroke: ${({ theme }) => theme.textColor};
   }
 `;
 export const FooterLink = styled.a`
