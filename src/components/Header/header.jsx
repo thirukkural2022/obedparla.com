@@ -29,6 +29,10 @@ const HeaderLink = styled.a`
   color: ${({ theme }) => theme.textColor};
   font-size: 1.15rem;
   opacity: 0.8;
+
+  &[aria-current='page'] {
+    font-weight: bold;
+  }
 `;
 
 const Nav = styled.nav`
@@ -48,7 +52,7 @@ const Nav = styled.nav`
     props.sticky &&
     css`
       height: 60px;
-      background: #fff;
+      background: ${props.theme.stickyHeaderBg};
       box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px 0;
       transition: all 250ms ease-in-out 0s;
     `}
@@ -94,13 +98,14 @@ export const Header = props => {
   const [isSticky, setIsSticky] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
 
-  const handleScrolll = () => {
+  const handleScroll = () => {
     setIsSticky(window.scrollY > 0);
   };
-  React.useEffect(() => {
-    window.addEventListener('scroll', handleScrolll);
 
-    return () => window.removeEventListener('scroll', handleScrolll);
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (

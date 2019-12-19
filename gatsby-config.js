@@ -15,7 +15,6 @@ module.exports = {
         config.siteUrl,
         config.pathPrefix,
       )}/logos/logo-512.png`,
-      copyright: config.copyright,
     },
   },
   plugins: [
@@ -132,7 +131,6 @@ module.exports = {
                 title
                 description
                 image_url
-                copyright
               }
             }
           }

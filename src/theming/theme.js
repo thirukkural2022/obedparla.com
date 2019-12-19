@@ -17,6 +17,7 @@ const theme = {
     lightBackground: '#e5e5e5',
     textColor: 'hsla(0,0%,0%,0.8)',
     colorNegative: '#f1f1f1',
+    stickyHeaderBg: '#fff',
   },
   dark: {
     isDark: true,
@@ -26,6 +27,7 @@ const theme = {
     lightBackground: '#181818',
     textColor: '#f1f1f1',
     colorNegative: '#f1f1f1',
+    stickyHeaderBg: '#101010',
   },
 };
 
