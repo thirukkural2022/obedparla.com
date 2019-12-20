@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import config from '../../data/SiteConfig';
 import { Header } from '../components/Header/header';
 import { Container } from './components/container';
-import GlobalStyles from './globalStyles';
+import GlobalStyles from './components/globalStyles';
 import Footer from '../components/Footer/Footer';
 
 export default class MainLayout extends React.Component {

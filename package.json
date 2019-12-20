@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-advanced",
-  "description": "GatsbyJS starter that includes examples for advanced use cases.",
+  "description": "Obed Parlapiano's personal site",
   "version": "1.1.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "author": "Obed Parlapiano <https://twitter.com/obedparla>",
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
@@ -42,7 +42,6 @@
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
     "react-toggle": "^4.1.1",
-    "react-twitter-widgets": "^1.7.1",
     "react-typography": "^0.16.19",
     "tinycolor2": "^1.4.1",
     "typography": "^0.16.19",

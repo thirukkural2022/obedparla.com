@@ -5,7 +5,6 @@ import Img from 'gatsby-image';
 import styled from '@emotion/styled';
 
 import Layout from '../layout/Layout';
-import UserInfo from '../components/UserInfo/UserInfo';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -27,21 +26,18 @@ export default class PostTemplate extends React.Component {
 
     return (
       <Layout>
-        <div>
-          <Helmet>
-            <title>{`${post.title} | ${config.siteTitle}`}</title>
-          </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
-          <Article>
-            {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
-            <h1>{post.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            <div className='post-meta'>
-              <SocialLinks postPath={slug} postNode={postNode} />
-            </div>
-            <UserInfo config={config} />
-          </Article>
-        </div>
+        <Helmet>
+          <title>{`${post.title} | ${config.siteTitle}`}</title>
+        </Helmet>
+        <SEO postPath={slug} postNode={postNode} postSEO />
+        <Article>
+          {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
+          <h1>{post.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          <div className='post-meta'>
+            <SocialLinks postPath={slug} postNode={postNode} />
+          </div>
+        </Article>
       </Layout>
     );
   }
@@ -49,6 +45,7 @@ export default class PostTemplate extends React.Component {
 
 const Article = styled.article`
   .gatsby-image-wrapper {
+    margin-top: -var(--container-space);
     margin-left: -1.5rem;
     width: calc(100% + 3rem);
 
