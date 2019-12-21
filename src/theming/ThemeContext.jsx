@@ -5,7 +5,8 @@ import theme from './theme';
 
 export const ThemeContext = React.createContext({});
 export const ThemeContextProvider = ({ children }) => {
-  const darkModePreference = localStorage.getItem('oDarkMode');
+  const darkModePreference =
+    typeof window !== 'undefined' ? localStorage.getItem('oDarkMode') : false;
   const [darkMode, setDarkMode] = useState(darkModePreference === 'true');
 
   const contextValue = {
