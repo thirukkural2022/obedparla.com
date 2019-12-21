@@ -1,18 +1,20 @@
-import React, { useState } from "react";
-import { ThemeProvider } from "emotion-theming";
+import React, { useState } from 'react';
+import { ThemeProvider } from 'emotion-theming';
 
-import theme from "./theme";
+import theme from './theme';
 
 export const ThemeContext = React.createContext({});
 export const ThemeContextProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const darkModePreference = localStorage.getItem('oDarkMode');
+  const [darkMode, setDarkMode] = useState(darkModePreference === 'true');
 
   const contextValue = {
     theme,
     darkMode,
     toggleDarkMode() {
+      localStorage.setItem('oDarkMode', `${!darkMode}`);
       setDarkMode(!darkMode);
-    }
+    },
   };
 
   return (
