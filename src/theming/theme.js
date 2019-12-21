@@ -3,7 +3,7 @@ const commonsStyles = {
     desktop: 'min-width: 762px',
     mobile: 'max-width: 761px',
   },
-  containerSize: '650px',
+  containerSize: '700px',
   containerSpace: 'var(--container-space)',
   highlightColor: '#ff6b45',
 };
