@@ -1,7 +1,6 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
-import './reactToggle.css';
 
 const GlobalStyles = () => {
   const theme = useTheme();
@@ -43,8 +42,14 @@ const GlobalStyles = () => {
         h6,
         p,
         div,
-        span {
+        span,
+        blockquote {
           color: ${theme.textColor};
+        }
+
+        blockquote {
+          border-left: 0.2rem solid ${theme.highlightColor};
+          padding-left: 1.5rem;
         }
       `}
     />
