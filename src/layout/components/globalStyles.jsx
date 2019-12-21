@@ -47,6 +47,10 @@ const GlobalStyles = () => {
           color: ${theme.textColor};
         }
 
+        a {
+          color: ${theme.highlightColor};
+        }
+
         blockquote {
           border-left: 0.2rem solid ${theme.highlightColor};
           padding-left: 1.5rem;

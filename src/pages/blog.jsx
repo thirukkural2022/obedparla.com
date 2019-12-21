@@ -39,6 +39,8 @@ const ArticlesSearch = styled.input`
   border-radius: 5px;
   border: 2px solid #ccc;
   width: 90%;
+  background: ${({ theme }) => theme.backgroundColor};
+  color: ${({ theme }) => theme.textColor};
 
   &:focus {
     border-color: ${({ theme }) => theme.highlightColor};

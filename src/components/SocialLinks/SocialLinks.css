@@ -6,6 +6,8 @@
     align-content: center;
     align-items: center;
     margin: 8px 0;
+    border-top: 2px solid #ccc;
+    padding-top: 1.56rem;
 }
 
 .social-links > div {
@@ -15,8 +17,4 @@
 .social-links svg {
     height: 36px;
     width: 36px;
-}
-
-.share-count {
-    text-align: center;
 }

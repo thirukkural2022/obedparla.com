@@ -5,8 +5,7 @@ const commonsStyles = {
   },
   containerSize: '650px',
   containerSpace: 'var(--container-space)',
-  highlightColor: '#f55a32',
-  softHighlight: 'rgba(245, 121, 81, 0.2)',
+  highlightColor: '#ff6b45',
 };
 const theme = {
   light: {
@@ -18,6 +17,7 @@ const theme = {
     textColor: 'hsla(0,0%,0%,0.8)',
     colorNegative: '#f1f1f1',
     navigationBg: '#fff',
+    softHighlight: 'rgba(255, 107, 69, 0.12)',
   },
   dark: {
     isDark: true,
@@ -28,6 +28,7 @@ const theme = {
     textColor: '#f1f1f1',
     colorNegative: '#f1f1f1',
     navigationBg: '#101010',
+    softHighlight: 'rgba(14, 14, 14, 0.63)',
   },
 };
 

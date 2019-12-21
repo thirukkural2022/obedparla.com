@@ -120,7 +120,7 @@ export const Header = props => {
             Home
           </MobileHeaderLink>
           <HeaderLink as={Link} to='/blog'>
-            Blog
+            Articles
           </HeaderLink>
           <HeaderLink as={Link} to='/about'>
             About
