@@ -33,10 +33,9 @@ const IndexPage = props => {
               margin-bottom: 4px;
             `}
           >
-            I'm JavaScript engineer & mentor, bookworm and an attempt at a
-            writer. Welcome to my mostly-polished dumpster of ideas, where
-            you'll find my thoughts about books, life's questions, and hopefully
-            good stories.
+            I'm JavaScript engineer, bookworm and writer. Welcome to my dumpster
+            of ideas, where you'll find my thoughts about books, life's
+            questions and the journey of being a developer.
           </p>
           <Link to='/about'>
             <small
