@@ -9,29 +9,10 @@ import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
-
-const Category = styled.span`
-  display: inline-block;
-  padding: 5px 12px;
-  background: ${({ theme }) => theme.softHighlight};
-  margin: 3px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-transform: capitalize;
-  color: ${({ theme }) => theme.highlightColor};
-  font-size: 0.9rem;
-
-  ${({ selected, theme }) =>
-    selected &&
-    css`
-      background: ${theme.highlightColor};
-      color: #fff;
-    `}
-`;
-
-const CategoryContainer = styled.div`
-  margin-bottom: 40px;
-`;
+import {
+  CategoryButton,
+  CategoryContainer,
+} from '../components/CategoryButton';
 
 const ArticlesSearch = styled.input`
   display: block;
@@ -114,14 +95,14 @@ const BlogPage = props => {
 
       <CategoryContainer>
         {[...allCategories].map(cat => (
-          <Category
+          <CategoryButton
             key={cat}
             tabIndex={0}
             onClick={() => setCategory(cat === category ? null : cat)}
             selected={cat === category}
           >
             {cat.replace('-', ' ')}
-          </Category>
+          </CategoryButton>
         ))}
         <SearchLabel htmlFor='search-articles'>Search for articles</SearchLabel>
         <SearchContainer>
@@ -171,7 +152,6 @@ export const listingQuery = graphql`
                 }
               }
             }
-            date
           }
         }
       }

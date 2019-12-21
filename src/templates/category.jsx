@@ -1,32 +1,44 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../layout/Layout';
 
 import PostListing from '../components/PostListing/PostListing';
 import config from '../../data/SiteConfig';
+import { usePostFields } from '../hooks/usePostFields';
+import {
+  CategoryButton,
+  CategoryContainer,
+} from '../components/CategoryButton';
 
-export default class CategoryTemplate extends React.Component {
-  render() {
-    const { category } = this.props.pageContext;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
-    return (
-      <Layout>
-        <div className='category-container'>
-          <Helmet
-            title={`Posts in category "${category}" | ${config.siteTitle}`}
-          />
-          <PostListing postEdges={postEdges} />
-        </div>
-      </Layout>
-    );
-  }
-}
+const CategoryTemplate = props => {
+  const { category } = props.pageContext;
+  const postFields = usePostFields(props.data.posts.edges);
+
+  return (
+    <Layout>
+      <h1>{category}</h1>
+      <Helmet
+        title={`Articles in category "${category}" | ${config.siteTitle}`}
+      />
+      <CategoryContainer>
+        {props.data.categories.distinct.map(cat => (
+          <CategoryButton key={cat} tabIndex={0} as={Link} to={`/${cat}/`}>
+            {cat}
+          </CategoryButton>
+        ))}
+      </CategoryContainer>
+      <PostListing postList={postFields} isBig />
+    </Layout>
+  );
+};
+
+export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query CategoryPage($category: String) {
-    allMarkdownRemark(
+    posts: allMarkdownRemark(
       limit: 1000
       sort: { fields: [fields___date], order: DESC }
       filter: { frontmatter: { categories: { eq: $category } } }
@@ -54,6 +66,9 @@ export const pageQuery = graphql`
           }
         }
       }
+    }
+    categories: allMarkdownRemark {
+      distinct(field: frontmatter___categories)
     }
   }
 `;

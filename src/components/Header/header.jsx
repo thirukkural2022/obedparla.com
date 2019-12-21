@@ -1,19 +1,17 @@
 import React from 'react';
-import Toggle from 'react-toggle';
 
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { ThemeContext } from '../../theming/ThemeContext';
 import { MobileHamburguer } from './components/MobileHamburguer';
+import { Container } from '../../layout/components/container';
 
-const StyledHeader = styled.div`
+const StyledHeader = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  max-width: ${({ theme }) => theme.containerSize};
-  margin: 0 auto;
   padding: 0 var(--container-space);
 
   @media (${({ theme }) => theme.media.mobile}) {
@@ -97,7 +95,7 @@ const LinksContainer = styled.div`
   `}
 `;
 
-export const Header = props => {
+export const Header = () => {
   const [isSticky, setIsSticky] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
 

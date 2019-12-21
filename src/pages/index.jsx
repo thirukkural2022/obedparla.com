@@ -11,6 +11,7 @@ import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
+import { SimpleButton as ViewAll } from '../components/SimpleButton';
 
 const IndexPage = props => {
   const emoji = useRandomEmoji();
@@ -50,7 +51,9 @@ const IndexPage = props => {
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Latest articles</h2>
-              <ViewAll to='/blog'>View all</ViewAll>
+              <ViewAll to='/blog' css={{ marginLeft: '30px', bottom: '3px' }}>
+                View all
+              </ViewAll>
             </div>
             <PostListing postList={latestPosts} />
           </section>
@@ -70,37 +73,6 @@ const IndexPage = props => {
 
 export default IndexPage;
 
-const ViewAll = styled(Link)`
-  display: inline-block;
-  background: ${({ theme }) => theme.lightBackground};
-  padding: 4px 8px;
-  border-radius: 4px;
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
-  font-size: 0.8rem;
-  position: relative;
-  bottom: 3px;
-  margin-left: 30px;
-  color: ${({ theme }) => theme.textColor};
-  opacity: 0.8;
-
-  &:hover {
-    background: ${({ theme }) =>
-      tinycolor(theme.lightBackground)
-        .darken(10)
-        .toString()};
-  }
-
-  &:active {
-    background: ${({ theme }) =>
-      tinycolor(theme.lightBackground)
-        .darken(40)
-        .toString()};
-    color: ${({ theme }) => theme.colorNegative};
-  }
-`;
-
 /* eslint no-undef: "off" */
 export const listingQuery = graphql`
   query ListingQuery {
@@ -119,7 +91,7 @@ export const listingQuery = graphql`
             categories
             cover {
               childImageSharp {
-                fixed(width: 80, height: 80) {
+                fixed(width: 70, height: 70) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -145,7 +117,7 @@ export const listingQuery = graphql`
             categories
             cover {
               childImageSharp {
-                fixed(width: 80, height: 80) {
+                fixed(width: 70, height: 70) {
                   ...GatsbyImageSharpFixed
                 }
               }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from '@emotion/styled';
 
@@ -9,6 +9,7 @@ import SocialLinks from '../components/SocialLinks/SocialLinks';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import './b16-tomorrow-dark.css';
+import { PostInfo } from '../components/PostInfo';
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -16,13 +17,6 @@ export default class PostTemplate extends React.Component {
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;
-
-    if (!post.id) {
-      post.id = slug;
-    }
-    if (!post.category_id) {
-      post.category_id = config.postDefaultCategoryID;
-    }
 
     return (
       <Layout>
@@ -32,7 +26,26 @@ export default class PostTemplate extends React.Component {
         <SEO postPath={slug} postNode={postNode} postSEO />
         <Article>
           {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
-          <h1>{post.title}</h1>
+
+          <h1 css={{ marginBottom: 0 }}>{post.title}</h1>
+
+          <div css={{ marginBottom: '40px' }}>
+            <PostInfo
+              date={postNode.fields.date}
+              timeToRead={postNode.timeToRead}
+            />
+            {' - '}
+            <small>
+              {post.categories.map((category, index) => (
+                <>
+                  <Link to={`/${category}`} css={{}}>
+                    {category}
+                  </Link>
+                  {index < post.categories.length - 1 && ', '}
+                </>
+              ))}
+            </small>
+          </div>
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <div className='post-meta'>
             <SocialLinks postPath={slug} postNode={postNode} />
@@ -45,10 +58,6 @@ export default class PostTemplate extends React.Component {
 
 const Article = styled.article`
   .gatsby-image-wrapper {
-    margin-top: -var(--container-space);
-    margin-left: -1.5rem;
-    width: calc(100% + 3rem);
-
     @media (${({ theme }) => theme.media.mobile}) {
       img {
         border-radius: 0;
@@ -63,12 +72,12 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
-      excerpt
       frontmatter {
         title
+        categories
         cover {
           childImageSharp {
-            fluid(maxWidth: 650, quality: 100) {
+            fluid(maxWidth: 600, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

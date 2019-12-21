@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Img from 'gatsby-image';
-import { formatDate } from '../../utils/global';
+import { PostInfo } from '../PostInfo';
 
 const PostListing = ({ postList, isBig }) => {
   return (
@@ -25,12 +25,7 @@ const PostListing = ({ postList, isBig }) => {
                 </ListItemHeader>
               </StyledLink>
               {post.excerpt && <Excerpt>{post.excerpt}</Excerpt>}
-              <small>
-                <span>{formatDate(post.date)}</span>
-                {post.timeToRead && (
-                  <span>{` - ${post.timeToRead} min read`}</span>
-                )}
-              </small>
+              <PostInfo date={post.date} timeToRead={post.timeToRead} />
             </PostItemContent>
           </PostItem>
         ))}
@@ -48,6 +43,7 @@ const StyledLink = styled(Link)`
   box-shadow: none;
   display: block;
   margin-right: ${props => (props.isBig ? '0' : '1.125rem')};
+  font-size: 0;
 `;
 
 const PostItem = styled.div`
