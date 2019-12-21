@@ -10,13 +10,13 @@ const PostListing = ({ postList, isBig }) => {
       {postList &&
         postList.map(post => (
           <PostItem key={post.path} isBig={isBig}>
-            <StyledLink to={post.path} key={post.title} isBig={isBig}>
+            <StyledLink to={post.path} isBig={isBig}>
               {post.cover && post.cover.childImageSharp.fixed && (
                 <Img fixed={post.cover.childImageSharp.fixed} />
               )}
             </StyledLink>
             <PostItemContent>
-              <StyledLink to={post.path} key={post.title} isBig={isBig}>
+              <StyledLink to={post.path} isBig={isBig}>
                 {post.cover && post.cover.childImageSharp.fluid && (
                   <Img fluid={post.cover.childImageSharp.fluid} />
                 )}
