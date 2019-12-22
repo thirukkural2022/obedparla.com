@@ -1,28 +1,43 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import React from 'react';
+import styled from '@emotion/styled';
+
 import config from '../../../data/SiteConfig';
 import { Container } from '../../layout/components/container';
-import styled from '@emotion/styled';
 import { GithubIcon, RssIcon, TwitterIcon } from './components/Icons';
+
 const Footer = () => (
   <footer>
     <FooterContainer>
       <Container>
         <div>
-          <TwitterIcon />
-          <FooterLink href='https://twitter.com/obedparla'>
+          <FooterLink
+            href='https://twitter.com/obedparla'
+            target='_blank'
+            rel='noreferrer nofollow'
+          >
+            <TwitterIcon />
             Follow me on Twitter
           </FooterLink>
         </div>
         <div>
-          <GithubIcon />
-          <FooterLink href='https://github.com/obedparla'>
+          <FooterLink
+            href='https://github.com/obedparla'
+            target='_blank'
+            rel='noreferrer nofollow'
+          >
+            <GithubIcon />
             View source on Github
           </FooterLink>
         </div>
         <div>
-          <RssIcon />
-          <FooterLink href={config.siteRss}>Follow the RSS feed</FooterLink>
+          <FooterLink
+            href={config.siteRss}
+            target='_blank'
+            rel='noreferrer nofollow'
+          >
+            <RssIcon />
+            Follow the RSS feed
+          </FooterLink>
         </div>
       </Container>
     </FooterContainer>

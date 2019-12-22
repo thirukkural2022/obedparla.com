@@ -119,9 +119,11 @@ export const StyledHamburguer = styled.div`
       transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 `;
+
 export const MobileHamburguer = props => (
   <StyledHamburguer>
     <button
+      aria-label='Mobile Menu'
       className={`hamburger hamburger--collapse ${
         props.menuOpen ? 'is-active' : ''
       }`}

@@ -8,27 +8,30 @@ const PostListing = ({ postList, isBig }) => {
   return (
     <PostListContainer>
       {postList &&
-        postList.map(post => (
-          <PostItem key={post.path} isBig={isBig}>
-            <StyledLink to={post.path} isBig={isBig}>
-              {post.cover && post.cover.childImageSharp.fixed && (
-                <Img fixed={post.cover.childImageSharp.fixed} />
-              )}
-            </StyledLink>
-            <PostItemContent>
-              <StyledLink to={post.path} isBig={isBig}>
-                {post.cover && post.cover.childImageSharp.fluid && (
-                  <Img fluid={post.cover.childImageSharp.fluid} />
+        postList.map(post => {
+          const ariaLabel = `Visit ${post.title}`;
+          return (
+            <PostItem key={post.path} isBig={isBig}>
+              <StyledLink to={post.path} isBig={isBig} aria-label={ariaLabel}>
+                {post.cover && post.cover.childImageSharp.fixed && (
+                  <Img fixed={post.cover.childImageSharp.fixed} />
                 )}
-                <ListItemHeader as={isBig ? 'h2' : 'h3'} isBig={isBig}>
-                  {post.title}
-                </ListItemHeader>
               </StyledLink>
-              {post.excerpt && <Excerpt>{post.excerpt}</Excerpt>}
-              <PostInfo date={post.date} timeToRead={post.timeToRead} />
-            </PostItemContent>
-          </PostItem>
-        ))}
+              <PostItemContent>
+                <StyledLink to={post.path} isBig={isBig} aria-label={ariaLabel}>
+                  {post.cover && post.cover.childImageSharp.fluid && (
+                    <Img fluid={post.cover.childImageSharp.fluid} />
+                  )}
+                  <ListItemHeader as={isBig ? 'h2' : 'h3'} isBig={isBig}>
+                    {post.title}
+                  </ListItemHeader>
+                </StyledLink>
+                {post.excerpt && <Excerpt>{post.excerpt}</Excerpt>}
+                <PostInfo date={post.date} timeToRead={post.timeToRead} />
+              </PostItemContent>
+            </PostItem>
+          );
+        })}
     </PostListContainer>
   );
 };
