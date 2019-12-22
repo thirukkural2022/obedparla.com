@@ -6,10 +6,7 @@ import Layout from '../layout/Layout';
 import PostListing from '../components/PostListing/PostListing';
 import config from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
-import {
-  CategoryButton,
-  CategoryContainer,
-} from '../components/CategoryButton';
+import { CategoriesList } from '../components/CategoryButton';
 
 const CategoryTemplate = props => {
   const { category } = props.pageContext;
@@ -17,17 +14,11 @@ const CategoryTemplate = props => {
 
   return (
     <Layout>
-      <h1>{category}</h1>
+      <h1>All articles in "{category}"</h1>
       <Helmet
         title={`Articles in category "${category}" | ${config.siteTitle}`}
       />
-      <CategoryContainer>
-        {props.data.categories.distinct.map(cat => (
-          <CategoryButton key={cat} tabIndex={0} as={Link} to={`/${cat}/`}>
-            {cat}
-          </CategoryButton>
-        ))}
-      </CategoryContainer>
+      <CategoriesList categories={props.data.categories.distinct} />
       <PostListing postList={postFields} isBig />
     </Layout>
   );
