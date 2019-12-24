@@ -41,7 +41,7 @@ const PostItemContent = styled.div``;
 const Excerpt = styled.p`
   margin-bottom: 0;
 `;
-const StyledLink = styled(Link)`
+const StyledLink = styled(({ isBig, ...rest }) => <Link {...rest} />)`
   color: inherit;
   box-shadow: none;
   display: block;

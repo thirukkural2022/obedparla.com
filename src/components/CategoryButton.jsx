@@ -7,7 +7,9 @@ export const CategoryContainer = styled.div`
   margin-bottom: 40px;
 `;
 
-export const CategoryButton = styled(Link)`
+export const CategoryButton = styled(({ isSelected, ...rest }) => (
+  <Link {...rest} />
+))`
   display: inline-block;
   padding: 5px 12px;
   background: ${({ theme }) => theme.softHighlight};
@@ -18,13 +20,14 @@ export const CategoryButton = styled(Link)`
   color: ${({ theme }) => theme.highlightColor};
   font-size: 0.9rem;
   box-shadow: none;
+  border: ${({ theme }) => theme.categoryButtonBorder};
 
   ${({ isSelected, theme }) =>
     isSelected &&
     css`
       background: ${theme.highlightColor};
       color: #fff;
-    `}
+    `};
 `;
 
 export const CategoriesList = ({ categories }) => {

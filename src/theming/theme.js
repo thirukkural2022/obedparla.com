@@ -18,6 +18,7 @@ const theme = {
     colorNegative: '#f1f1f1',
     navigationBg: '#fff',
     softHighlight: 'rgba(255, 107, 69, 0.12)',
+    categoryButtonBorder: 'none',
   },
   dark: {
     isDark: true,
@@ -29,6 +30,7 @@ const theme = {
     colorNegative: '#f1f1f1',
     navigationBg: '#101010',
     softHighlight: 'rgba(14, 14, 14, 0.63)',
+    categoryButtonBorder: '1px solid  #f1f1f1',
   },
 };
 
