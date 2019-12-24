@@ -32,7 +32,9 @@ export const CategoryButton = styled(({ isSelected, ...rest }) => (
 
 export const CategoriesList = ({ categories }) => {
   const allCategories = ['latest', ...categories];
-  const category = window && window.location.pathname.replace(/\//g, '');
+  const category =
+    typeof window !== 'undefined' &&
+    window.location.pathname.replace(/\//g, '');
   return (
     <CategoryContainer>
       {allCategories.map(cat => {
