@@ -41,6 +41,7 @@ const Nav = styled.nav`
   width: 100%;
   background: ${({ theme }) => theme.backgroundColor};
   z-index: 10;
+  transition: height 300ms ease;
 
   @media (${({ theme }) => theme.media.mobile}) {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
@@ -53,7 +54,6 @@ const Nav = styled.nav`
       height: 60px;
       background: ${props.theme.navigationBg};
       box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px 0;
-      transition: all 250ms ease-in-out 0s;
     `}
 `;
 
@@ -100,7 +100,12 @@ export const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const handleScroll = () => {
-    setIsSticky(window.scrollY > 0);
+    const scrolledDown = window.scrollY > 25;
+    if (scrolledDown) {
+      setIsSticky(true);
+    } else if (window.scrollY === 0) {
+      setIsSticky(false);
+    }
   };
 
   React.useEffect(() => {
