@@ -1,10 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../layout/Layout';
 
 import PostListing from '../components/PostListing/PostListing';
-import config from '../../data/SiteConfig';
+import { siteTitle } from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
 import { CategoriesList } from '../components/CategoryButton';
 
@@ -15,9 +15,7 @@ const CategoryTemplate = props => {
   return (
     <Layout>
       <h1>All articles in "{category}"</h1>
-      <Helmet
-        title={`Articles in category "${category}" | ${config.siteTitle}`}
-      />
+      <Helmet title={`Articles in category "${category}" | ${siteTitle}`} />
       <CategoriesList categories={props.data.categories.distinct} />
       <PostListing postList={postFields} isBig />
     </Layout>

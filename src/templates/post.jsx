@@ -20,9 +20,11 @@ export default class PostTemplate extends React.Component {
 
     return (
       <Layout>
-        <Helmet>
-          <title>{`${post.title} | ${config.siteTitle}`}</title>
-        </Helmet>
+        <Helmet
+          title={`${post.title} | ${config.siteTitle}`}
+          description={postNode.excerpt}
+        />
+
         <SEO postPath={slug} postNode={postNode} postSEO />
         <Article>
           {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
@@ -37,12 +39,12 @@ export default class PostTemplate extends React.Component {
             {' - '}
             <small>
               {post.categories.map((category, index) => (
-                <>
+                <React.Fragment key={category}>
                   <Link to={`/${category}`} css={{}}>
                     {category}
                   </Link>
                   {index < post.categories.length - 1 && ', '}
-                </>
+                </React.Fragment>
               ))}
             </small>
           </div>
@@ -72,12 +74,13 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
+      excerpt
       frontmatter {
         title
         categories
         cover {
           childImageSharp {
-            fluid(maxWidth: 600, quality: 100) {
+            fluid(maxWidth: 600, quality: 85) {
               ...GatsbyImageSharpFluid
             }
           }

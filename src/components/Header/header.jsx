@@ -123,9 +123,6 @@ export const Header = () => {
           <HeaderLink as={Link} to='/blog'>
             Articles
           </HeaderLink>
-          <HeaderLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
-            Bookshelf
-          </HeaderLink>
           <MobileHeaderLink href='https://twitter.com/obedparla'>
             @obedparla
           </MobileHeaderLink>

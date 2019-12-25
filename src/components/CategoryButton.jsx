@@ -30,8 +30,9 @@ export const CategoryButton = styled(({ isSelected, ...rest }) => (
     `};
 `;
 
+const allPostsName = 'all';
 export const CategoriesList = ({ categories }) => {
-  const allCategories = ['latest', ...categories];
+  const allCategories = [allPostsName, ...categories];
   const category =
     typeof window !== 'undefined' &&
     window.location.pathname.replace(/\//g, '');
@@ -39,13 +40,13 @@ export const CategoriesList = ({ categories }) => {
     <CategoryContainer>
       {allCategories.map(cat => {
         const isSelected =
-          category === cat || (category === 'blog' && cat === 'latest');
+          category === cat || (category === 'blog' && cat === allPostsName);
         return (
           <CategoryButton
             isSelected={isSelected}
             key={cat}
             tabIndex={0}
-            to={cat === 'latest' ? '/blog/' : `/${cat}/`}
+            to={cat === allPostsName ? '/blog/' : `/${cat}/`}
           >
             {cat}
           </CategoryButton>

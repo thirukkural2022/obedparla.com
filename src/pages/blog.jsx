@@ -2,12 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
 
 import Layout from '../layout/Layout';
 import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
-import config from '../../data/SiteConfig';
+import { siteTitle } from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
 import {
   CategoryButton,
@@ -46,6 +45,10 @@ const SearchLabel = styled.label`
   font-size: 0.9rem;
   display: block;
   margin-top: 10px;
+`;
+
+const StyledH1 = styled.h1`
+  margin-top: 0;
 `;
 
 const BlogPage = props => {
@@ -104,13 +107,7 @@ const BlogPage = props => {
 
   return (
     <Layout>
-      <h1
-        css={css`
-          margin-top: 0;
-        `}
-      >
-        All articles
-      </h1>
+      <StyledH1>All articles {category ? `in "${category}"` : ''}</StyledH1>
 
       <CategoryContainer>
         {[...allCategories].map(cat => (
@@ -143,7 +140,7 @@ const BlogPage = props => {
 
       <div className='listing-container'>
         <div className='posts-container'>
-          <Helmet title={`Articles - ${config.siteTitle}`} />
+          <Helmet title={`Articles - ${siteTitle}`} />
           <SEO />
           <PostListing postList={allPosts.slice(0, articlesToShow)} isBig />
         </div>

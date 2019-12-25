@@ -2,14 +2,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../layout/Layout';
 
-import config from '../../data/SiteConfig';
+import { siteTitle } from '../../data/SiteConfig';
 
 const AboutPage = () => {
   const age = new Date().getFullYear() - 2015;
 
   return (
     <Layout>
-      <Helmet title={`About me | ${config.siteTitle}`} />
+      <Helmet title={`About me | ${siteTitle}`} />
 
       <h1>About me</h1>
       <p>

@@ -3,7 +3,12 @@ import styled from '@emotion/styled';
 
 import config from '../../../data/SiteConfig';
 import { Container } from '../../layout/components/container';
-import { GithubIcon, RssIcon, TwitterIcon } from './components/Icons';
+import {
+  GithubIcon,
+  RssIcon,
+  TwitterIcon,
+  GoodreadsIcon,
+} from './components/Icons';
 
 const Footer = () => (
   <footer>
@@ -37,6 +42,12 @@ const Footer = () => (
           >
             <RssIcon />
             Follow the RSS feed
+          </FooterLink>
+        </div>
+        <div>
+          <FooterLink href='https://www.goodreads.com/review/list/37832424-obed-m-parlapiano?shelf=read&sort=date_read&utm_campaign=mybooksnav&utm_content=mybooks_cta&utm_medium=web&utm_source=homepage'>
+            <GoodreadsIcon />
+            See all my read books
           </FooterLink>
         </div>
       </Container>

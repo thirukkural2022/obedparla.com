@@ -2,13 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
-import tinycolor from 'tinycolor2';
 
 import Layout from '../layout/Layout';
 import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
-import config from '../../data/SiteConfig';
+import { siteTitle } from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
 import { SimpleButton as ViewAll } from '../components/SimpleButton';
@@ -25,7 +23,7 @@ const IndexPage = props => {
     <Layout>
       <div className='listing-container'>
         <div className='posts-container'>
-          <Helmet title={config.siteTitle} />
+          <Helmet title={siteTitle} />
           <SEO />
           <h1>Hey, I'm Obed! {emoji}</h1>
           <p
@@ -60,7 +58,9 @@ const IndexPage = props => {
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Popular articles</h2>
-              <ViewAll to='/blog'>View all</ViewAll>
+              <ViewAll to='/blog' css={{ marginLeft: '30px', bottom: '3px' }}>
+                View all
+              </ViewAll>
             </div>
             <PostListing postList={popularPosts} />
           </section>
