@@ -117,11 +117,11 @@ export const Header = () => {
           <MobileHeaderLink as={Link} to='/'>
             Home
           </MobileHeaderLink>
-          <HeaderLink as={Link} to='/about'>
-            Me
-          </HeaderLink>
           <HeaderLink as={Link} to='/blog'>
             Articles
+          </HeaderLink>
+          <HeaderLink as={Link} to='/about'>
+            About
           </HeaderLink>
           <MobileHeaderLink href='https://twitter.com/obedparla'>
             @obedparla

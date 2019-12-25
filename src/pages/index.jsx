@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import { css } from '@emotion/core';
@@ -10,8 +10,10 @@ import { siteTitle } from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
 import { SimpleButton as ViewAll } from '../components/SimpleButton';
+import { useTheme } from 'emotion-theming';
 
 const IndexPage = props => {
+  const theme = useTheme();
   const emoji = useRandomEmoji();
   const latestPostsEdges = props.data.latest.edges;
   const latestPosts = usePostFields(latestPostsEdges);
@@ -25,16 +27,32 @@ const IndexPage = props => {
         <div className='posts-container'>
           <Helmet title={siteTitle} />
           <SEO />
-          <h1>Hey, I'm Obed! {emoji}</h1>
-          <p
+          <div
             css={css`
-              margin-bottom: 4px;
+              display: flex;
+              align-items: center;
+
+              iframe {
+                margin: 0;
+              }
+              @media (${theme.media.mobile}) {
+                flex-wrap: wrap;
+              }
             `}
           >
-            I'm JavaScript engineer, bookworm and writer. Welcome to my dumpster
-            of ideas, where you'll find my thoughts about books, life's
-            questions and the journey of being a developer.
-          </p>
+            <div>
+              <h1>Hey, I'm Obed! {emoji}</h1>
+              <p
+                css={css`
+                  margin-bottom: 4px;
+                `}
+              >
+                I'm JavaScript engineer, bookworm and writer. Welcome to my
+                place in the internet, where you'll find my thoughts about
+                books, life's questions and the journey of being a developer.
+              </p>
+            </div>
+          </div>
           <Link to='/about'>
             <small
               css={css`
@@ -45,6 +63,22 @@ const IndexPage = props => {
             </small>
           </Link>
 
+          <div
+            css={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '20px',
+            }}
+          >
+            <iframe
+              width='100%'
+              height='180'
+              src='https://obedparla.substack.com/embed'
+              frameBorder='0'
+              scrolling='no'
+              css={{ margin: 0 }}
+            />
+          </div>
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Latest articles</h2>
