@@ -11,6 +11,7 @@ import { usePostFields } from '../hooks/usePostFields';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
 import { SimpleButton as ViewAll } from '../components/SimpleButton';
 import { useTheme } from 'emotion-theming';
+import { NewsletterIframe } from '../components/NewsletterIframe';
 
 const IndexPage = props => {
   const theme = useTheme();
@@ -62,23 +63,6 @@ const IndexPage = props => {
               Who are you, again?
             </small>
           </Link>
-
-          <div
-            css={{
-              display: 'flex',
-              justifyContent: 'center',
-              marginTop: '20px',
-            }}
-          >
-            <iframe
-              width='100%'
-              height='180'
-              src='https://obedparla.substack.com/embed'
-              frameBorder='0'
-              scrolling='no'
-              css={{ margin: 0 }}
-            />
-          </div>
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Latest articles</h2>
@@ -88,7 +72,6 @@ const IndexPage = props => {
             </div>
             <PostListing postList={latestPosts} />
           </section>
-
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Popular articles</h2>
@@ -99,6 +82,9 @@ const IndexPage = props => {
             <PostListing postList={popularPosts} />
           </section>
         </div>
+        <hr />
+        <NewsletterIframe margin={'0 0 1.4rem'} />
+        <hr />
       </div>
     </Layout>
   );

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import Layout from '../layout/Layout';
 
 import { siteTitle } from '../../data/SiteConfig';
+import { NewsletterIframe } from '../components/NewsletterIframe';
 
 const AboutPage = () => (
   <Layout>
@@ -15,14 +16,7 @@ const AboutPage = () => (
       unsubscribe at <i>any time</i>
     </p>
 
-    <iframe
-      width='100%'
-      height='480'
-      src='https://obedparla.substack.com/embed'
-      frameBorder='0'
-      scrolling='no'
-      css={{ margin: 0 }}
-    />
+    <NewsletterIframe height={'480px'} />
   </Layout>
 );
 

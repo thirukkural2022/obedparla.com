@@ -10,6 +10,7 @@ import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import './b16-tomorrow-dark.css';
 import { PostInfo } from '../components/PostInfo';
+import { NewsletterIframe } from '../components/NewsletterIframe';
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -49,6 +50,9 @@ export default class PostTemplate extends React.Component {
             </small>
           </div>
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          <hr />
+          <NewsletterIframe margin={'0 0 1.4rem'} />
+
           <div className='post-meta'>
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
