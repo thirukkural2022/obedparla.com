@@ -2,7 +2,7 @@ const config = {
   siteTitle: 'Obed Parlapiano - JavaScript Engineer & Writer', // Site title.
   siteTitleShort: 'Obed Parlapiano', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Obed M' Parlapiano's Blog", // Alternative site title for SEO.
-  siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
+  siteLogo: '/logos/logo-512.png', // Logo used for SEO and manifest.
   siteUrl: 'https://obedparla.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:

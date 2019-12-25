@@ -16,6 +16,23 @@ export default class MainLayout extends React.Component {
         <Helmet>
           <meta name='description' content={config.siteDescription} />
           <html lang='en' />
+          <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='/logos/apple-touch-icon.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='32x32'
+            href='/logos/favicon-32x32.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='16x16'
+            href='/logos/favicon-16x16.png'
+          />
         </Helmet>
         <Header />
         <Container>{children}</Container>
