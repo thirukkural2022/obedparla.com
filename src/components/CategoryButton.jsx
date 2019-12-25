@@ -1,26 +1,17 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { Link } from 'gatsby';
 import React from 'react';
+import { SimpleButton } from './SimpleButton';
 
 export const CategoryContainer = styled.div`
   margin-bottom: 40px;
 `;
 
 export const CategoryButton = styled(({ isSelected, ...rest }) => (
-  <Link {...rest} />
+  <SimpleButton {...rest} />
 ))`
-  display: inline-block;
-  padding: 5px 12px;
-  background: ${({ theme }) => theme.softHighlight};
   margin: 3px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-transform: capitalize;
-  color: ${({ theme }) => theme.highlightColor};
   font-size: 0.9rem;
-  box-shadow: none;
-  border: ${({ theme }) => theme.categoryButtonBorder};
 
   ${({ isSelected, theme }) =>
     isSelected &&

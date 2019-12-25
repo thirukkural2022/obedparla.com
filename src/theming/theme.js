@@ -5,7 +5,6 @@ const commonsStyles = {
   },
   containerSize: '700px',
   containerSpace: 'var(--container-space)',
-  highlightColor: '#ff6b45',
 };
 const theme = {
   light: {
@@ -17,20 +16,20 @@ const theme = {
     textColor: 'hsla(0,0%,0%,0.8)',
     colorNegative: '#f1f1f1',
     navigationBg: '#fff',
-    softHighlight: 'rgba(255, 107, 69, 0.12)',
-    categoryButtonBorder: 'none',
+    softHighlight: '#fafafa',
+    highlightColor: '#0a71e2',
   },
   dark: {
     isDark: true,
     ...commonsStyles,
     backgroundColor: '#1f1f1f',
     highContrastBg: '#000',
-    lightBackground: '#181818',
+    lightBackground: '#000',
     textColor: '#f1f1f1',
     colorNegative: '#f1f1f1',
     navigationBg: '#101010',
     softHighlight: 'rgba(14, 14, 14, 0.63)',
-    categoryButtonBorder: '1px solid  #f1f1f1',
+    highlightColor: '#4096f5',
   },
 };
 

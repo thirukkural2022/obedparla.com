@@ -70,4 +70,5 @@ export const FooterLink = styled.a`
   text-decoration: none;
   box-shadow: none;
   color: ${({ theme }) => theme.textColor};
+  padding: 5px 0;
 `;

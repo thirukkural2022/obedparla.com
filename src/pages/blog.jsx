@@ -73,15 +73,9 @@ const BlogPage = props => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const postEdges = props.data.allMarkdownRemark.edges;
+  const postEdges = props.data.posts.edges;
 
-  const allCategories = React.useMemo(() => {
-    const categoriesSet = new Set();
-    postEdges.forEach(post => {
-      post.node.frontmatter.categories.forEach(cat => categoriesSet.add(cat));
-    });
-    return categoriesSet;
-  }, [postEdges]);
+  const allCategories = props.data.categories.distinct;
 
   const postFields = usePostFields(postEdges);
 
@@ -110,14 +104,19 @@ const BlogPage = props => {
       <StyledH1>All articles {category ? `in "${category}"` : ''}</StyledH1>
 
       <CategoryContainer>
-        {[...allCategories].map(cat => (
+        {allCategories.map(cat => (
           <CategoryButton
             key={cat}
             tabIndex={0}
             onClick={e => {
               e.preventDefault();
-              window.history.pushState({}, '', `/${cat}/`);
-              setCategory(cat === category ? null : cat);
+              const sameCategory = cat === category;
+              window.history.pushState(
+                {},
+                '',
+                sameCategory ? '/blog/' : `/${cat}/`,
+              );
+              setCategory(sameCategory ? null : cat);
             }}
             isSelected={cat === category}
             to={`/${cat}/`}
@@ -154,7 +153,7 @@ export default BlogPage;
 /* eslint no-undef: "off" */
 export const listingQuery = graphql`
   query Blogquery {
-    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
+    posts: allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
       edges {
         node {
           fields {
@@ -176,6 +175,9 @@ export const listingQuery = graphql`
           }
         }
       }
+    }
+    categories: allMarkdownRemark {
+      distinct(field: frontmatter___categories)
     }
   }
 `;
