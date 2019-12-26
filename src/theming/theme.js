@@ -17,7 +17,7 @@ const theme = {
     colorNegative: '#f1f1f1',
     navigationBg: '#fff',
     softHighlight: '#fafafa',
-    highlightColor: '#0a71e2',
+    highlightColor: '#1071dc',
   },
   dark: {
     isDark: true,

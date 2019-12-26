@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 export const NewsletterIframe = props => (
   <iframe
+    title='Subscribe to my newsletter'
     width={props.width || '100%'}
     height={props.height || '300px'}
     src='https://obedparla.substack.com/embed'

@@ -48,7 +48,7 @@ const IndexPage = props => {
                   margin-bottom: 4px;
                 `}
               >
-                I'm JavaScript engineer, bookworm and writer. Welcome to my
+                I'm a JavaScript engineer, bookworm and writer. Welcome to my
                 place in the internet, where you'll find my thoughts about
                 books, life's questions and the journey of being a developer.
               </p>

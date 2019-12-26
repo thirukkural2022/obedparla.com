@@ -4,6 +4,7 @@ import Layout from '../layout/Layout';
 
 import { siteTitle } from '../../data/SiteConfig';
 import { NewsletterIframe } from '../components/NewsletterIframe';
+import { css } from '@emotion/core';
 
 const AboutPage = () => {
   const age = new Date().getFullYear() - 2015;
@@ -12,13 +13,28 @@ const AboutPage = () => {
     <Layout>
       <Helmet title={`About me | ${siteTitle}`} />
 
-      <h1>About me</h1>
-      <p>
-        I'm Obed Parlapiano, I'm a JavaScript Engineer living in the beautiful
-        city of Budapest and working for a remote-first company called{' '}
-        <a href='heetch.com'>Heetch</a>. I'm an advocate for remote work, which
-        I believe makes life better.
-      </p>
+      <div css={{ display: 'flex', alignItems: 'center' }}>
+        <div>
+          <h1>About me</h1>
+          <p>
+            I'm Obed Parlapiano, I'm a JavaScript Engineer living in the
+            beautiful city of Budapest and working for{' '}
+            <a href='heetch.com'>Heetch</a>, a remote-first company. Which
+            turned me into an advocate for remote work, which I believe makes
+            people happier and more productive (ask me anything about this!).
+          </p>
+        </div>
+        <img
+          css={{
+            height: '150px',
+            width: 'auto',
+            borderRadius: '4px',
+            marginLeft: '20px',
+          }}
+          src='/myself.png'
+          alt='Obed Parlapiano'
+        />
+      </div>
 
       <h2>Books</h2>
       <p>
