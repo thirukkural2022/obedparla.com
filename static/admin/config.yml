@@ -4,7 +4,7 @@ backend:
   repo: obedparla/obedparla.com # Repo for pushing new commits. Make sure to replace with your repo!
 
 media_folder: content/images
-public_folder: public
+public_folder: content/posts
 
 collections:
   - name: blog
