@@ -5,7 +5,7 @@ This is the source code for my personal website and blog [obedparla.com](https:/
 It's a fully static site built with Gatsby.js that maximizes speed (both of the website and of development) and simplicity.
 
 ## Why?
-I've had my blog as a Wordpress website for more than 5 years and it sufficed, but a lot of the time I never improved it or added new features because I don't enjoy working with Wordpress, so I decided to move away from that into something I enjoy working with!
+I've had my blog as a Wordpress website for more than 5 years and it sufficed, but it was a barrier for me to easily modify my site or add new cool features, so I decided to move away from that into something I enjoy working with!
 
 I also wanted to showcase React projects without having to use a different domain or think too much about it. Which is complicated within Wordpress.
 
@@ -20,5 +20,7 @@ Simplicity rules.
 - [Prettier](https://github.com/prettier/prettier) - Don't think about how your code looks but how it works
 
 ## License
-
 Licensed under the MIT License. Feel free to use parts of the code in your own projects with attribution!
+
+Do keep in mind this is a personal website so it has a lot of modifications to the Gatsby Advanced Started theme.
+You'd be wiser to use that instead of trying to base work off this repo, but please feel free to use this as an inspiration!
