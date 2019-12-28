@@ -11,7 +11,7 @@ import {
 } from 'react-share';
 import urljoin from 'url-join';
 import config from '../../../data/SiteConfig';
-import './SocialLinks.css';
+import { StyledSocialLinks } from './styles';
 
 class SocialLinks extends Component {
   render() {
@@ -21,7 +21,7 @@ class SocialLinks extends Component {
     const iconSize = mobile ? 36 : 48;
 
     return (
-      <div className='social-links'>
+      <StyledSocialLinks>
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
@@ -38,7 +38,7 @@ class SocialLinks extends Component {
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
         </RedditShareButton>
-      </div>
+      </StyledSocialLinks>
     );
   }
 }

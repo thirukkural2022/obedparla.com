@@ -2,15 +2,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import styled from '@emotion/styled';
 
 import Layout from '../layout/Layout';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
-import './b16-tomorrow-dark.css';
 import { PostInfo } from '../components/PostInfo';
 import { NewsletterIframe } from '../components/NewsletterIframe';
+import { Article } from './styles';
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -61,16 +60,6 @@ export default class PostTemplate extends React.Component {
     );
   }
 }
-
-const Article = styled.article`
-  .gatsby-image-wrapper {
-    @media (${({ theme }) => theme.media.mobile}) {
-      img {
-        border-radius: 0;
-      }
-    }
-  }
-`;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
