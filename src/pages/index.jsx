@@ -103,7 +103,7 @@ export const listingQuery = graphql`
         node {
           fields {
             slug
-            date
+            date: fancyDate
           }
           timeToRead
           frontmatter {
@@ -129,7 +129,7 @@ export const listingQuery = graphql`
         node {
           fields {
             slug
-            date
+            date: fancyDate
           }
           timeToRead
           frontmatter {

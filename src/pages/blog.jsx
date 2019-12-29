@@ -157,7 +157,7 @@ export const listingQuery = graphql`
       edges {
         node {
           fields {
-            date
+            date: fancyDate
             slug
           }
           excerpt

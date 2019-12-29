@@ -12,6 +12,7 @@ const config = {
   googleAnalyticsID: 'UA-131360286-1', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
   dateFromFormat: 'YYYY-MM-DD', // Date format used in the frontmatter.
+  dateFancyFormat: 'MMMM Do, YYYY', // Date format used to stylize
   dateFormat: 'DD/MM/YYYY', // Date format for display.
   userEmail: 'obedparla@gmail.com', // Email used for RSS feed's author segment
   userTwitter: 'obedparla', // Optionally renders "Follow Me" in the UserInfo segment.

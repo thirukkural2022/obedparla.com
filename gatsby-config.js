@@ -77,7 +77,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-force-trailing-slashes',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -102,7 +101,13 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        navigateFallbackWhitelist: [/\/$/],
+      },
+    },
+    'gatsby-plugin-force-trailing-slashes',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

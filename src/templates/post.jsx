@@ -81,7 +81,7 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-        date
+        date: fancyDate
       }
     }
   }
