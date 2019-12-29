@@ -1,11 +1,22 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../layout/Layout';
+import styled from '@emotion/styled';
 
 import { siteTitle } from '../../data/SiteConfig';
 import { NewsletterIframe } from '../components/NewsletterIframe';
-import { css } from '@emotion/core';
 
+const AboutMe = styled.div`
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 150px;
+    width: auto;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+`;
 const AboutPage = () => {
   const age = new Date().getFullYear() - 2015;
 
@@ -13,7 +24,7 @@ const AboutPage = () => {
     <Layout>
       <Helmet title={`About me | ${siteTitle}`} />
 
-      <div css={{ display: 'flex', alignItems: 'center' }}>
+      <AboutMe>
         <div>
           <h1>About me</h1>
           <p>
@@ -24,17 +35,8 @@ const AboutPage = () => {
             people happier and more productive (ask me anything about this!).
           </p>
         </div>
-        <img
-          css={{
-            height: '150px',
-            width: 'auto',
-            borderRadius: '4px',
-            marginLeft: '20px',
-          }}
-          src='/myself.png'
-          alt='Obed Parlapiano'
-        />
-      </div>
+        <img src='/myself.png' alt='Obed Parlapiano' />
+      </AboutMe>
 
       <h2>Books</h2>
       <p>

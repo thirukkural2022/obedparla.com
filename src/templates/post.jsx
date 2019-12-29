@@ -10,6 +10,7 @@ import config from '../../data/SiteConfig';
 import { PostInfo } from '../components/PostInfo';
 import { NewsletterIframe } from '../components/NewsletterIframe';
 import { Article } from './styles';
+import { SpacingContainer } from '../components/styles';
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -29,9 +30,11 @@ export default class PostTemplate extends React.Component {
         <Article>
           {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
 
-          <h1 css={{ marginBottom: 0 }}>{post.title}</h1>
+          <SpacingContainer as='h1' marginBottom={0}>
+            {post.title}
+          </SpacingContainer>
 
-          <div css={{ marginBottom: '40px' }}>
+          <SpacingContainer marginBottom='40px'>
             <PostInfo
               date={postNode.fields.date}
               timeToRead={postNode.timeToRead}
@@ -40,14 +43,12 @@ export default class PostTemplate extends React.Component {
             <small>
               {post.categories.map((category, index) => (
                 <React.Fragment key={category}>
-                  <Link to={`/${category}/`} css={{}}>
-                    {category}
-                  </Link>
+                  <Link to={`/${category}/`}>{category}</Link>
                   {index < post.categories.length - 1 && ', '}
                 </React.Fragment>
               ))}
             </small>
-          </div>
+          </SpacingContainer>
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <hr />
           <NewsletterIframe margin={'0 0 1.4rem'} />

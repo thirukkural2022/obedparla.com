@@ -74,11 +74,8 @@ const BlogPage = props => {
   }, []);
 
   const postEdges = props.data.posts.edges;
-
   const allCategories = props.data.categories.distinct;
-
   const postFields = usePostFields(postEdges);
-
   const allPosts = React.useMemo(() => {
     let postList = postFields;
 
