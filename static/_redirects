@@ -1,3 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://obedparla.netlify.com/* https://obedparla.com/:splat 301!
 # Self development
 /self-development/how-to-learn-any-new-skill-in-20-hours-or-less    /thoughts/how-to-learn-any-new-skill-in-20-hours-or-less
 /self-development/how-to-find-meaning-and-happiness-in-our-lives    /thoughts/how-to-find-meaning-and-happiness-in-our-lives
