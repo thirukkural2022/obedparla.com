@@ -1,8 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
-import { useTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 
 import Layout from '../layout/Layout';
 import PostListing from '../components/PostListing/PostListing';
@@ -12,9 +11,18 @@ import { usePostFields } from '../hooks/usePostFields';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
 import { SimpleButton as ViewAll } from '../components/SimpleButton';
 import { NewsletterIframe } from '../components/NewsletterIframe';
+import { SpacingContainer } from '../components/styles';
+
+const IndexViewAll = styled(ViewAll)`
+  margin-left: 30px;
+  bottom: 3px;
+`;
+
+const H2 = styled.h2`
+  display: inline-block;
+`;
 
 const IndexPage = props => {
-  const theme = useTheme();
   const emoji = useRandomEmoji();
   const latestPostsEdges = props.data.latest.edges;
   const latestPosts = usePostFields(latestPostsEdges);
@@ -28,57 +36,32 @@ const IndexPage = props => {
         <div className='posts-container'>
           <Helmet title={siteTitle} />
           <SEO />
-          <div
-            css={css`
-              display: flex;
-              align-items: center;
-
-              iframe {
-                margin: 0;
-              }
-              @media (${theme.media.mobile}) {
-                flex-wrap: wrap;
-              }
-            `}
-          >
-            <div>
-              <h1>Hey, I'm Obed! {emoji}</h1>
-              <p
-                css={css`
-                  margin-bottom: 4px;
-                `}
-              >
-                I'm a JavaScript engineer, bookworm and writer. Welcome to my
-                place in the internet, where you'll find my thoughts about
-                books, life's questions and the journey of being a developer.
-              </p>
-            </div>
+          <div>
+            <h1>Hey, I'm Obed! {emoji}</h1>
+            <SpacingContainer as={'p'} marginBottom={'4px'}>
+              I'm a JavaScript engineer, bookworm and writer. Welcome to my
+              place in the internet, where you'll find my thoughts about books,
+              life's questions and the journey of being a developer.
+            </SpacingContainer>
           </div>
           <Link to='/about/'>
-            <small
-              css={css`
-                margin: 0;
-              `}
-            >
+            <SpacingContainer as={'small'} margin={0}>
               Who are you, again?
-            </small>
+            </SpacingContainer>
           </Link>
+
           <section>
-            <div css={{ marginBottom: '18px' }}>
-              <h2 css={{ display: 'inline-block' }}>Latest articles</h2>
-              <ViewAll to='/blog/' css={{ marginLeft: '30px', bottom: '3px' }}>
-                View all
-              </ViewAll>
-            </div>
+            <SpacingContainer marginBottom='18px'>
+              <H2>Latest articles</H2>
+              <IndexViewAll to='/blog/'>View all</IndexViewAll>
+            </SpacingContainer>
             <PostListing postList={latestPosts} />
           </section>
           <section>
-            <div css={{ marginBottom: '18px' }}>
-              <h2 css={{ display: 'inline-block' }}>Popular articles</h2>
-              <ViewAll to='/blog/' css={{ marginLeft: '30px', bottom: '3px' }}>
-                View all
-              </ViewAll>
-            </div>
+            <SpacingContainer marginBottom='18px'>
+              <H2>Popular articles</H2>
+              <IndexViewAll to='/blog/'>View all</IndexViewAll>
+            </SpacingContainer>
             <PostListing postList={popularPosts} />
           </section>
         </div>

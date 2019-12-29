@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
 import { ThemeContext } from '../../theming/ThemeContext';
 import { MobileHamburguer } from './components/MobileHamburguer';
 import { Container } from '../../layout/components/container';
@@ -37,24 +36,18 @@ const HeaderLink = styled.a`
 const Nav = styled.nav`
   position: sticky;
   top: 0;
-  height: 80px;
+  height: ${({ sticky }) => (sticky ? '60px' : '80px')};
   width: 100%;
-  background: ${({ theme }) => theme.backgroundColor};
+  background: ${({ sticky, theme }) =>
+    sticky ? theme.navigationBg : theme.backgroundColor};
   z-index: 10;
   transition: height 300ms ease;
+  box-shadow: ${({ sticky }) => sticky && 'rgba(0, 0, 0, 0.15) 0 1px 4px 0'};
 
   @media (${({ theme }) => theme.media.mobile}) {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
     height: 60px;
   }
-
-  ${props =>
-    props.sticky &&
-    css`
-      height: 60px;
-      background: ${props.theme.navigationBg};
-      box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px 0;
-    `}
 `;
 
 const MobileHeaderLink = styled(HeaderLink)`
@@ -73,7 +66,7 @@ const LinksContainer = styled.div`
   display: flex;
   align-items: center;
 
-  ${props => css`
+  ${props => `
     @media (${props.theme.media.mobile}) {
       position: fixed;
       top: 0;
@@ -96,8 +89,8 @@ const LinksContainer = styled.div`
 `;
 
 export const Header = () => {
-  const [isSticky, setIsSticky] = React.useState(false);
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const scrolledDown = window.scrollY > 25;
@@ -108,7 +101,7 @@ export const Header = () => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -142,27 +135,28 @@ export const Header = () => {
   );
 };
 
+const ToggleThemeButton = styled.button`
+  display: flex;
+  background: transparent;
+  border: none;
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+`;
+
 const ToggleTheme = () => {
-  const themeContext = React.useContext(ThemeContext);
+  const themeContext = useContext(ThemeContext);
 
   return (
-    <button
+    <ToggleThemeButton
       type='button'
       aria-label={`Switch to ${themeContext.darkMode ? 'light' : 'dark'} mode`}
-      css={css`
-        display: flex;
-        background: transparent;
-        border: none;
-
-        img {
-          width: 22px;
-          height: 22px;
-        }
-      `}
       onClick={themeContext.toggleDarkMode}
     >
       {themeContext.darkMode ? <SunIcon /> : <MoonIcon />}
-    </button>
+    </ToggleThemeButton>
   );
 };
 
