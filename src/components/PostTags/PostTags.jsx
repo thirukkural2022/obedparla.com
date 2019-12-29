@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import _ from "lodash";
-import { Link } from "gatsby";
+import React, { Component } from 'react';
+import _ from 'lodash';
+import { Link } from 'gatsby';
 
 class PostTags extends Component {
   render() {
     const { tags } = this.props;
     return (
-      <div className="post-tag-container">
+      <div className='post-tag-container'>
         {tags &&
           tags.map(tag => (
             <Link
               key={tag}
-              style={{ textDecoration: "none" }}
-              to={`/tags/${_.kebabCase(tag)}`}
+              style={{ textDecoration: 'none' }}
+              to={`/tags/${_.kebabCase(tag)}/`}
             >
-              <button type="button">{tag}</button>
+              <button type='button'>{tag}</button>
             </Link>
           ))}
       </div>

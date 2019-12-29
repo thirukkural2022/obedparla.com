@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
+import { useTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 
 import Layout from '../layout/Layout';
@@ -10,7 +11,6 @@ import { siteTitle } from '../../data/SiteConfig';
 import { usePostFields } from '../hooks/usePostFields';
 import { useRandomEmoji } from '../hooks/useRandomEmoji';
 import { SimpleButton as ViewAll } from '../components/SimpleButton';
-import { useTheme } from 'emotion-theming';
 import { NewsletterIframe } from '../components/NewsletterIframe';
 
 const IndexPage = props => {
@@ -54,7 +54,7 @@ const IndexPage = props => {
               </p>
             </div>
           </div>
-          <Link to='/about'>
+          <Link to='/about/'>
             <small
               css={css`
                 margin: 0;
@@ -66,7 +66,7 @@ const IndexPage = props => {
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Latest articles</h2>
-              <ViewAll to='/blog' css={{ marginLeft: '30px', bottom: '3px' }}>
+              <ViewAll to='/blog/' css={{ marginLeft: '30px', bottom: '3px' }}>
                 View all
               </ViewAll>
             </div>
@@ -75,7 +75,7 @@ const IndexPage = props => {
           <section>
             <div css={{ marginBottom: '18px' }}>
               <h2 css={{ display: 'inline-block' }}>Popular articles</h2>
-              <ViewAll to='/blog' css={{ marginLeft: '30px', bottom: '3px' }}>
+              <ViewAll to='/blog/' css={{ marginLeft: '30px', bottom: '3px' }}>
                 View all
               </ViewAll>
             </div>

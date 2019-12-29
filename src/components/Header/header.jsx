@@ -122,10 +122,10 @@ export const Header = () => {
           <MobileHeaderLink as={Link} to='/'>
             Home
           </MobileHeaderLink>
-          <HeaderLink as={Link} to='/blog'>
+          <HeaderLink as={Link} to='/blog/'>
             Articles
           </HeaderLink>
-          <HeaderLink as={Link} to='/about'>
+          <HeaderLink as={Link} to='/about/'>
             About
           </HeaderLink>
           <MobileHeaderLink href='https://twitter.com/obedparla'>
@@ -148,6 +148,7 @@ const ToggleTheme = () => {
   return (
     <button
       type='button'
+      aria-label={`Switch to ${themeContext.darkMode ? 'light' : 'dark'} mode`}
       css={css`
         display: flex;
         background: transparent;

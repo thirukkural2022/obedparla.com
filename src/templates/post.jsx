@@ -40,7 +40,7 @@ export default class PostTemplate extends React.Component {
             <small>
               {post.categories.map((category, index) => (
                 <React.Fragment key={category}>
-                  <Link to={`/${category}`} css={{}}>
+                  <Link to={`/${category}/`} css={{}}>
                     {category}
                   </Link>
                   {index < post.categories.length - 1 && ', '}
