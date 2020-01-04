@@ -12,11 +12,13 @@ const PostListing = ({ postList, isBig }) => {
           const ariaLabel = `Visit ${post.title}`;
           return (
             <PostItem key={post.path} isBig={isBig}>
-              <StyledLink to={post.path} isBig={isBig} aria-label={ariaLabel}>
-                {post.cover && post.cover.childImageSharp.fixed && (
-                  <Img fixed={post.cover.childImageSharp.fixed} />
-                )}
-              </StyledLink>
+              {post.cover && (
+                <StyledLink to={post.path} isBig={isBig} aria-label={ariaLabel}>
+                  {post.cover && post.cover.childImageSharp.fixed && (
+                    <Img fixed={post.cover.childImageSharp.fixed} />
+                  )}
+                </StyledLink>
+              )}
               <PostItemContent>
                 <StyledLink to={post.path} isBig={isBig} aria-label={ariaLabel}>
                   {post.cover && post.cover.childImageSharp.fluid && (
