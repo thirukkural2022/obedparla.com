@@ -17,8 +17,8 @@ const config = {
   userEmail: 'obedparla@gmail.com', // Email used for RSS feed's author segment
   userTwitter: 'obedparla', // Optionally renders "Follow Me" in the UserInfo segment.
   userAvatar: 'https://api.adorable.io/avatars/150/test.png', // User avatar to display in the author segment.
-  themeColor: '#ff6b45', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#e0e0e0', // Used for setting manifest background color.
+  themeColor: '#fff', // Used for setting manifest and progress theme colors.
+  backgroundColor: '#fff', // Used for setting manifest background color.
 };
 
 // Validate

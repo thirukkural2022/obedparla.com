@@ -101,13 +101,8 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        navigateFallbackWhitelist: [/\/$/],
-      },
-    },
     'gatsby-plugin-force-trailing-slashes',
+    'gatsby-plugin-remove-serviceworker',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
