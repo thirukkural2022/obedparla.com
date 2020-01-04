@@ -30,8 +30,9 @@ export const Article = styled.article`
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    background: #1d1f21;
+    background: #333334;
     color: #c5c8c6;
+    border-radius: 4px;
   }
 
   pre[class*='language-']::-moz-selection,
@@ -54,6 +55,7 @@ export const Article = styled.article`
     padding: 1em;
     margin: 0.5em 0;
     overflow: auto;
+    margin-bottom: 1.82rem;
   }
 
   :not(pre) > code[class*='language-'] {
