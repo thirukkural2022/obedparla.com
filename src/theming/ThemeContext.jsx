@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from 'emotion-theming';
 
 import theme from './theme';
 
 export const ThemeContext = React.createContext({});
 export const ThemeContextProvider = ({ children }) => {
-  const darkModePreference =
-    typeof window !== 'undefined' ? localStorage.getItem('oDarkMode') : false;
-  const [darkMode, setDarkMode] = useState(darkModePreference === 'true');
+  const [darkMode, setDarkMode] = useState(false);
 
   const contextValue = {
     theme,
@@ -17,6 +15,13 @@ export const ThemeContextProvider = ({ children }) => {
       setDarkMode(!darkMode);
     },
   };
+
+  useEffect(() => {
+    const darkModePreference =
+      typeof window !== 'undefined' ? localStorage.getItem('oDarkMode') : false;
+
+    setDarkMode(darkModePreference === 'true');
+  });
 
   return (
     <ThemeContext.Provider value={contextValue}>
