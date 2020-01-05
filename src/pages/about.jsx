@@ -18,7 +18,14 @@ const AboutMe = styled.div`
   }
 `;
 const AboutPage = () => {
-  const age = new Date().getFullYear() - 2015;
+  const today = new Date();
+  const birthDate = new Date('2015-09-18');
+  const m = today.getMonth() - birthDate.getMonth();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
 
   return (
     <Layout>
@@ -30,9 +37,9 @@ const AboutPage = () => {
           <p>
             I'm Obed Parlapiano, I'm a JavaScript Engineer living in the
             beautiful city of Budapest and working for{' '}
-            <a href='heetch.com'>Heetch</a>, a remote-first company. Which
-            turned me into an advocate for remote work, which I believe makes
-            people happier and more productive (ask me anything about this!).
+            <a href='heetch.com'>Heetch</a>, a remote-first company. This turned
+            me into an advocate for remote work, which I believe makes people
+            happier and more productive (ask me anything about this!).
           </p>
         </div>
         <img src='/myself.png' alt='Obed Parlapiano' />
@@ -40,9 +47,9 @@ const AboutPage = () => {
 
       <h2>Books</h2>
       <p>
-        Books are a big part of my life and one of my biggest passions. I'm{' '}
+        Books are a big part of my life and one of my greatest passions. I'm{' '}
         <i>always</i> up for a discussion about books. I try to read from 30 to
-        60 books every year and you can see this year books{' '}
+        60 books every year and you can see this year's books{' '}
         <a href='https://www.goodreads.com/user_challenges/16055659'>here</a>.
         This is the reason many of my articles are related to books I've read in
         one way or another. After all, the best source of knowledge are books.
@@ -58,14 +65,14 @@ const AboutPage = () => {
 
       <h2>This place</h2>
       <p>
-        This is my personal space in the internet. You'll find my articles, open
+        This is my personal space on the internet. You'll find my articles, open
         source projects and everything else I publish online that is worthwhile
         right here.
       </p>
 
       <p>
         There are three things that define me: my work as an engineer, the books
-        I read and my lovely {age} years old daughter.
+        I read and my lovely {age} year old daughter.
       </p>
 
       <h2>Freelancing</h2>

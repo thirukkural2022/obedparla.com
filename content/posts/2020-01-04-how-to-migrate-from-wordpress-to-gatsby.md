@@ -1,5 +1,5 @@
 ---
-title: 'Migrating 5 years of Wordpress to Gatsby'
+title: 'Migrating 5 years of WordPress to Gatsby'
 author: 'Obed Marquez Parlapiano'
 date: '2020-01-04'
 categories:
@@ -9,14 +9,14 @@ cover: '../images/gatsby_cover_image.png'
 ---
 
 Back in 2014, I had the incredible idea of starting a blog. At the time I never
-imagined I'd write over 120 articles in 5 years. My blog has become part of my
+imagined I'd write over 130 articles in 5 years. My blog has become part of my
 identity and a part I'm quite proud of.
 
 My web development experience in 2014 was limited. I had only written a few
 university assignments in C++ or PHP, so I decided to go for something simple
-and powerful: Wordpress.
+and powerful: WordPress.
 
-But now as an experienced web dev, I started to feel Wordpress was slowing me
+But now as an experienced web dev, I started to feel WordPress was slowing me
 down. I wanted a personal site, blog, and portfolio all in one. Somewhere I
 could show my open source projects as much as my articles and anything in
 between. So I decided to rewrite the whole thing to suit my needs.
@@ -25,12 +25,12 @@ between. So I decided to rewrite the whole thing to suit my needs.
 
 - **It must use React:** It's just great.
 - **Incredibly fast:** I'm a performance geek and fast websites are great. I
-  spent a lot of time optimizing my Wordpress site and didn't want to sacrifice
+  spent a lot of time optimizing my WordPress site and didn't want to sacrifice
   performance.
-- **Fun to develop and write on:** Writing and publishing in Wordpress are easy,
+- **Fun to develop and write on:** Writing and publishing in WordPress are easy,
   but developing for it isn't that much fun. I wanted something JavaScript
   based.
-- **Low maintenance required and low cost:** Wordpress hosting is cheap but I
+- **Low maintenance required and low cost:** WordPress hosting is cheap but I
   wanted cheaper.
 
 This list is the holy grail of websites: fast, fun to develop and cheap to
@@ -74,30 +74,30 @@ My favorite advantages of using Gatsby are:
   a PR to Gatsby's core? Since everything is in JS you can be part of the
   community. Gatsby has fantastic documentation too.
 
-## Migrating to Gatsby from 5 years of Wordpress
+## Migrating to Gatsby from 5 years of WordPress
 
-I've written all my articles in Wordpress since 2014 and I wanted all 120+ of
+I've written all my articles in WordPress since 2014 and I wanted all 130+ of
 them in my new blog. It was easier than I thought it would be.
 
 Here's how:
 
-### Using Wordpress data in Gatsby
+### Using WordPress data in Gatsby
 
 I thought this was going to be the most challenging part. I needed a way to use
-all articles living in Wordpress in Gatsby. However, Gatsby makes it effortless
+all articles living in WordPress in Gatsby. However, Gatsby makes it effortless
 to use data from popular platforms. By using a "source plugin" Gatsby
 automatically populates its Graphql store and gives you access to all your
 information. You can create or modify your own source plugins as well, if your
-platform of use doesn't have a source plugin (and make it OSS!).
+platform of use doesn't have a source plugin (and make it open source!).
 
 Graphql is a new way to get data from APIs, very different from the good old
 REST API. It's also an integral part of Gatsby as it was designed to be used
 with it. Although you can bypass Graphql entirely, it's strongly discouraged as
 you won't have access to some powerful features.
 
-After tinkering with the idea of keeping my articles in Wordpress I decided to
+After tinkering with the idea of keeping my articles in WordPress I decided to
 move everything into Markdown instead. It would make developing easier and I
-would completely rid myself of Wordpress. Markdown (**.md** files) allows you to
+would completely rid myself of WordPress. Markdown (**.md** files) allows you to
 write plain text and it's easy to transform into HTML. This article and all of
 Github's **README**s are written in Markup, for example.
 
@@ -109,15 +109,15 @@ be version controlled! They also allowed me to use
 SEO centric Gatsby websites. No one wants to reinvent the wheel and GAS helps
 you focus on developing your site and not the boring parts.
 
-### How to transform Wordpress posts into Markdown
+### How to transform WordPress posts into Markdown
 
-After exporting all articles from Wordpress I had to transform them into
+After exporting all articles from WordPress I had to transform them into
 Markdown. The best way to do this is with a tool, which you can find here:
-[Wordpress Export To Markdown](add my fork). I fined tuned it to extract all the
+[WordPress Export To Markdown](add my fork). I fined tuned it to extract all the
 content, categories, tags and other important information. It will also extract
 all of your post's images.
 
-Add the **export.xml** you got from Wordpress to the tool above and run:
+Add the **export.xml** you got from WordPress to the tool above and run:
 
 ```bash
  node index.js --postfolders=false --prefixdate=true
@@ -133,7 +133,7 @@ Gatsby uses "PHP like" routing, where each React component placed under the
 **pages** folder will automatically become a page in your site. Use this for
 one-time pages such as "about me" and "index".
 
-For dynamic content such as posts or categories, you can create "templates"
+For dynamic content such as posts or categories, you can create **templates**
 which Gatsby uses to create specific pages at build time. If you're using GAS
 these templates already exist for **posts**, **categories** and **tags**.
 Reading through them is a good way to understand how to create dynamic content
@@ -141,11 +141,11 @@ in Gatsby. You can modify any template or page and Gatsby will show the changes
 instantly in your browser, an important feature for fast iteration.
 
 The heart of Gatsby is in the **gatsby-node.js** file, where you specify the
-page's or "template's" behavior: its slug, component to be used, and any extra
-data you want to use. This file is also where you can populate your "nodes",
-which represent data in your Graphql store. With GAS this is are already taken
+page's or template's behavior: its slug, component to be used, and any extra
+data you want to use. This file is also where you can populate your **nodes**,
+which represent data in your GraphQL store. With GAS this is are already taken
 care of though, all you'll need is to understand
-[the basics of Graphql](https://www.gatsbyjs.org/docs/graphql-concepts/) in
+[the basics of GraphQL](https://www.gatsbyjs.org/docs/GraphQL-concepts/) in
 order to use that data in your components.
 
 [This site's source code](https://github.com/obedparla/obedparla.com) is open,
@@ -186,7 +186,7 @@ Heroku, AWS Amplify.
 
 ## Optimizing it!
 
-With Gatsby, your site will be faster than the default Wordpress install out of
+With Gatsby, your site will be faster than the default WordPress install out of
 the box, but you can improve it to make it even faster, more accessible and SEO
 friendly.
 
@@ -221,7 +221,7 @@ Speed is paramount on the internet. Users have come to expect fast-loading
 websites and even Google takes it into account for rankings. Gatsby sites are
 incredibly fast, but you need to follow some good practices to keep it that way:
 
-- **All data in Gatsby should go through Graphql or the page's context:** This
+- **All data in Gatsby should go through GraphQL or the page's context:** This
   allows Gatsby to render the pages statically, the way it works is that Gatsby
   is fetching and generating all data in Node during build time. This means you
   should avoid requesting data clientside (in your **useEffect** or
@@ -235,7 +235,7 @@ incredibly fast, but you need to follow some good practices to keep it that way:
 - **Let the server do the hard work:** Using the example above, if you need to
   modify dates with **moment** do it in **gatsby-node.js** and send that data as
   props to your pages rather than importing it directly in your components.
-- **Use less data:** Graphql makes it easy to get _only_ the data you need, but
+- **Use less data:** GraphQL makes it easy to get _only_ the data you need, but
   it's also simple to get too much of it by mistake. An example is being able to
   get every single article for an infinite-scrolling blog. Make sure the data
   you get is the data you need.
@@ -275,14 +275,10 @@ GAS takes care of the basics by adding metadata to your pages such as the
 If you've heard that "React is not good for SEO", worry not! What _could_ be bad
 for SEO is client-side-rendered apps, since Google might not be able to read
 your content, but with Gatsby all content is static, letting Google see it and
-"crawl" it.
+crawl it.
 
 ## Final words
 
 Since you've read all the way here I hope you've learned something and found
-this article helpful! I write content like this, code in general, books and more
-interesting topics. If that sounds interesting yo you consider
-[subscribing to my newsletter](/newsletter).
-
-Discuss this, or anything else with me
+this article helpful! Discuss this, or anything else with me
 [@obedparla](https://twitter.com/obedparla).
