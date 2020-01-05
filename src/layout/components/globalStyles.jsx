@@ -64,6 +64,18 @@ const GlobalStyles = () => {
           border-left: 0.2rem solid ${theme.highlightColor};
           padding-left: 1.5rem;
         }
+
+        .gatsby-resp-image-background-image {
+          border-radius: 4px;
+        }
+
+        figcaption {
+          text-align: center;
+          color: ${theme.isDark
+            ? 'rgba(241, 241, 241, 0.8)'
+            : 'rgba(0, 0, 0, 0.60)'};
+          margin-top: 5px;
+        }
       `}
     />
   );

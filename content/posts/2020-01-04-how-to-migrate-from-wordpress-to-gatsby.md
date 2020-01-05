@@ -36,7 +36,7 @@ between. So I decided to rewrite the whole thing to suit my needs.
 This list is the holy grail of websites: fast, fun to develop and cheap to
 maintain, what could tick all the boxes?
 
-![gatsby is fast](../images/obedparla_speed_100.png)
+![Showing 100 score in google speed test for obedparla.com](../images/obedparla_speed_100.png 'This site is now faster')
 
 ### The perfect match: Gatsby
 
@@ -264,7 +264,7 @@ Google) like the following:
 - That shows up in other parts of the internet
 - And follow certain guidelines
 
-![Google controls the search engine market](../images/search-engine-market-share-q2-2019.jpg)
+![Google market share as per Q2 2019, showing 94%](../images/search-engine-market-share-q2-2019.jpg 'Google controls the search engine market')
 
 There are tools to help you with SEO but since Google doesn't fully disclose
 what they rank for, they're closer to guidelines and good practices than
