@@ -40,8 +40,8 @@ const IndexPage = props => {
             <h1>Hey, I'm Obed! {emoji}</h1>
             <SpacingContainer as={'p'} marginBottom={'4px'}>
               I'm a JavaScript Engineer, bookworm and writer. Welcome to my
-              place in the internet, where you'll find my thoughts about books,
-              life's questions and the journey of being a developer.
+              place on the internet, where you'll find candid thoughts about
+              books, web development and life's questions.
             </SpacingContainer>
           </div>
           <Link to='/about/'>

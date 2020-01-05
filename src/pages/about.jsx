@@ -65,20 +65,20 @@ const AboutPage = () => {
 
       <h2>This place</h2>
       <p>
-        This is my personal space on the internet. You'll find my articles, open
-        source projects and everything else I publish online that is worthwhile
-        right here.
+        This is my personal space on the internet. You'll find my articles
+        open-source projects and everything else I publish online that is
+        worthwhile right here.
       </p>
 
       <p>
-        There are three things that define me: my work as an engineer, the books
-        I read and my lovely {age} year old daughter.
+        Three things define me: my work as an engineer, the books I read and my
+        lovely {age} year old daughter.
       </p>
 
       <h2>Freelancing</h2>
       <p>
         I'm a part-time freelancer working on a wide variety of projects,
-        helping people become better engineers. If you'd like to woth with me{' '}
+        helping people become better engineers. If you'd like to work with me{' '}
         <a href='mailto:obedparla@gmail.com'>get in touch</a>.
       </p>
 
