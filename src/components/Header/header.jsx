@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import { MobileHamburguer } from './components/MobileHamburguer';
 import { Container } from '../../layout/components/container';
-import { useTheme } from 'emotion-theming';
+import { ThemeContext } from '../../theming/ThemeContext';
 
 const StyledHeader = styled(Container)`
   display: flex;
@@ -148,7 +148,7 @@ const ToggleThemeButton = styled.button`
 `;
 
 const ToggleTheme = () => {
-  const themeContext = useTheme();
+  const themeContext = useContext(ThemeContext);
 
   return (
     <ToggleThemeButton

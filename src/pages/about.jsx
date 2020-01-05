@@ -59,8 +59,8 @@ const AboutPage = () => {
       <p>
         I'm a professional mentor at{' '}
         <a href='https://www.thinkful.com/'>Thinkful</a> and{' '}
-        <a href='https://www.bloc.io/'>Bloc.io</a> where I help others to learn
-        the craft of software development.
+        <a href='https://www.bloc.io/'>Bloc.io</a> where I help others learn the
+        craft of software development.
       </p>
 
       <h2>This place</h2>
