@@ -113,9 +113,9 @@ you focus on developing your site and not the boring parts.
 
 After exporting all articles from WordPress I had to transform them into
 Markdown. The best way to do this is with a tool, which you can find here:
-[WordPress Export To Markdown](add my fork). I fined tuned it to extract all the
-content, categories, tags and other important information. It will also extract
-all of your post's images.
+[WordPress Export To Markdown](https://github.com/obedparla/wordpress-export-to-markdown).
+I fined tuned it to extract all the content, categories, tags and other
+important information. It will also extract all of your post's images.
 
 Add the **export.xml** you got from WordPress to the tool above and run:
 
