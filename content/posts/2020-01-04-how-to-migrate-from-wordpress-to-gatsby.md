@@ -68,8 +68,8 @@ My favorite advantages of using Gatsby are:
 - **No errors:** since all pages are generated at build time, your site won't
   crash due to bugs. If it builds, it works!
 - **Plug-and-play:** there are
-  [over 1500 plugins](<[https://www.gatsbyjs.org/plugins/](https://www.gatsbyjs.org/plugins/)>)
-  to make your life easier, from Google Analytics to offline support and SEO.
+  [over 1500 plugins](https://www.gatsbyjs.org/plugins/) to make your life
+  easier, from Google Analytics to offline support and SEO.
 - **It's all JavaScript:** having an error? A plugin misbehaving? Want to submit
   a PR to Gatsby's core? Since everything is in JS you can be part of the
   community. Gatsby has fantastic documentation too.
