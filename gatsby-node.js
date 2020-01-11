@@ -25,17 +25,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       } else {
         slug = `/${_.kebabCase(node.frontmatter.title)}/`;
       }
-    } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
-      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-    } else if (parsedFilePath.dir === '') {
-      slug = `/${parsedFilePath.name}/`;
-    } else {
-      slug = `/${parsedFilePath.dir}/`;
     }
 
     if (Object.prototype.hasOwnProperty.call(node, 'frontmatter')) {
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug'))
         slug = `/${_.kebabCase(node.frontmatter.slug)}/`;
+
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, 'date')) {
         const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
         if (!date.isValid)
@@ -47,6 +42,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
           value: moment(date, siteConfig.dateFromFormat).format(
             siteConfig.dateFancyFormat,
           ),
+        });
+
+        createNodeField({
+          node,
+          name: 'fileName',
+          value: parsedFilePath.name,
         });
 
         createNodeField({ node, name: 'date', value: date.toISOString() });

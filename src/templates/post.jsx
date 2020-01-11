@@ -12,55 +12,55 @@ import { NewsletterIframe } from '../components/NewsletterIframe';
 import { Article } from './styles';
 import { SpacingContainer } from '../components/styles';
 
-export default class PostTemplate extends React.Component {
-  render() {
-    const { data, pageContext } = this.props;
-    const { slug } = pageContext;
-    const postNode = data.markdownRemark;
-    const post = postNode.frontmatter;
+const PostTemplate = props => {
+  const { data, pageContext } = props;
+  const { slug } = pageContext;
+  const postNode = data.markdownRemark;
+  const post = postNode.frontmatter;
+  const { fancyDate, fileName } = postNode.fields;
+  const githubLink = `${config.repo}/blob/master/content/posts/${fileName}.md`;
 
-    return (
-      <Layout>
-        <Helmet
-          title={`${post.title} | ${config.siteTitle}`}
-          description={postNode.excerpt}
-        />
+  return (
+    <Layout>
+      <Helmet
+        title={`${post.title} | ${config.siteTitle}`}
+        description={postNode.excerpt}
+      />
+      <SEO postPath={slug} postNode={postNode} postSEO />
+      <Article>
+        {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
 
-        <SEO postPath={slug} postNode={postNode} postSEO />
-        <Article>
-          {post.cover && <Img fluid={post.cover.childImageSharp.fluid} />}
+        <SpacingContainer as='h1' marginBottom={0}>
+          {post.title}
+        </SpacingContainer>
 
-          <SpacingContainer as='h1' marginBottom={0}>
-            {post.title}
-          </SpacingContainer>
-
-          <SpacingContainer marginBottom='40px'>
-            <PostInfo
-              date={postNode.fields.date}
-              timeToRead={postNode.timeToRead}
-            />
+        <SpacingContainer marginBottom='40px'>
+          <PostInfo date={fancyDate} timeToRead={postNode.timeToRead} />
+          <small>
             {' - '}
-            <small>
-              {post.categories.map((category, index) => (
-                <React.Fragment key={category}>
-                  <Link to={`/${category}/`}>{category}</Link>
-                  {index < post.categories.length - 1 && ', '}
-                </React.Fragment>
-              ))}
-            </small>
-          </SpacingContainer>
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          <hr />
-          <NewsletterIframe margin={'0 0 1.4rem'} />
+            {post.categories.map((category, index) => (
+              <React.Fragment key={category}>
+                <Link to={`/${category}/`}>{category}</Link>
+                {index < post.categories.length - 1 && ', '}
+              </React.Fragment>
+            ))}
+            {' - '}
+            <a href={githubLink}>Edit on Github</a>
+          </small>
+        </SpacingContainer>
+        <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        <hr />
+        <NewsletterIframe margin={'0 0 1.4rem'} />
 
-          <div className='post-meta'>
-            <SocialLinks postPath={slug} postNode={postNode} />
-          </div>
-        </Article>
-      </Layout>
-    );
-  }
-}
+        <div className='post-meta'>
+          <SocialLinks postPath={slug} postNode={postNode} />
+        </div>
+      </Article>
+    </Layout>
+  );
+};
+
+export default PostTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -82,7 +82,8 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-        date: fancyDate
+        fancyDate
+        fileName
       }
     }
   }

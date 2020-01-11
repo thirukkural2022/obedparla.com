@@ -4,6 +4,7 @@ author: 'Obed Marquez Parlapiano'
 date: '2020-01-04'
 categories:
   - code
+  - popular
 tags: ''
 cover: '../images/gatsby_cover_image.png'
 ---

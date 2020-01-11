@@ -23,7 +23,7 @@ const Footer = () => (
           Follow me on Twitter
         </FooterLink>
         <FooterLink
-          href='https://github.com/obedparla'
+          href={config.repo}
           target='_blank'
           rel='noreferrer nofollow'
         >

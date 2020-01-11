@@ -37,9 +37,10 @@ const AboutPage = () => {
           <p>
             I'm Obed Parlapiano, I'm a JavaScript Engineer living in the
             beautiful city of Budapest and working for{' '}
-            <a href='heetch.com'>Heetch</a>, a remote-first company. This turned
-            me into an advocate for remote work, which I believe makes people
-            happier and more productive (ask me anything about this!).
+            <a href='https://heetch.com'>Heetch</a>, a remote-first company.
+            This turned me into an advocate for remote work, which I believe
+            makes people happier and more productive (ask me anything about
+            this!).
           </p>
         </div>
         <img src='/myself.png' alt='Obed Parlapiano' />

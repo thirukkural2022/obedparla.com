@@ -19,6 +19,7 @@ const config = {
   userAvatar: 'https://api.adorable.io/avatars/150/test.png', // User avatar to display in the author segment.
   themeColor: '#fff', // Used for setting manifest and progress theme colors.
   backgroundColor: '#fff', // Used for setting manifest background color.
+  repo: 'https://github.com/obedparla/obedparla.com',
 };
 
 // Validate
