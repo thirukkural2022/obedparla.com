@@ -713,6 +713,61 @@ limitless energy and ideas for the team he was building. I was sold.
 
 I accepted the job a few days after moving to Hungary, Budapest, where we've
 been since June. The final salary was 62k plus some cool benefits. That was a
-41% increase from my previous 44k salary. The taxes I was going to pay in
-Hungary as a contractor were also a bit lower than what I would've paid being
-hired in Malta.
+41% increase from my previous 44k salary.
+
+### Third quarter
+
+Moving to Budapest was great. The city is beautiful, the people are nice and
+theres just _so much green_ everywhere. I grow up surrounded by mountains and I
+had really missed that.
+
+I started working at Heetch and started to discover the wonders of working from
+home. I absolutely love it and I've learned a lot from it. Communication is very
+different when you can't tap on someone's shoulder to ask a question. Heetch
+itself is incredibly different from the companies I've worked on before. I even
+made an article
+[about my first week's experience](https://obedparla.com/thoughts/my-first-week-at-a-remote-first-company/).
+
+I travelled to Paris during this time and fell in love with the city. It's the
+city with the best vibe I've ever seen, with people filling the restaurants and
+bars at _any time of day_ and the most good looking people I've ever seen. "The
+city of love" is a well earned title.
+
+### The last part of the decade
+
+The rest of 2019 was, thankfully, more chill. Nothing major happened and yet it
+felt like a lifetime. I can't imagine having to work in an office, or having
+endless, meaningless meetings.
+
+My daughter talks fluent Hungarian now and I can barely understand a few
+sentences, but at least the lady in the bakery nearby knows I always buy their
+amazing apple pies.
+
+In December I went to my first conference ever and loved it. It was a great
+experience and I got to see two of my friends from Malta. I decided to become a
+conference speaker in 2020 as a result.
+
+## From a boy to a man.
+
+In 2010 I was a 17 year old boy finishing highschool, with no idea about the
+world or what to do with my life, living in a country doomed to failure and with
+a bit of an addiction to video games.
+
+I would be so proud of myself if I had known that 10 years later I'd have a 4
+year old daughter, lived in a vibrant European city, a great job, and a peaceful
+life overall. Life is good and I'm happy of all the decisions I've taken (or not
+taken) to get here. I'm sure a lot of it has been due to sheer luck, but I've
+also worked very hard for everything I have.
+
+If I have learned anything in the last 10 years is a simple thing, no matter how
+cheesy it is, the most important thing is to believe in yourself. Had I not
+believed in myself everything I've achieved would've been so much harder and
+even impossible.
+
+I'm lucky to be Italian and be able to live in Europe, to be white, to be
+healthy and educated, but I also know a lot of people that as just as lucky or
+even more and that don't use that luck for anything worthwhile. We are as good
+as we hope to be. The only person we should compete with is ourselves.
+
+Luck is when preparation meets opportunity. Let's see what this decade has in
+store, and hopefully I'll be prepared for it.
