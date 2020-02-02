@@ -135,8 +135,8 @@ state inside the render method will cause your component to explode, since it's
 updating, re-creating, updating again and so son.
 
 The way I think about this is that whenever state changes, the original box is
-thrown away and a new one is created in it's place. JavaScript or React can try
-to optimize this, but I don't care about that because it doesn't affect the way
-I have to think about it.
+thrown away and a new one is created in it's place. JavaScript or React might
+optimize it, but I don't care about that because it doesn't affect the way I
+have to think about it.
 
 Thinking about it this way helps a lot with bugs.
