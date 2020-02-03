@@ -110,7 +110,7 @@ box, only whatever is inside of it can access it.
 Sounds familiar? A React component is a closure, a box. You can only pass props
 down from parent to child. It's boxes all the way down!
 
-## Giving our boxes a name
+## Giving our boxes a name: Component.
 
 Now let's advance our mental model: let's think about React components. What is
 a component? Another box. Seriously, if you take anything from this talk it's
@@ -139,4 +139,43 @@ thrown away and a new one is created in it's place. JavaScript or React might
 optimize it, but I don't care about that because it doesn't affect the way I
 have to think about it.
 
-Thinking about it this way helps a lot with bugs.
+Thinking about it this way helps a lot with bugs and I find it to be crucial to
+understand how and when to optimize a component.
+
+## When the boxes get too slow
+
+Speed is important for everyone, something to understand is that thrashing our
+boxes and recreating them, or in React jargon re-rendering our components is
+incredibly cheap in terms of resources. But sometimes our components get complex
+enough, or are created in such a way that they become slow. Having a good mental
+model makes improving performance a lot easier.
+
+Whenever a component is re-rendered some information inside of it isn't lost.
+The state of the component is safe because React keeps track of it. This is
+especially true for Functional components, but I find that using the same mental
+model for Class-based components works as well.
+
+--- Put code that reflects a slow-rendering component. Kent C Doods code could
+be useful here. ---
+
+--- Explain code and then change to a visual representation of it ---
+
+A lot of performance issues come from misunderstanding how React will threat a
+component or group of components. Improving upon the mental model so far, a box
+can have many boxes inside of it, but whenever the parent box is thrased, all
+its children get trashed as well and then re-created. Again, this happens
+incredibly fast, but if you have too many of them, or the user needs constant
+feedback, for example when they're entering text in an input field, then
+re-rendering so many elements so fast will be slow enough for the user to
+notice, and _you never want the user to notice!_.
+
+The simplest way to improve performance? Co-locate your state in such a way that
+only the required components are re-rendered. In other words, change the way
+your boxes connect to each other, so that they only have to be re-created when
+it's absolutely necessary.
+
+--- Show fixed code and fixed visual ---
+
+## When our boxes get too complex
+
+talk about useEffect
