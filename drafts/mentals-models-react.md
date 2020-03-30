@@ -1,5 +1,3 @@
-# A Visual Guide To React Mental Models
-
 ## About me
 
 Obed Parlapiano
@@ -7,46 +5,47 @@ Obed Parlapiano
 - Senior Frontend Engineer at Heetch. Reimagining a legacy platform to serve the
   organization better
 - Writer at obedparla.com
-- Mentor Thinkful.com - where I've helped dozens of students understand code
+- Mentor Thinkful.com - where I've helped dozens of students learn to code
 
 ## The real difference between experts and newcomers
 
 I've been coding for over 10 years, and something I've learned is that
-_everyone_ is learning how to code, to different degrees. Newcomers to the field
+_everyone_ is learning how to code in a different level. Newcomers to the field
 are learning the basics, and seasoned engineers are learning how to do the
-basics in the absolute best way possible.
+basics the best way possible.
 
 Something I've come to realize is that the biggest difference between someone
 that has mastered a language, framework or tool and someone that hasn't lies not
 in the fact that they know the language's syntax, have read the source code, or
-know all the usecases, but instead in the _mental models_ they use to understand
-the language, framework or tool.
+know all the use-cases, but instead in the _mental models_ they use to
+understand the language, framework or tool.
 
-## So what's a mental model and why is so important?
+## What's a mental model and why is it so important?
 
 A mental model is someone's thought process that represents the way something
-works in the real world. It connects the relationships between varios parts of a
-system and makes sense of it, so that you get an intuitive understanding of that
-system.
+works in the real world. It connects the relationships between various parts of
+a system and makes sense of it, so that you get an intuitive understanding of
+that system.
 
 That sounds very fancy, a simpler a more down-to-earth explanation is to imagine
 the way you think about cars. Most of us don't know the exact mechanical
-principles that make a car work. I don't know what torque is, or the equation
-for acceleration or velocity. I mean I can google it, but I don't need any of it
-in order to drive every day.
+principles that make a car work. I don't know what torque is, or remember the
+equation for acceleration or velocity. I mean I can google it and learn, but I
+don't need any of it in order to drive my car.
 
-I intuitively understand how a car works. I have a mental model of it in my
-mind. If I press the gas pedal it will start accelerating, the harder I press it
-the faster it will do it. It's dangerous if I do it too fast as well as if I
-brake too fast. My driving instructor didn't teach me how a motor works, but
-instead how to know when to switch from first to second.
+That's because I intuitively understand how a car works. I have a mental model
+of it in my mind. If I press the gas pedal it will start accelerating, the
+harder I press it the faster I'll move. It's dangerous if I do it too fast as
+well as if I brake too fast. My driving instructor didn't teach me how a motor
+works, but instead how to know when to switch from first to second gear, "feel
+the car" and all that juju.
 
-The way we teach code isn't always like this. We focus on syntax, and how
-something works, rather than creating a good picture in our minds about a piece
-of the puzzle so that we don't have to figure it out ever again.
+We don't teach code this way. We focus on syntax, and how something works,
+rather than creating a good picture in our minds about a piece of the puzzle so
+that we don't have to figure it out ever again.
 
 Do you remember trying to learn something new, but it just didn't make sense and
-you ended up copying some code from StackOverflow instead? But slowly, as you
+you ended up copying some code from StackOverflow instead? And slowly, as you
 used it more and more, you somehow got to understand it? That's your mind
 building a mental model about it. Everything we understand we do through mental
 models, from code, to physics.
@@ -63,12 +62,30 @@ working with React for years or are just starting, I will show you the Mental
 Models I use with React every day that help me to solve, explain and debug even
 the hardest of problems.
 
+Something important I've learned is that having a _mostly_ correct overall
+picture is enough to be great at what you do. Trying to learn the ins and outs
+of a system can lead you into a rabbit hole without offering much return of
+investment on your time. Instead focus on understanding just enough to
+_correctly_ solve a problem, and then subsequently polish that knowledge.
+
+I think the best example of this is when I started learning React. First I was
+overwhelmed by how many things I supposedly had to learn: Webpack, Babel, React,
+Redux. Back then every single React guide had Redux slapped on its title as
+well. I was lucky to learn only React, and I was working with React
+profesionally for over a year before ever having to touch anything close to
+Redux. To this day I don't really know Redux and I don't need to. I have a
+close-enough mental model of how it works that I can jump into a project with
+Redux and be effective at it. If I had to implement it in my team's app for some
+reason, then I should improve my mental models, but until then, why bother? I
+rather learn X State or something.
+
 ## It's functions all the way down
 
-There's a story about an astronomer, that after a lecture was told by an elderly
-lady that he had it all wrong, that the world actually rested on top of a
-tortoise. When the astronomer cleverly replied "and what supports the tortoise?"
-she lady replied: "it's turtles all the way down!"
+There once was a famous astronomer, one day after giving one of his lectures, an
+elderly lady told him that he had it all wrong, that the world actually rested
+on top of a tortoise. When the astronomer cleverly replied "and what supports
+the tortoise?" she replied: "very clever, but it's obviously turtles all the way
+down!"
 
 React is functions all the way down! Every component is a function, that calls
 more functions, that can in turn ... well ... call more functions! And props are
@@ -84,8 +101,10 @@ have to build them up from the ground up.
 
 Something important to note: I'm a visual person, and we all are to different
 levels, so when I think about a problem I see it visually in my mind and I try
-to solve it visually, like machine gears turning and fitting together. You'll
-see a representation of how I imagine functionality right here.
+to solve it visually, as if my code was made of machine gears turning and
+fitting together. I'll show you a visual representation of how I imagine code
+works, and I hope it helps you build your own mental models to tackle the
+difficulties of everyday React.
 
 ## Closures are fancy boxes
 
@@ -144,25 +163,6 @@ it.
 Imagining it this way helps me a lot when coding new features, fixing bugs, or
 optimizing performance. It also help to grasp complex components.
 
-## Not sure where to place the following:
-
-Something important I've learned is that having a _mostly_ correct overall
-picture is enough to be great at what you do. Trying to learn the ins and outs
-of a system can lead you into a rabbit hole without offering much return of
-investment on your time. Instead focus on understanding just enough to
-_correctly_ solve a problem, and then subsequently polish that knowledge.
-
-I think the best example of this is when I started learning React. First I was
-overwhelmed by how many things I supposedly had to learn: Webpack, Babel, React,
-Redux. Back then every single React guide had Redux slapped on its title as
-well. I was lucky to learn only React, and I was working with React
-profesionally for over a year before ever having to touch anything close to
-Redux. To this day I don't really know Redux and I don't need to. I have a
-close-enough mental model of how it works that I can jump into a project with
-Redux and be effective at it. If I had to implement it in my team's app for some
-reason, then I should improve my mental models, but until then, why bother? I
-rather learn X State or something.
-
 ## When our boxes get too complex
 
 My favorite addition to React Hooks was `useEffect`, it's also the one I had the
@@ -212,7 +212,7 @@ I mean it makes sense doesn't it? Do you get out of bed butt naked and go
 straight to the window? No, of course not, who does that? You put a bathrobe at
 least, and then check the weather to put on the right clothes.
 
-This are just examples of course, but they help me to illustrate the mental
+These are just examples of course, but they help me to illustrate the mental
 model I have in mind when thinking about problems. Do you want your user to see
 a blank page for even an instant? Do you want some static icons or images to
 show without context and without data? That's why we have our famous "loading
@@ -250,8 +250,8 @@ sizes. As I mentioned, there's always more to learn.
 ## Rendering: dressing up
 
 If I had to mention a single place where React's magic lies is in the Render
-part of it. Being able to map through arrays and filter and do so many things
-right where we show the content to the user is brilliant.
+method. Being able to map through arrays and filter and do so many things right
+where we show the content to the user is brilliant.
 
 The rendering part of our component is the easier to map to a model. Whatever
 the function returns will be executed by React. This means the JSX turns into
@@ -267,9 +267,9 @@ user won't see conditional statements, or for loops. They see HTML in the web,
 or something alike with React-native and so on. So can I make sense of all that
 logic?
 
-Since JSX is syntaxtic sugar for JavaScript, and it gets transformed into
+Since JSX is syntactic sugar for JavaScript, and it gets transformed into
 regular functions when they're compiled, I use the same mental models I've shown
-you so far. What your component is returning isn't HTML, it's other functions
+you so far. What the component is returning isn't HTML, it's other functions
 that will tell React what HTML it should create. But again, we don't care about
 the details, what matters is that everything inside your render method behaves
 just like a function does. It gets evaluated in the same way.
@@ -286,14 +286,13 @@ year in a workshop with Max Stoiber and I was mind-blown! I know I could call a
 function in JSX and get JSX back, but having an actual closure inside? Doing
 actual logic? Amazing!
 
-I mean, I've never seen this code --point to code-- being used anywhere,
-probably because it's a terrible idea, but because of it I had an incomplete
-mental model at my disposal, which proves just how far you can get without
-knowing everything.
+I've never seen this code --point to code-- being used anywhere before but
+because of it I had an incomplete mental model of JSX. This proves how missing
+certain pieces of the puzzle doesn't have to hinder you. I improved my mental
+model but I won't use that particular code anytime soon.
 
-To finish up with my point about the render part: the way I imagine it is
-simple, it's a function, it gets evaluated, and whatever it ends up returning
-React will convert into HTML.
+In conclussion: the way I imagine rendering is that it's a function that gets
+evaluated and whatever it returns React will execute and convert into HTML.
 
 Knowing this, these code samples make sense:
 
@@ -306,26 +305,24 @@ elements without a parent.
 --- Show code of elements trying to be returned without a parent and the React
 error message ---
 
-How should React try to solve this? Run a bunch of functions in parallel? I
-don't know. It's far easier if everything _always_ has a parent. That enables it
-to run one function inside another one. Or a box within a box within a box, and
-you know, it's boxes all the way down.
+How should React try to solve this? It's far easier if everything _always_ has a
+parent. That enables React to run one function inside another. Or a box within a
+box within a box, and you know, it's boxes all the way down.
 
 ## Rerendering: we all deserve a second⁽ᴺ⁾ chance
 
-After a component is mounted and rendered, it most likely will be re-rendered,
-many, many times. This is the hardest part to understand and the one that comes
-with most pitfalls.
-
-Re-rendering doesn't make our component behave any differently, the same mental
-model that applies to rendering applies to it too. However a few things a bit
-different. I think our mind can keep track of something happening for the first
-time with ease, but following when something happens many times and very quickly
-is challenging.
+After a component is mounted and rendered, it will likely re-render many times.
+For me this was the hardest part to understand and the one that came with most
+pitfalls, that's because re-rendering doesn't make our component behave any
+differently, the same mental model that applies to rendering applies to this
+part too. However a few things are different.
 
 Whenever a component re-renders, _everything_ inside of it will be re-run. All
 the logic is re-evaluated. All the conditionals are checked again, variables are
 re-assigned, functions re-created.
+
+// I don't like this explanation, I think the "throw the box away" idea is
+better
 
 So the way I think about re-rendering in my mental model, is to imagine my box
 being updated, it's washed of everything it currently has and is left sparkling
@@ -346,44 +343,43 @@ purpose, it's equivalent to just calling the function right away --- show code
 ---.
 
 By using my mental model of "everything gets re-created" I feel safer in knowing
-that even the functions are brand new every time. This is what allows us to do
-stuff like having variables as flags that reflect a change in state: --- show
-code ---.
+that the functions are brand new every time. This is what allows us to do stuff
+like having variables as flags that reflect a change in state: --- show code
+---.
 
 With that in mind, there are some things that we need to hone down this mental
 model.
 
-### useMemo and useCallback - because functions want to live too
+### useMemo and useCallback - preventing functions from being recreated
 
 Memoization is a scary word but it basically means to remember or to memorize.
 By using these two hooks we ask React to please remember our function and to
 avoid creating it again in each render. If I have these in my code, then I know
 that whatever function or code if inside of them, won't be recreated again and I
-can trust it to stay the same. It's not a guarantee that it will do so, as we
-all know, memory is not super reliable and so React might forget about them and
-recreate them.
+can trust it to stay the same. It's not a guarantee that it will do so since
+React might forget about it and re-create for multiple reasons.
 
 So the code from before becomes: --- show code --- and it makes sense this time.
 
 But what happens when our components get a bit out of hand? If you've ever had a
-slow React app, it probably was caused by either components that rendered too
-slowly, or components that rendered far too often.
+slow React app, it probably was caused by components that rendered too slowly,
+or components that rendered far too often.
 
-In my experience slow components aren't that common, but ones that render too
-often, or too many times? That's a different story.
+In my experience, slow components aren't that common, but ones that render too
+often, or too many times are _very_ common.
 
 ### Too many renders = slow app
 
 Did you ever create a controlled input in React, and by controlled I mean that
-the input's value, or information, is stored in state rather than by the form
-itself, just to notice that entering data into the input was super, duper, slow?
-And then Googled, or duck-duck-goed for the privacy activists here, "React
+the input's value, is stored in state rather than by the form itself, just to
+notice that entering data into the input was super slow? And then Googled "React
 controlled input too slow", and ended up in some Stack Overflow plus React Docs
 rabbit hole that made you realize every decision you ever took in your entire
-life led to this very moment? I know I have!
+life led to this very moment? I know I have, and I didn't quite understand why
+it happened and how to avoid it.
 
-React is _fast_, and this issue is usually caused by having state in the wrong
-place.
+The thing is that React is _fast_, this issue is usually caused by having state
+in the wrong place, which is to say it's the code's fault and not React's.
 
 --- Put code that reflects a slow-rendering component. Kent C Doods code could
 be useful here. ---
@@ -401,9 +397,13 @@ arrange our boxes in such a way as to tell React: "hey, this data is only
 relevant to this few boxes, leave the other ones alone".
 
 Remember, React updates our boxes from outside-in, or top-to-bottom depending on
-how you imagine it. I've seen this expressed as a tree, with each subsequent box
-being a branch, but as I've shown you I like to imagine it more as a Russian
-doll, with many boxes inside one another.
+how you imagine it. The most common way to expressed it is as a tree, with each
+subsequent box being a branch, but as I've shown you I like to imagine it more
+as a Russian doll, with many boxes inside one another. The idea of a tree is
+very helpful when you're dealing with many components side-by-side rather than
+one inside another.
+
+--- Show React tree, there must be a good image somewhere ---
 
 Right now this is our code: --- show code of input state with many boxes inside
 --- every state change causes all components to re-render, since React doesn't
@@ -416,12 +416,6 @@ visually now: --- add visual ---
 --- nice comparison, Russian doll is very close to how I think of it, maybe
 worth updating above to make this reference before ---
 
-Sow now I've shown you the way I think about boxes being born, boxes getting
-dressed, what happens when The Lord Of The Boxes decides to put them to _ehem_
-sleep?
-
-## Unmounting: aka a box biggest fear
-
 # Notes:
 
 - Add also a mention to how `setState` works, and why it being async can cause
@@ -429,40 +423,3 @@ sleep?
 
 --- This could be left out, a proof of concept rather than an integral part of
 the talk ---
-
-## When the boxes get too slow
-
-Speed is important for everyone, something to understand is that "washing" our
-boxes, or in React jargon re-rendering our components is incredibly cheap in
-terms of resources, so don't worry about adding an extra function, or an line
-function, or whatever.
-
-Sometimes, however, our components get complex enough, or are created in such a
-way that they become slow. When it comes to improve performance, having a good
-mental model is super useful.
-
-Now, whenever a component is re-rendered some information inside of it isn't
-lost. The state of the component is safe because React keeps track of it. This
-is especially true for Functional components, but I find that using the same
-mental model for Class-based components works as well.
-
---- Put code that reflects a slow-rendering component. Kent C Doods code could
-be useful here. ---
-
---- Explain code and then change to a visual representation of it ---
-
-A lot of performance issues come from misunderstanding how React will threat a
-component or group of components. Improving upon the mental model so far, a box
-can have many boxes inside of it, but whenever the parent box is thrased, all
-its children get trashed as well and then re-created. Again, this happens
-incredibly fast, but if you have too many of them, or the user needs constant
-feedback, for example when they're entering text in an input field, then
-re-rendering so many elements so fast will be slow enough for the user to
-notice, and _you never want the user to notice!_.
-
-The simplest way to improve performance? Co-locate your state in such a way that
-only the required components are re-rendered. In other words, change the way
-your boxes connect to each other, so that they only have to be re-created when
-it's absolutely necessary.
-
---- Show fixed code and fixed visual ---
