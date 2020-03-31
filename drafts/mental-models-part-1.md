@@ -1,3 +1,6 @@
+In this article I will show you the Mental Models I use with React every day
+that help me to solve, explain and debug even the hardest of problems.
+
 ## The real difference between experts and newcomers
 
 I started coding in 2009, more than a decade ago (omg what) and something I've
@@ -58,53 +61,80 @@ make sure that portion is always up to date with whatever data it relies on.
 However, sometimes it's not obvious how it's doing this or why.
 
 This is where a good mental model about React will help. Whether you've been
-working with React for years or are just starting, I will show you the Mental
-Models I use with React every day that help me to solve, explain and debug even
-the hardest of problems.
+working with React for years or are just starting, in this article I will show
+you the mental models I use with React every day that help me to solve, explain
+and debug even the hardest of problems.
 
-Something important I've learned is that having a _mostly_ correct overall
-picture is enough to be great at what you do. Trying to learn the ins and outs
-of a system can lead you into a rabbit hole without offering much return of
-investment on your time. Instead focus on understanding just enough to
-_correctly_ solve a problem, and then subsequently polish that knowledge.
-
-I think the best example of this is when I started learning React. First I was
-overwhelmed by how many things I supposedly had to learn: Webpack, Babel, React,
-Redux. Back then every single React guide had Redux slapped on its title as
-well. I was lucky to learn only React, and I was working with React
-profesionally for over a year before ever having to touch anything close to
-Redux. To this day I don't really know Redux and I don't need to. I have a
-close-enough mental model of how it works that I can jump into a project with
-Redux and be effective at it. If I had to implement it in my team's app for some
-reason, then I should improve my mental models, but until then, why bother? I
-rather learn X State or something.
+So in order for me to transfer the mental models I use with React and JavaScript
+to you, I'll have to build them up from the ground up, starting from a simple
+idea and building on top of it until it's a complete house.
 
 ## It's functions all the way down
 
-There once was a famous astronomer, one day after giving one of his lectures, an
-elderly lady told him that he had it all wrong, that the world actually rested
-on top of a tortoise. When the astronomer cleverly replied "and what supports
-the tortoise?" she replied: "very clever, but it's obviously turtles all the way
-down!"
+In order to create clear and useful mental models we must start by understanding
+the basic building blocks of our system, in the case of React (and JavaScript in
+general) that's functions.
 
-React is functions all the way down! Every component is a function, that calls
-more functions, that can in turn ... well ... call more functions! And props are
-functions' arguments that you access in a more fancy way. Strip away JSX and
-React is really a bunch of functions calling one another. JSX is in itself an
-applied mental model to make using React simpler.
+If you fully understand functions in JavaScript you will be closer to
+understanding React. This is even more true since the React Hooks revolution,
+but the mental model I'll explain fits well enough for React classes too.
+
+In fact, React is functions all the way down. A component is actually a
+function, and component containing other components are functions calling other
+functions. Props are the functions' arguments. Strip away JSX and React is
+really a bunch of functions calling one another. JSX is in itself an applied
+mental model to make using React simpler.
+
+That's a loaded paragraph, let's slow down and break it down.
+
+### A component is a function
+
+If we ignore class components we're left with "functional" components, which are
+plain functions that behaves exactly like any other JavaScript function. React's
+magic comes from JSX, which allows us to use components (functions) in a way
+that feels like HTML.
+
+Under the hood JSX is transformed into the below. Ignoring that it's a mess to
+read, they're a bunch of functions calling one another.
 
 --- Good place to show React with JSX and the output of it, which one do you
 prefer to write? ---
 
-So in order for me to "transfer" the mental models I use with react to you, I'll
-have to build them up from the ground up.
+In turn, a component's props are the function's arguments. We use them the
+"React" way by calling them `props`, but they could as well be called `args`.
 
-Something important to note: I'm a visual person, and we all are to different
-levels, so when I think about a problem I see it visually in my mind and I try
-to solve it visually, as if my code was made of machine gears turning and
-fitting together. I'll show you a visual representation of how I imagine code
-works, and I hope it helps you build your own mental models to tackle the
-difficulties of everyday React.
+So how can we turn this knowledge into a useful mental model? When I think about
+a function, I imagine it as a box. And since a component is a fancy function, I
+imagine a fancy box (in truth I imagine it something like this 📦). Sometimes
+goes into the magic box, and what comes out is what the user sees. I imagine
+`props` as being the ingredients the box needs to create the output.
+
+https://cdn.dribbble.com/users/1986644/screenshots/4141673/dribbble_gsn118_cardboard_box.png
+
+Something important to note: I'm a visual person so when I think about a problem
+I see it visually in my mind and I try to solve it visually, as if my code was
+made of machine gears turning and fitting together. I'll show you a visual
+representation of how I imagine code to work, and I hope it helps you build your
+own mental models to tackle the difficulties of everyday React.
+
+### JSX as a mental model
+
+In the early days of React, JSX was controvertial, but nowadays it has become an
+important aspect in React's success. That's because JSX offers a great applied
+mental model for using nested functions in a way that feels intuitive.
+
+We've all used HTML, and the concept of each element having a single parent and
+many children and siblings is easy to understand and relate to. It also
+translates nicely to functions, with each "parent" calling all its children.
+
+For me, each component is a box, and since all components are children to a
+parent, I imagine them as many boxes one inside another. I developed this idea
+first with HTML, and since JSX follows the same principles it was easy to
+re-purpose.
+
+https://share.getcloudapp.com/7KuRGj2b
+
+-- tm --
 
 ## Closures are fancy boxes
 
