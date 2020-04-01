@@ -134,30 +134,51 @@ re-purpose.
 
 https://share.getcloudapp.com/7KuRGj2b
 
--- tm --
+--- Image with boxes inside of boxes, maybe animated? ---
 
-## Closures are fancy boxes
+But the mental model of a box being a component is not complete without
+understanding how it can interact with other components.
+
+## How To Think About Closures
 
 --- start with some code for some closures ---
 
-I don't know how many times I've read or been asked about closures. It's one of
-those things you have to learn about JavaScript but it really doesn't like being
-understood, almost like me as a teenager.
-
-Why are closures important? Because without them we wouldn't be able to do a lot
-of complex things, and React wouldn't work the way it does, or even be possible.
-Here's how I imagine a closure: it's a box. That's it.
+Closures are a core concept in JavaScript. Nearly all complex functionality in
+the language is enabled by them, so understanding how they work is important.
 
 --- Add a visual of a closure being a box ---
 
 A closure is a box that keeps whatever is inside of it from spilling out while
 allowing whatever is outside from entering. Spilling out where? Well, to the
-_bigger_ box. With the biggest box being the global scope. If something lives in
-the global scope, other boxes can access it, but if something lives inside a
-box, only whatever is inside of it can access it.
+_bigger_, container box. With the biggest box being the `global` scope (which is
+the `window` object in the browser). If something lives in the global scope, all
+other boxes can access it, but if something lives inside a box, only itself and
+its children can have access to it.
+
+This is the reason I like to imagine the functions/boxes as _open_ boxes. The
+parent can send information down to its children, but not the other way around.
+This information is sent as `arguments` to our functions.
 
 Sounds familiar? A React component is a closure, a box. You can only pass props
 down from parent to child. It's boxes all the way down!
+
+In more technical terms, a closure enables a function to keep its own state
+(variables, function declarations, logic) isolated, only usable to with itself.
+Any function created within such a function (an inner function) allows it to use
+the enclosing function's (the parent) state.
+
+In React this usage is common: declaring a "handle" method that uses the
+enclosing function's React state. This is possible due to closures. If the
+handle method was _outsite_ of the component, it wouldn't be able to gain access
+to the `state` variable.
+
+--- Show code about a handle function ---
+
+In mental model words: a box can access the state of the parent, or share it
+with its children, but never share it or access it to other boxes outside of
+itself such as siblings or other parents.
+
+--- Show image with no sharing between sibling boxes ---
 
 ## Giving our boxes a name: Component.
 
