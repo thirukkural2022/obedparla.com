@@ -163,14 +163,14 @@ Sounds familiar? A React component is a closure, a box. You can only pass props
 down from parent to child. It's boxes all the way down!
 
 In more technical terms, a closure enables a function to keep its own state
-(variables, function declarations, logic) isolated, only usable to with itself.
-Any function created within such a function (an inner function) allows it to use
-the enclosing function's (the parent) state.
+isolated (variables, function declarations, logic), only usable to within
+itself. Any function created in such a function can use the enclosing function's
+state (children can access the parent's information).
 
-In React this usage is common: declaring a "handle" method that uses the
-enclosing function's React state. This is possible due to closures. If the
-handle method was _outsite_ of the component, it wouldn't be able to gain access
-to the `state` variable.
+In React this usage is common: a good example is declaring a "handle" method
+that uses the enclosing function's React state. This is possible due to
+closures. If the handle method was _outsite_ of the component, it wouldn't be
+able to gain access to the `state` variable.
 
 --- Show code about a handle function ---
 
@@ -180,36 +180,142 @@ itself such as siblings or other parents.
 
 --- Show image with no sharing between sibling boxes ---
 
-## Giving our boxes a name: Component.
+## Fitting React's State and Props Into Our Mental Model
 
-Now let's advance our mental model: let's think about React components. What is
-a component? Another box. Seriously, if you take anything from this talk it's
-that I _love_ boxes.
+What happens when we add state to a component? It will behave in a different way
+than what we'd expect from a normal function, but how does it change, exactly?
 
---- change visual to show "component" rather than "function's closure" ---
+Whenever we create a component, it will be executed and rendered by React into
+HTML (or whatever other platform you're running React on), but that will happen
+only once, at the very first render. With state we can control when React should
+re-render the components (and therefore re-execute all the code within).
 
-As you can see, the mental model didn't change that much. A basic React
-component is a cube that gets data from its parent and can pass it down to its
-children. Eventually that information will be used to render something, to
-create HTML.
+The idea at the core of React is simple and elegant: let it handle all
+rendering, so it can make it efficient and easy to deal with. After all,
+everything we do in any kind of app is with the purpose of showing something to
+the end-user. It does this by offering a simple api: state.
 
---- Good place to show data
+In my mental model, state is like a especial property in the box. It's
+independent from everything else that happens within it. It will get whatever
+value you start it with and then store subsequent ones without caring what's
+going on around it.
 
-Let's make our component more complex. What happens when we add state? Our
-component has some instrinsic functionality now, it will behave in a different
-way.
+State follows a simple rule, whenever it changes it will re-rendered the
+component and its children. This means on every render everything in the
+component is executed again, which includes functions and variables. Props
+follow the exact same logic, if a prop changes, the component will re-render.
 
-If state changes our component is re-rendered. Which means everything inside of
-it gets re-created, including functions and variables. This is why updating
-state inside the render method will cause your component to explode, since it's
-updating, re-creating, updating again and so son, you overload everything by
-recreating so many boxes!
+Rendering is React's most confusing part and where having a clear mental model
+really helps. It's confusing because there are a lot of things that happen
+during rendering and a lot of pitfalls that come with them.
 
-The way I think about this is that whenever state changes, the original box is
-"washed" so that everything inside of it gets clean, but the box is not thrown
-away, it's still there. JavaScript or React might optimize the washing, but I
-don't care about that because it doesn't affect the way I have to think about
-it.
+The way I imagine rendering with my mental model boxes is two fold: the first
+render brings the box into existence. That's when state is initialized. The
+second part is when it re-renders. I imagine it as the box being thrown away and
+an almost-brand-new-one being created. It sorts of recycles the box.
 
-Imagining it this way helps me a lot when coding new features, fixing bugs, or
-optimizing performance. It also help to grasp complex components.
+Whenever a re-render happens, everything inside the box is re-created, including
+variables and functions. Everything except for state which is maintained from
+render to render. That's why the box is "recycled". React keeps track of each
+box and that's why state is always reliable, because its value is maintained
+whatever happens.
+
+We call it a "render" because it ultimately renders (shows) something to the
+screen, but it's equal to a function being executed, and when you execute a
+function everything inside of it is run from scratch; variables are initialized,
+functions are called, memory is allocated, the whole deal. Component work the
+same way and that's why we can have logic like this:
+
+--- show basic code that relies on some state to render something ---
+
+The above will give a different result depending on the props the component
+receives. Whenever props or state changes, a new render happens and the function
+is executed again.
+
+By imagining a box being recycled, I can understand what's going on inside of
+it. For simple components it's easy to guess, but the more complex a group of
+components gets, the more useful a clear mental model becomes.
+
+A very common situation in React is when you have state in a component and
+suddenly you need to share that state to another component that isn't a child.
+The way to solve this is by "lifting state up" to the closest parent that
+contains both components needing such state. Like this:
+
+--- image of lifting state up with boxes ---
+
+I've seen many of my students struggling with this idea, I believe it's because
+without a good mental model you can't imagine how each component connects to
+another.
+
+Another great example of this mental model in action is updating a parent's
+state from a child. It's very common to want to update some state whenever a
+button is clicked, so we sent props with a function that will update state. In
+under to understand this we need to remember that a parent box can share
+information to any of its children. When we send down a function, the parent is
+telling its child "hey, here's a function you can use to give me some
+intructions". Like:
+
+--- Visual representation of the above ---
+
+### Conclusion
+
+Here's the complete mental model I use for React components, directly translated
+from how I imagine them into words.
+
+I imagine a React component as a box.
+
+The box contains not only its own information but also all of its children. A
+box, like a real world box, can have other boxes inside of it as well as many
+other things, and the boxes can in turn contain other boxes. Either side by side
+or inside each other. I use a similar mental model for recursion and HTML.
+
+The boxes are self-contained, impermeable. They never leak anything outside of
+themselves, but they can share things to its children, or whatever is inside of
+them. In React the way to share things between boxes is called `props`, the same
+idea applies to function and then it's called `arguments`.
+
+Since information can only travel _down_ from parents to children, whenever I
+need to share something between them, I imagine that piece as moving _up_ into a
+bigger box that contains all the boxes that need such information, in React
+jargon we're "lifting state up", but this can be applied to other things too,
+such as variables or functions (this is a great way to think about Context, see
+the upcoming PART 3).
+
+The box is created on the first _render_ and that's when _state_ (and a few
+other things, see the upcoming PART 2) is initialized, the box is only _created_
+once, so state is also only initialized once.
+
+Since a component is a function, on every render it gets executed again and the
+box is re-created, but since it contained some important information, that's
+kept safe, so I imagine it as being recycled rather than fully destroyed and
+remade.
+
+Whenever a box is recycled, so are all of its children. This can happen because
+of a state change in itself, or a props change from the parent. Most
+optimizations are about avoiding unnecessary renders (see PART 2).
+
+By using these mental models I feel confident when working with React. They help
+me visualize what can be a maze of code into a comprehensive mental map. It also
+dimistifies React and brings it to a level I'm much more comfortable with, that
+is simple JavaScript functions.
+
+React is not that complex once you start understanding the core principles
+behind it and create some ways to imagine how your code works.
+
+?? question, if props don't change, does React still re renders? because of a
+parent re-render ??
+
+---
+
+This was a long post with a lot of useful information. I didn't set myself to
+write a "learn React basics" article but that's the article it wanted to be. I
+hope it's useful to you and it was as enjoyable to read as it was to write!
+
+I'm working on PART 2 which will go more in-depth into React's API such as
+useMemo, useCallback and of course, useEffect, as well as how to use a more
+advanced mental model to improve your app's performance. PART 3 will focus in
+high-level features such as Context and I'll write about the exact mental model
+I use for all of React.
+
+If you'd like to read the next 2 parts please consider subscribing to my
+newsletter, I only email for new articles and will never spam you.
