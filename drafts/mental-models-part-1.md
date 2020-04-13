@@ -1,120 +1,110 @@
-I've been coding for more than a decade and something I've learned is that
-_everyone_ is learning how to code in one way or another. Sometimes you're
-learning the basics and sometimes how to do things in the most efficient way,
-with the right tool, or under certain constraints.
-
-The biggest difference between someone that has mastered a language, framework
-or tool and someone who hasn't lies in the creation of _mental models_.
-
-Mental models are born from deeper understanding of how tools work and help
-solve hard problem by giving insight into how you can best use them. But not
-only do they help solve problems, mental models also allow us to explain complex
-systems to others and to ourselves, and most importantly, humans are naturally
-wired to understand the world through mental models.
+I've learned that the biggest difference between someone that has mastered a
+language, framework or tool and someone who hasn't lies in the _mental model_
+they use. One person will have a clear and advanced one and the other will not.
 
 In this article I will show you the mental models I use with React every day
 that help me to solve, explain and debug even the hardest of problems.
 
-## What's a mental model and why is it so important?
+> Whether you've been working with React for years or are just starting, having
+> a useful mental models is, in my opinion, the fastest way to feel confident
+> working with it.
 
-A mental model is a thought process that represents the way something works in
-the real world. It connects the relationships between various parts of a system
-and makes sense of it so that anyone using that model will have an intuitive
-understanding of the system.
+## What's a mental model?
 
-In other words: a mental model helps you make sense of the world around you and
-helps you to make the best use of it. It can be applied to tools, systems, and
-even ideas. The best part is that we all have mental models of our own!
+A mental model is how we imagine a system to work. We create one by
+understanding different parts of the system and its connections, and it's
+important because it helps us make sense of the world and helps us solve
+problems.
 
-Imagine the way you think about cars. Most of us don't know the exact mechanical
-principles that make a car work. I don't know what torque is, or remember the
-equation for acceleration or velocity, and I don't need any of that knowledge in
-order to drive my car every day.
+A good example of a mental model is the internet: it's a complex system with
+many interconnected parts, but think about the way you imagine it to work. As
+for me, I imagine it as many little computers connected to each other through
+many big computers. Each big computer has a directory in it with all the
+website's servers and so on.
 
-That's because I intuitively understand how a car works. I have a mental model
-of it. If I press the gas pedal it will accelerate, the harder I press it the
-faster I'll move. The brakes do the opposite and decrease my speed. My driving
-instructor didn't teach me how a motor works, but instead how to know when to
-switch from first to second gear, how to "feel the car" and so on.
+That's of course an incomplete mental model, I'd need a whole article to explain
+my mental model fully, and I'm sure I don't grasp all the complexity of the
+internet, but it's good enough that I can work with it, solve problems with it,
+and improve it if I ever need to.
 
-For me, a car is a box that moves in a certain way when I do certain inputs. The
-car gives me feedback based on what I'm doing and that's how I know if I'm doing
-it right or wrong.
+## Why are mental models important?
 
-We don't teach code this way. We focus on syntax, do-s and dont's, best
-practices and how to glue things together. We should focus on creating a picture
-in our minds about a piece of the puzzle so that we deeply and intuitively
-understand it and can solve the puzzle in any way we want.
+When I started building websites circa 2014 I had the hardest time understanding
+how it all worked. Building my blog with WordPress was easy, but I had no idea
+what IPs were, how to connect to a server, or how to host it.
 
-We've transported school rote-learning to coding, and most of the time it
-doesn't stick.
+As I limped along, reading articles and trying things out, I started to grasp
+the whole system, get glimpses into how it all worked, until eventually it
+"clicked" and I felt comfortable working with it. My mind was building a mental
+model and every new piece information helped me to refine it.
 
-Do you remember trying to learn something new, but it just didn't make sense and
-after copying code from StackOverflow many times, and reading articles it slowly
-"clicked" into place and you could understand it? That's your mind building a
-mental model by using all the pieces of the puzzle you've encountered.
+Since then, I've built my own mental models for dozens of systems—JavaScript,
+React, Webpack, they're all systems—but I've learned that we don't teach code
+this way. We focus on syntax, do-s and dont's, best practices and tools.
+Although that's important, we neglect teaching how to make sense of the tools we
+use in an intuitive way.
 
-Once you build a mental model (even an incomplete one) hard
-systems/tools/problems start to make sense to us.
+Since I believe mental models are so important to take full advantage of a tool,
+I'll explain (and show) the mental models I use with React, and hopefully it
+will help you understand it and make you a better developer.
 
 ## React Mental Models
 
-React helps us build complex, interactive UIs in an easier way than we could do
-without it. It does this by creating a system around our apps that makes them
-simpler to understand.
+React helps us build complex, interactive UIs more easily than ever before by
+creating a system around our apps that encourages good practices and discourages
+bad ones, guiding us to create apps that are simpler to navigate and understand.
 
-This doesn't mean React itself is simple, but that it forces us (or guides us)
-to create apps in such a way that they are generally simpler to navigate.
-
-React itself is a great mental model with a simple idea at its core: encapsulate
-portions of your app that rely on similar logic and UI, and React will make sure
+React itself is a mental model with a simple idea at its core: encapsulate
+portions of your app that rely on similar logic and UI and React will make sure
 that portion is always up kept up to date.
 
-Whether you've been working with React for years or are just starting, having
+Whether you've been working with React for years or are just starting, having a
 useful mental models is, in my opinion, the fastest way to feel confident
-working with a complex system.
+working with it.
 
-So in order for me to transfer my mental models to you, I'll start with the
-principles behind them and build them on each step.
+So in order for me to transfer my mental models to you, I'll start from the
+beginning: principles, and build on top of them.
 
 ## It's functions all the way down
 
-In order to create clear and useful mental models we must start by understanding
-the basic building blocks of our system, in the case of React (and JavaScript in
-general) that's functions.
+Let's start by modeling the basic building blocks of JavaScript and React:
+functions. It goes like this:
 
-If you fully understand functions in JavaScript you will be closer to
-understanding React. This applies closest to functional components (and Hooks
-too) but the mental model I'll explain fits well for React classes too.
+- A React component is actually a function
+- Components containing other components are functions calling other functions
+- Props are the function's arguments
 
-In React, a component is actually a function, and components containing other
-components are functions calling other functions and props are the function's
-arguments. Strip away JSX and React is really a bunch of functions calling one
-another. JSX is in itself an applied mental model that makes using React simpler
-and more intuitive.
+This is hidden away by JSX, the markup language React uses. Strip away JSX and
+React is a bunch of functions calling one another. JSX is in itself an applied
+mental model that makes using React simpler and more intuitive.
 
-That's a loaded paragraph, let's break it down.
+Let's look at each part individually.
 
 ### A component is a function that returns JSX
 
-If we ignore class components we're left with functional components, which are
-plain functions that behaves exactly like any other JavaScript function, but in
-this case they return JSX, which is in turn transformed into HTML by React.
-
-Under the hood JSX looks like the below. Ignoring that it's a mess to read, you
-might notice they're bunch of functions calling one another. Now think in which
-way would you rather write React?
+Let's ignore class components and focus on the far more common functional
+components. A _functional_ component is a function that behaves exactly like any
+other JavaScript function. React components always return JSX which is then
+executed and turned into HTML.
 
 --- Good place to show React with JSX and the output of it, which one do you
 prefer to write? ---
 
-### Props are the same as function arguments
+Once JSX is transformed into JavaScript it looks like the above. You will notice
+each component is a function calling another function. If you find the "normal"
+code difficult to follow, you will understand why the React team decided to use
+JSX.
 
-A function can receive arguments when it's called, we use arguments to pass
-information from wherever we're calling the function to the function itself. In
-React components we call these arguments `props`, and that can cause confusion,
-but under the hood they behave _exactly_ like function arguments, but we
-interact with them through a nicer interface which is JSX.
+### component's props are the same as a function's arguments
+
+We use arguments to pass information to the function when calling it, it's a way
+to share information between two separate entities.
+
+For React components we call these arguments `props` (funny story, it took me a
+long time to realize it was short for _properties_). Under the hood props behave
+_exactly_ like function arguments, the differences are that we interact with
+them through the nicer interface of JSX, and that React gives especial
+functionality to props such as `children` or `ref`.
 
 ### Turning this information into a mental model
 
@@ -235,6 +225,8 @@ State follows a simple rule, whenever it changes it will re-rendered the
 component and its children. This means on every render everything in the
 component is executed again, which includes functions and variables. Props
 follow the exact same logic, if a prop changes, the component will re-render.
+
+## Rendering Mental Model
 
 Rendering is React's most confusing part and where having a clear mental model
 really helps. It's confusing because there are a lot of things that happen
