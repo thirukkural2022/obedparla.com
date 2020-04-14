@@ -82,6 +82,10 @@ Let's look at each part individually.
 
 ### A component is a function that returns JSX
 
+React is used with JSX, a JavaScript extention language. The reason is that it
+offers a great applied mental model for using nested functions in a way that
+feels intuitive.
+
 Let's ignore class components and focus on the far more common functional
 components. A _functional_ component is a function that behaves exactly like any
 other JavaScript function. React components always return JSX which is then
@@ -95,126 +99,133 @@ each component is a function calling another function. If you find the "normal"
 code difficult to follow, you will understand why the React team decided to use
 JSX.
 
+An important feature of React and JSX is that a component can have many children
+but only one parent. I found this a confusing until I realized it's the exact
+same logic HTML has, where each element must be inside other elements, and can
+have many children.
+
+--- image of HTML ---
+
 ### component's props are the same as a function's arguments
 
 We use arguments to pass information to the function when calling it, it's a way
 to share information between two separate entities.
 
 For React components we call these arguments `props` (funny story, it took me a
-long time to realize it was short for _properties_). Under the hood props behave
-_exactly_ like function arguments, the differences are that we interact with
-them through the nicer interface of JSX, and that React gives especial
+long time to realize props was short for _properties_). Under the hood props
+behave _exactly_ like function arguments, the differences are that we interact
+with them through the nicer interface of JSX, and that React gives especial
 functionality to props such as `children` or `ref`.
 
-### Turning this information into a mental model
+### Creating a mental model
 
-When I think about a function, I imagine it as a self-enclosed box. Whenever
-it's called it will do something and usually return a result.
+Let's bundle up all this knowledge together and craft a mental model to
+intuitively understand functions!
+
+When I think about a function I imagine it as a box, and that box will do
+something whenever it's used/called.
 
 --- a simple graphic with 2 + 2 = 4 return 4 in a box ---
 
-Since a component is a fancy function, I imagine a fancy box (in truth I imagine
-it something like this 📦), with `props` as the ingredients the box needs to
-create the output. Sometimes you care about what the box is doing, and sometimes
-it behaves more like a blackbox, where you only care about what you give it and
-what it returns.
+Since a component is a fancy function, that makes a component a box as well,
+with `props` as the ingredients the box needs in order to create the output.
 
 https://lh3.googleusercontent.com/proxy/aGxUBL4uzZaGghiO3gNJx9LbFpaJHrjNMGbn67Y7WfnGF_DekKxfpmhWfXoLqkGhJUDS9bZIz1zlzKjqAZyOyX6AY0b_nEeJVfGuX-_AUW6pKBDQ2HjyPPHX2SXLeGsTk0Zn3CuEf-2E2NXgaTFM-os
 https://cdn.dribbble.com/users/1986644/screenshots/4141673/dribbble_gsn118_cardboard_box.png
 
-When a component is executed, it will run whatever logic it has (if any) and
-return JSX. That JSX can be composed of pure elements that turn into HTML, or
-other components that will also return something. A component can have many
-children, but only one parent.
+When a component is executed, it will run whatever logic it has, if it has any,
+and return JSX. That JSX can be composed of pure elements/tags that turn into
+HTML, or other components that will in turn be executed.
 
-HTML made the concept of each element having a single parent and many children
-part of all websites.
+Since a component can have many children, but only one parent, I imagine
+multiple components, one inside another, as a set of boxes. Each box must be
+contained within a bigger box and can have many smaller boxes inside.
 
 --- Image of boxes inside boxes ---
 
-??? I'm a visual person so when I think about a problem I see it visually in my
-mind and I try to solve it visually, as if my code was made of gears turning and
-fitting together. I'll show you a visual representation of how I imagine code to
-work, and I hope it helps you build your own mental models to tackle the
-difficulties of everyday React.
-
-## JSX as a mental model
-
-In the early days of React, JSX was controvertial, but nowadays it has become an
-important aspect in React's success. That's because JSX offers a great applied
-mental model for using nested functions in a way that feels intuitive.
-
-HTML made the concept of each element having a single parent and many children
-part of all websites. This concept translates perfectly to JSX and components,
-where each parent can have many children.
-
-For me, each component is a box, and since all components are children to a
-parent, I imagine them as many boxes one inside another. I developed this idea
-first with HTML, and since JSX follows the same principles it was easy to
-re-purpose.
-
-https://share.getcloudapp.com/7KuRGj2b
-
---- Image with boxes inside of boxes, maybe animated? ---
-
-But the mental model of a box being a component is not complete without
-understanding how it can interact with other components.
+But the mental model of a component being a box is not complete without
+understanding how it can interact with other boxes.
 
 ## How To Think About Closures
 
---- start with some code for some closures ---
+Closures are a core concept in JavaScript. They enable complex functionality in
+the language, so they're important to understand.
 
-Closures are a core concept in JavaScript. Nearly all complex functionality in
-the language is enabled by them, so understanding how they work is important.
+They're also one of the features newcomers struggle with the most, so instead of
+explaining the technicalities, I'll demonstrate my mental model of them which
+simplifies them dramatically.
 
 --- Add a visual of a closure being a box ---
 
-A closure is a box that keeps whatever is inside of it from spilling out while
-allowing whatever is outside from entering. Spilling out where? Well, to the
-_bigger_, container box. With the biggest box being the `global` scope (which is
-the `window` object in the browser). If something lives in the global scope, all
-other boxes can access it, but if something lives inside a box, only itself and
-its children can have access to it.
+I imagine a closure as a box that keeps what's inside of it from spilling out,
+while allowing the things outside of it from entering, like a semi-permeable
+box.
 
-This is the reason I like to imagine the functions/boxes as _open_ boxes. The
-parent can send information down to its children, but not the other way around.
-This information is sent as `arguments` to our functions.
+Let's go into more detail.
 
-Sounds familiar? A React component is a closure, a box. You can only pass props
-down from parent to child. It's boxes all the way down!
+### But what _is_ a closure?
 
-In more technical terms, a closure enables a function to keep its own state
-isolated (variables, function declarations, logic), only usable to within
-itself. Any function created in such a function can use the enclosing function's
-state (children can access the parent's information).
+A closure is a feature of JavaScript functions. If you're using a function,
+you're using a closure.
 
-In React this usage is common: a good example is declaring a "handle" method
-that uses the enclosing function's React state. This is possible due to
-closures. If the handle method was _outsite_ of the component, it wouldn't be
-able to gain access to the `state` variable.
+A function is a box, so a closure is also a box. Since each function can contain
+many other function inside of it (and the same goes for components), then the
+closure becomes the ability of the box to use the information outside of it,
+while keeping the information inside of it from "spilling out", or being used by
+the parent or container box.
+
+--- Show image of sharing between boxes ---
+
+That's why I imagine the boxes as _open_ boxes. The child (inner box) can see
+the parent's information, but the parent (outer/container box) can't see or use
+the child's.
+
+That's the core concept of closures, and although simple, it can be exploited to
+create some powerful mechanics. React takes full advantage of them.
+
+For example, a React component is a closure, a box. You can only pass props down
+from parent to child, but a child cannot pass information upward to a parent.
+
+### Closures in React
+
+A great example of closures in React components is updating a parent's state in
+a child component. You've probably done this without realizing you were messing
+around with closures.
+
+To start, we know the parent can't access the child's information directly, but
+the child can access the parent's. So we send down that info from parent to
+child through `props`. In this case the information takes the shape of a
+function that updates the parent's state.
+
+Once something happens, a click or an event, the child can use that function,
+and the parent's state will be updated.
 
 --- Show code about a handle function ---
 
-In mental model words: a box can access the state of the parent, or share it
-with its children, but never share it or access it to other boxes outside of
-itself such as siblings or other parents.
+This makes it seem as if the parent had access to the child's information
+somehow, but it can't. To go around this limitation we take advantage of the
+fact that in closures the child can access the parent's state instead, and we
+leave the work of updating it to the child.
 
---- Show image with no sharing between sibling boxes ---
+We've discussed state in components, but how do they affect our mental model?
 
-## Fitting React's State and Props Into Our Mental Model
+## Fitting React's State Into Our Mental Model
 
 What happens when we add state to a component? It will behave in a different way
 than what we'd expect from a normal function, but how does it change, exactly?
 
-Whenever we create a component, it will be executed and rendered by React into
-HTML (or whatever other platform you're running React on), but that will happen
-only once, at the very first render. With state we can control when React should
-re-render the components (and therefore re-execute all the code within).
+When we use a component React executes and renders it into HTML. It can render
+different HTML based on two things: the props the component received and the
+state it has.
 
-The idea at the core of React is simple and elegant: let it handle all
-rendering, so it can make it efficient and easy to deal with. After all,
-everything we do in any kind of app is with the purpose of showing something to
-the end-user. It does this by offering a simple api: state.
+With state we can control when React should re-render the components and
+therefore re-execute all the code within. We do this to show new information to
+the user.
+
+The idea at the core of React is simple and elegant: let it handle all rendering
+so it can make it efficient and easy to deal with. After all, our apps's purpose
+is to show something to the end-user. It does this by offering a simple api:
+state.
 
 In my mental model, state is like a especial property in the box. It's
 independent from everything else that happens within it. It will get whatever
