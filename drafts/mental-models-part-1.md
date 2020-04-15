@@ -299,50 +299,57 @@ In React the way to share information between components is called `props`, the
 same idea applies to function and then it's called `arguments`, they both work
 in the same way but with a different syntax.
 
-TK
+Within components information can only travel _down_ from parents to children.
+In other words, children can access their parent's data and state, but not the
+other way around, and the way we share that information is through `props`.
 
-Since information can only travel _down_ from parents to children, whenever I
-need to share something between them, I imagine that piece as moving _up_ into a
-bigger box that contains all the boxes that need such information, in React
-jargon we're "lifting state up", but this can be applied to other things too,
-such as variables or functions (this is a great way to think about Context, see
-the upcoming PART 3).
+I imagine this directional sharing of information as boxes within boxes. With
+the inner-most box being able to absorb the parent's data.
 
-The box is created on the first _render_ and that's when _state_ (and a few
-other things, see the upcoming PART 2) is initialized, the box is only _created_
-once, so state is also only initialized once.
+The box must first be created though, and this happens on `render`, where the
+default value is given to `state` and just like with functions, all the code
+within the component is executed. In my mental model this is equivalent to the
+box being _created_.
 
-Since a component is a function, on every render it gets executed again and the
-box is re-created, but since it contained some important information, that's
-kept safe, so I imagine it as being recycled rather than fully destroyed and
-remade.
+Subsequequent renders, or `rerenders`, execute all the code in the component
+again, recalculating variables, recreating functions and so on. Everything
+except for `state` is brand new on each render, which value is always maintained
+unless updated directly by a `set` method.
 
-Whenever a box is recycled, so are all of its children. This can happen because
-of a state change in itself, or a props change from the parent. Most
-optimizations are about avoiding unnecessary renders (see PART 2).
+In my mental model I see rerendering as recycling the box since most of it is
+recreated, but its still the same box due to React keeping track of the
+component's state.
+
+Whenever a box is recycled so are all the boxes within it, its children. This
+can happen because the component's state was modified or a prop changed.
+
+Remember that a state or prop changing means the information the user sees is
+outdated, and React always wants to keep the UI updated so it rerenders the
+component that must show the new data.
 
 By using these mental models I feel confident when working with React. They help
 me visualize what can be a maze of code into a comprehensive mental map. It also
-dimistifies React and brings it to a level I'm much more comfortable with, that
-is simple JavaScript functions.
+dimistifies React and brings it to a level I'm much more comfortable with.
 
 React is not that complex once you start understanding the core principles
 behind it and create some ways to imagine how your code works.
 
-?? question, if props don't change, does React still re renders? because of a
-parent re-render ??
-
 ---
 
-This was a long post with a lot of useful information. I didn't set myself to
-write a "learn React basics" article but that's the article it wanted to be. I
-hope it's useful to you and it was as enjoyable to read as it was to write!
+This article was quite hard to write. I realized that I understand React
+intuitively and putting that understading into words was challenging. I hope it
+was useful to you and it was as enjoyable to read as it was to write!
 
-I'm working on PART 2 which will go more in-depth into React's API such as
-useMemo, useCallback and of course, useEffect, as well as how to use a more
-advanced mental model to improve your app's performance. PART 3 will focus in
-high-level features such as Context and I'll write about the exact mental model
-I use for all of React.
+Some of the explanations given in this article are simplifications, for example
+there are more things that are not re-executed on every render such as
+useEffect, useCallback and useMemo hooks. My complete mental model is more
+complex than I could explain in a single article, to stay tuned for PART 2
+and 3.
 
-If you'd like to read the next 2 parts please consider subscribing to my
-newsletter, I only email for new articles and will never spam you.
+Part 2 will focus on an in-depth model of React's API, such as useMemo,
+useCallback and useEffect as well as how to use a mental model to improve your
+React app's performance. Part 3 will focus on high-level features such as
+Context and a summary of the exact and complete mental model I use for React.
+
+If you'd like to read the next 2 parts consider subscribing to my newsletter, I
+only email for new articles and will never spam you.
