@@ -2,11 +2,11 @@ I've learned that the biggest difference between someone that has mastered a
 language, framework or tool and someone who hasn't lies in the _mental model_
 they use. One person will have a clear and advanced one and the other will not.
 
-In this article I will show you the mental models I use with React every day
+In this article, I will show you the mental models I use with React every day
 that help me to solve, explain and debug even the hardest of problems.
 
 > Whether you've been working with React for years or are just starting, having
-> a useful mental models is, in my opinion, the fastest way to feel confident
+> a useful mental model is, in my opinion, the fastest way to feel confident
 > working with it.
 
 ## What's a mental model?
@@ -22,10 +22,10 @@ for me, I imagine it as many little computers connected to each other through
 many big computers. Each big computer has a directory in it with all the
 website's servers and so on.
 
-That's of course an incomplete mental model, I'd need a whole article to explain
-my mental model fully, and I'm sure I don't grasp all the complexity of the
-internet, but it's good enough that I can work with it, solve problems with it,
-and improve it if I ever need to.
+That's an incomplete mental model, I'd need a whole article to explain my mental
+model fully, and I'm sure I don't grasp all the complexity of the internet, but
+it's good enough that I can work with it, solve problems with it, and improve it
+if I ever need to.
 
 ## Why are mental models important?
 
@@ -36,13 +36,13 @@ what IPs were, how to connect to a server, or how to host it.
 As I limped along, reading articles and trying things out, I started to grasp
 the whole system, get glimpses into how it all worked, until eventually it
 "clicked" and I felt comfortable working with it. My mind was building a mental
-model and every new piece information helped me to refine it.
+model and every new piece of information helped me to refine it.
 
-Since then, I've built my own mental models for dozens of systems—JavaScript,
-React, Webpack, they're all systems—but I've learned that we don't teach code
-this way. We focus on syntax, do-s and dont's, best practices and tools.
-Although that's important, we neglect teaching how to make sense of the tools we
-use in an intuitive way.
+Since then, I've built my mental models for dozens of systems—JavaScript, React,
+Webpack, they're all systems—but I've learned that we don't teach code this way.
+We focus on syntax, do-s and don't-s, best practices, and tools. Although that's
+important, we neglect teaching how to make sense of the tools we use
+intuitively.
 
 Since I believe mental models are so important to take full advantage of a tool,
 I'll explain (and show) the mental models I use with React, and hopefully it
@@ -59,18 +59,17 @@ portions of your app that rely on similar logic and UI and React will make sure
 that portion is always up kept up to date.
 
 Whether you've been working with React for years or are just starting, having a
-useful mental models is, in my opinion, the fastest way to feel confident
-working with it.
+useful mental model is the fastest way to feel confident working with it.
 
-So in order for me to transfer my mental models to you, I'll start from the
-beginning: principles, and build on top of them.
+So for me to transfer my mental models to you, I'll start from the beginning:
+principles, and build on top of them.
 
 ## It's functions all the way down
 
 Let's start by modeling the basic building blocks of JavaScript and React:
 functions. It goes like this:
 
-- A React component is actually a function
+- A React component is just a function
 - Components containing other components are functions calling other functions
 - Props are the function's arguments
 
@@ -82,7 +81,7 @@ Let's look at each part individually.
 
 ### A component is a function that returns JSX
 
-React is used with JSX, a JavaScript extention language. The reason is that it
+React is used with JSX, a JavaScript extension language. The reason is that it
 offers a great applied mental model for using nested functions in a way that
 feels intuitive.
 
@@ -100,9 +99,9 @@ code difficult to follow, you will understand why the React team decided to use
 JSX.
 
 An important feature of React and JSX is that a component can have many children
-but only one parent. I found this a confusing until I realized it's the exact
-same logic HTML has, where each element must be inside other elements, and can
-have many children.
+but only one parent. I found this a confusing until I realized it's the same
+logic HTML has, where each element must be inside other elements and can have
+many children.
 
 --- image of HTML ---
 
@@ -128,14 +127,14 @@ something whenever it's used/called.
 --- a simple graphic with 2 + 2 = 4 return 4 in a box ---
 
 Since a component is a fancy function, that makes a component a box as well,
-with `props` as the ingredients the box needs in order to create the output.
+with `props` as the ingredients the box needs to create the output.
 
 https://lh3.googleusercontent.com/proxy/aGxUBL4uzZaGghiO3gNJx9LbFpaJHrjNMGbn67Y7WfnGF_DekKxfpmhWfXoLqkGhJUDS9bZIz1zlzKjqAZyOyX6AY0b_nEeJVfGuX-_AUW6pKBDQ2HjyPPHX2SXLeGsTk0Zn3CuEf-2E2NXgaTFM-os
 https://cdn.dribbble.com/users/1986644/screenshots/4141673/dribbble_gsn118_cardboard_box.png
 
 When a component is executed, it will run whatever logic it has, if it has any,
 and return JSX. That JSX can be composed of pure elements/tags that turn into
-HTML, or other components that will in turn be executed.
+HTML, or other components that will, in turn, be executed.
 
 Since a component can have many children, but only one parent, I imagine
 multiple components, one inside another, as a set of boxes. Each box must be
@@ -143,7 +142,7 @@ contained within a bigger box and can have many smaller boxes inside.
 
 --- Image of boxes inside boxes ---
 
-But the mental model of a component being a box is not complete without
+But the mental model of a box representing a component is not complete without
 understanding how it can interact with other boxes.
 
 ## How To Think About Closures
@@ -174,7 +173,7 @@ closure becomes the ability of the box to use the information outside of it,
 while keeping the information inside of it from "spilling out", or being used by
 the parent or container box.
 
---- Show image of sharing between boxes ---
+--- Show an image of sharing between boxes ---
 
 That's why I imagine the boxes as _open_ boxes. The child (inner box) can see
 the parent's information, but the parent (outer/container box) can't see or use
@@ -194,7 +193,7 @@ around with closures.
 
 To start, we know the parent can't access the child's information directly, but
 the child can access the parent's. So we send down that info from parent to
-child through `props`. In this case the information takes the shape of a
+child through `props`. In this case, the information takes the shape of a
 function that updates the parent's state.
 
 Once something happens, a click or an event, the child can use that function,
@@ -215,19 +214,19 @@ When we use a component React executes and renders it into HTML. It can render
 different HTML based on two things: the props the component received and the
 state it has.
 
-With state we can control when React should re-render a component and therefore
+With state, we can control when React should re-render a component and therefore
 re-execute all the code within. We do this to show new, updated information to
 the user.
 
 The idea at the core of React is simple and elegant: let it handle all rendering
-so it can make it efficient and easy to deal with. After all, our apps's purpose
-is to show something to the end-user. It does this by offering a simple api:
+so it can make it efficient and easy to deal with. After all, our apps' purpose
+is to show something to the end-user. It does this by offering a simple API:
 state.
 
-In my mental model state is like a especial property inside the box. It's
-independent from everything else that happens within it. It will get a default
-value on first render and always be up to date with the latest value. That's the
-biggest difference between variables and state.
+In my mental model state is like an especial property inside the box. It's
+independent of everything else that happens within it. It will get a default
+value on the first render and always be up to date with the latest value. That's
+the biggest difference between variables and state.
 
 --- Image of state in the box ---
 
@@ -244,13 +243,13 @@ are more static and usually change as a reaction to a state change.
 ## Rendering Mental Model: how to think about React's hardest part
 
 I consider rendering to be React's most confusing part because a lot of things
-happen during rendering that aren't obvious by looking at the code. That's why
-having a clear mental model really helps.
+happen during rendering that isn't obvious by looking at the code. That's why
+having a clear mental model helps.
 
-The way I imagine rendering with my imaginary boxes is two fold: the first
-render brings the box into existence, that's when state is initialized. The
+The way I imagine rendering with my imaginary boxes is two-fold: the first
+render brings the box into existence, that's when the state is initialized. The
 second part is when it re-renders, that's the box being recycled, most of it is
-brand new but some important elements of it remain, namely state.
+brand new but some important elements of it remain namely state.
 
 On every render everything inside a component is created, including variables
 and functions, that's why we can have variables storing calculation results.
@@ -263,20 +262,20 @@ The above will give a different result depending on the props the component
 receives. Whenever props or state changes, a new render happens and code inside
 a component is executed again.
 
-However, state doesn't change, it is maintained across renders. That's why the
-box is "recycled" instead of created brand new every time. Internally, React is
-keeping track of each box, making sure its state is always consistent. That's
+However, the state doesn't change, it is maintained across renders. That's why
+the box is "recycled" instead of created brand new every time. Internally, React
+is keeping track of each box, making sure its state is always consistent. That's
 how React knows when to update a component, because when state changes it knows
 to which component it belonged to.
 
 By imagining a box being recycled I can understand what's going on inside of it.
-For simple components it's easy to grasp, but the more complex a components
-gets, the more props it receives, the more state it maintains, the more useful a
-clear mental model becomes.
+For simple components, it's easy to grasp, but the more complex a component
+becomes, the more props it receives, the more state it maintains, the more
+useful a clear mental model becomes.
 
 ## The final mental model. Putting it all together.
 
-Now that I've explained all the different parts of the puzzle separatedly, let's
+Now that I've explained all the different parts of the puzzle separately, let's
 put it all together. Here's the complete mental model I use for React
 components, directly translated from how I imagine them into words.
 
@@ -284,12 +283,12 @@ I imagine a React component as a box.
 
 --- A box ---
 
-The box contains all of its own information within its walls, as well as all its
+The box contains all of its information within its walls, as well as all its
 children.
 
 A box, like a box in the real world, can have other boxes inside of it and these
-boxes can in turn contain more boxes. In this way each box/component must have a
-single parent, and a parent can have many children.
+boxes can, in turn, contain more boxes. In this way, each box/component must
+have a single parent, and a parent can have many children.
 
 The boxes are self-contained, semi-permeable. They never leak anything from
 inside to outside, but they can use information from the outside as if it was
@@ -299,7 +298,7 @@ In React the way to share information between components is called `props`, the
 same idea applies to function and then it's called `arguments`, they both work
 in the same way but with a different syntax.
 
-Within components information can only travel _down_ from parents to children.
+Within components, information can only travel _down_ from parents to children.
 In other words, children can access their parent's data and state, but not the
 other way around, and the way we share that information is through `props`.
 
@@ -308,16 +307,16 @@ the inner-most box being able to absorb the parent's data.
 
 The box must first be created though, and this happens on `render`, where the
 default value is given to `state` and just like with functions, all the code
-within the component is executed. In my mental model this is equivalent to the
+within the component is executed. In my mental model, this is equivalent to the
 box being _created_.
 
-Subsequequent renders, or `rerenders`, execute all the code in the component
-again, recalculating variables, recreating functions and so on. Everything
-except for `state` is brand new on each render, which value is always maintained
-unless updated directly by a `set` method.
+Subsequent renders, or `rerenders`, execute all the code in the component again,
+recalculating variables, recreating functions and so on. Everything except for
+`state` is brand new on each render, which value is always maintained unless
+updated directly by a `set` method.
 
-In my mental model I see rerendering as recycling the box since most of it is
-recreated, but its still the same box due to React keeping track of the
+In my mental model, I see rerendering as recycling the box since most of it is
+recreated, but it's still the same box due to React keeping track of the
 component's state.
 
 Whenever a box is recycled so are all the boxes within it, its children. This
@@ -329,7 +328,7 @@ component that must show the new data.
 
 By using these mental models I feel confident when working with React. They help
 me visualize what can be a maze of code into a comprehensive mental map. It also
-dimistifies React and brings it to a level I'm much more comfortable with.
+demystifies React and brings it to a level I'm much more comfortable with.
 
 React is not that complex once you start understanding the core principles
 behind it and create some ways to imagine how your code works.
@@ -337,14 +336,13 @@ behind it and create some ways to imagine how your code works.
 ---
 
 This article was quite hard to write. I realized that I understand React
-intuitively and putting that understading into words was challenging. I hope it
+intuitively and putting that understanding into words was challenging. I hope it
 was useful to you and it was as enjoyable to read as it was to write!
 
 Some of the explanations given in this article are simplifications, for example
-there are more things that are not re-executed on every render such as
-useEffect, useCallback and useMemo hooks. My complete mental model is more
-complex than I could explain in a single article, to stay tuned for PART 2
-and 3.
+more things are not re-executed on every render such as useEffect, useCallback,
+and useMemo hooks. My complete mental model is more complex than I could explain
+in a single article, to stay tuned for PART 2 and 3.
 
 Part 2 will focus on an in-depth model of React's API, such as useMemo,
 useCallback and useEffect as well as how to use a mental model to improve your
