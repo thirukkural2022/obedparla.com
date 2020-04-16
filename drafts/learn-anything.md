@@ -1,41 +1,47 @@
 # How to learn in the age of fast food
 
-It's a Sunday, we wake up late and cook frozen croissants we bought at the
-supermarket for breakfast, then we drive to nearby park to play. In the
-afternoon we check some shoes in Amazon, I buy a couple of books online that
-will be delivered in a week, and think whether I should buy that on-sale video
-game. We order pizza for dinner and watch a a movie in Netflix.
+It's Sunday and after waking up late she decides to cook some frozen croissants
+for brunch. Her dog wants to play so she takes him to a park with her car, and
+while he runs she checks Instagram. Back at home she buys a pair of shoes and
+some books on Amazon that will be delivered next week. She invites some friends
+over, orders pizza and they eat it while watching a movie on Netflix.
 
-In a fictional day such as this (or maybe not so fictional) I can do a myriad of
-things to fufill all my needs and desires without exerting any effort at all
-from my part. The hardest thing I'd need to do to make any of those things
-happen is to think what I want and decide how to get it. It's not a matter of
-whether _I can_ have it, but if it's worth it and how.
+That sounds like a great day, but did you notice that this fictional person
+managed fulfill all her needs and desires without exerting any effort from her
+part?
 
-We live in the age of instant satisfaction, one tap away from anything our heart
-desires. From food delivered to our doorstep, clothing, entertainment and human
-connection, they are all available at our fingertips.
+None of the things she did are outrageous. We could do any of them and, money
+aside, the hardest part would be deciding what we want. It's not a matter of
+whether we _can_ have what we want anymore.
 
-The paradox is that the more we get used to easy access to _everything_ the more
-valuable it becomes to be able to produce valuable assets, and everything
-worthwhile starts by learning how to do it.
+We live in the age of instant satisfaction, where our heart's desires are one
+click away. From food delivered to our doorstep, to clothing, entertainment and
+even human connection, they're all for sale.
 
-The learning process is messy and complicated, but there are many proven ways we
-can use to be better at learning. I'm going to try to show you the way I learn,
-and how I've seen others succeed at learning complex things. A lot of this is
-geared towards _coding_ since that's a huge part of my life, but the same can be
-applied to everything.
+But having access to instant gratification makes us seek unique, tailored
+experiences. Something that is truly ours and no one else's.
 
-## 10 thousand hours, or just 20. You choose
+There are few things more valuable in a world of commodities than knowledge, and
+even though information is also a commodity noawdays, the ability to learn
+cannot be purchased.
 
-It's become a meme that we need "10 thousand hours of deliberate practice to
-achieve mastery" over any skill, from piano to swimming. This figure comes from
-a series of studies and is regarded as generally true. What is not true however
-is misinterpreting that we need vasts amounts of time and effort to become
-_good_ at something.
+The learning process is messy and complicated but there are proven methods that
+make us better at it. I'll explain the most important ideas and techniques that
+help me learn anything I want.
+
+By the end of this article you'll be better equipped to learn anything you want.
+
+## 10 thousand hours, or just 20. Your choice
+
+You might have heard we need "10 thousand hours of deliberate practice to
+achieve mastery" over a skill, from piano to swimming. This figure comes from a
+series of studies and is generally true. What is not true is that we need vasts
+amounts of time and effort to _learn_ something new.
+
+TK
 
 Being good is not the enemy of great. Anyone that is extraordinary at anything
-was simply decent-enough at it at some point. I love aiming at being _decent
+was simply decent-enough at it at some point. I love aiming at being _good
 enough_ in life. Most of the time it's, well, enough.
 
 Another figure that's bounced around is that you need 20 hours to learn a new
