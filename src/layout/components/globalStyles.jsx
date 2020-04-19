@@ -76,6 +76,20 @@ const GlobalStyles = () => {
             : 'rgba(0, 0, 0, 0.60)'};
           margin-top: 5px;
         }
+
+        // Code pre styling
+        :not(pre) > code[class*='language-'] {
+          padding: 4px 6px;
+        }
+
+        :not(pre) > code[class*='language-'],
+        pre[class*='language-'] {
+          border-radius: 6px;
+        }
+
+        pre[class*='language-'] {
+          margin-bottom: 2rem;
+        }
       `}
     />
   );
