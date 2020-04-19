@@ -1,9 +1,27 @@
-I've learned that the biggest difference between someone that has mastered a
-language, framework or tool and someone who hasn't lies in the _mental model_
-they use. One person will have a clear and advanced one and the other will not.
+---
+title: 'A visual guide to React Mental models'
+author: 'Obed Parlapiano'
+date: '2020-04-20'
+categories:
+  - code
+  - popular
+tags: ''
+cover: '../images/mental-models-part-1/mental-models-react.png'
+---
 
-In this article, I will show you the mental models I use with React every day
-that help me to solve, explain and debug even the hardest of problems.
+mental-models-react.png I've learned that the biggest difference between someone
+that has mastered a language, framework or tool and someone who hasn't lies in
+the _mental models_ they use. One person will have a clear and advanced one and
+the other will not.
+
+By having a good mental model you can intuitively understand complex problems
+and device solutions much faster than if you had to find a solution with a
+step-by-step process.
+
+I work with React every day and I'm constantly finding solutions to challenging
+problems. I can do that by having good mental models around React. In this
+article I will explain those mental models that help me solve problems and tame
+complexity.
 
 > Whether you've been working with React for years or are just starting, having
 > a useful mental model is, in my opinion, the fastest way to feel confident
@@ -16,58 +34,53 @@ understanding different parts of the system and its connections, and it's
 important because it helps us make sense of the world and helps us solve
 problems.
 
-A good example of a mental model is the internet: it's a complex system with
-many interconnected parts, but think about the way you imagine it to work. As
-for me, I imagine it as many little computers connected to each other through
-many big computers. Each big computer has a directory in it with all the
-website's servers and so on.
+![A representation of what a mental model is explained with an image inside a mind and the world outside as a complex system](../images/mental-models-part-1/mental-models-representation.png 'A visual representation of a mental model')
 
-That's an incomplete mental model, I'd need a whole article to explain my mental
-model fully, and I'm sure I don't grasp all the complexity of the internet, but
-it's good enough that I can work with it, solve problems with it, and improve it
-if I ever need to.
+A good example of a mental model is the internet: it's a complex system with
+many interconnected parts, but think about the way you imagine it to work. I
+imagine it as many computers connected to each other through many big servers,
+with many middle men redirecting where each piece of information is stored.
+
+That's of course an incomplete mental model but it's good enough that I can work
+with it, solve problems with it, and improve it if I ever need to, and that's
+the gist of it: Mental models are meant to help us solve problems and understand
+the world.
 
 ## Why are mental models important?
 
-When I started building websites circa 2014 I had the hardest time understanding
-how it all worked. Building my blog with WordPress was easy, but I had no idea
-what IPs were, how to connect to a server, or how to host it.
+When I started building websites in 2014 I had a hard time understanding how it
+all worked. Building my blog with WordPress was easy, but I had no idea about
+hosting, servers, DNS, certificates, and much more.
 
-As I limped along, reading articles and trying things out, I started to grasp
-the whole system, get glimpses into how it all worked, until eventually it
-"clicked" and I felt comfortable working with it. My mind was building a mental
-model and every new piece of information helped me to refine it.
+As I read articles and tried stuff out (and broke my server config more than
+once) I started to grasp the system, to get glimpses into how it all worked,
+until eventually it "clicked" and I felt comfortable working with it. My mind
+had built a mental model around this system that I could use to work with it.
 
-Since then, I've built my mental models for dozens of systems—JavaScript, React,
-Webpack, they're all systems—but I've learned that we don't teach code this way.
-We focus on syntax, do-s and don't-s, best practices, and tools. Although that's
-important, we neglect teaching how to make sense of the tools we use
-intuitively.
-
-Since I believe mental models are so important to take full advantage of a tool,
-I'll explain (and show) the mental models I use with React, and hopefully it
-will help you understand it and make you a better developer.
+If someone had explained it, transfered their mental model to me, I would've
+understood it much faster. Here I'll explain (and show) the mental models I use
+with React. It will help you understand React better and make you a better
+developer.
 
 ## React Mental Models
 
-React helps us build complex, interactive UIs more easily than ever before by
-creating a system around our apps that encourages good practices and discourages
-bad ones, guiding us to create apps that are simpler to navigate and understand.
+React helps us build complex, interactive UIs more easily than ever before. It
+also encourages us to write code in a certain way, guiding us to create apps
+that are simpler to navigate and understand.
 
 React itself is a mental model with a simple idea at its core: encapsulate
 portions of your app that rely on similar logic and UI and React will make sure
 that portion is always up kept up to date.
 
 Whether you've been working with React for years or are just starting, having a
-useful mental model is the fastest way to feel confident working with it.
-
-So for me to transfer my mental models to you, I'll start from the beginning:
-principles, and build on top of them.
+clear mental model is the best way to feel confident working with it. So for me
+to transfer my mental models to you I'll start from first-principles and build
+on top of them.
 
 ## It's functions all the way down
 
 Let's start by modeling the basic building blocks of JavaScript and React:
-functions. It goes like this:
+functions.
 
 - A React component is just a function
 - Components containing other components are functions calling other functions
@@ -81,66 +94,143 @@ Let's look at each part individually.
 
 ### A component is a function that returns JSX
 
-React is used with JSX, a JavaScript extension language. The reason is that it
-offers a great applied mental model for using nested functions in a way that
-feels intuitive.
+React is used with JSX—JavaScript XML—a way to write what seems as HTML with all
+of JavaScript's power. JSX offers a great applied mental model for using nested
+functions in a way that feels intuitive.
 
 Let's ignore class components and focus on the far more common functional
 components. A _functional_ component is a function that behaves exactly like any
 other JavaScript function. React components always return JSX which is then
 executed and turned into HTML.
 
---- Good place to show React with JSX and the output of it, which one do you
-prefer to write? ---
+This is what simple JSX looks like:
 
-Once JSX is transformed into JavaScript it looks like the above. You will notice
-each component is a function calling another function. If you find the "normal"
-code difficult to follow, you will understand why the React team decided to use
-JSX.
+```jsx
+const Li = props => <li {...props}>{props.children}</li>;
 
-An important feature of React and JSX is that a component can have many children
-but only one parent. I found this a confusing until I realized it's the same
-logic HTML has, where each element must be inside other elements and can have
-many children.
+export const RickRoll = () => (
+  <div>
+    <div className='wrapper'>
+      <ul>
+        <Li> Never</Li>
+        <Li color={'red'}>gonna</Li>
+        <Li dancing>let</Li>
+        <Li highlight>you</Li>
+        <Li>down</Li>
+      </ul>
+    </div>
+  </div>
+);
+```
 
---- image of HTML ---
+Which is then into the following by Babel:
+
+```jsx
+import React from 'react';
+
+const Li = props => React.createElement('li', props, props.children);
+
+export const RickRoll = () =>
+  React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'div',
+      {
+        className: 'wrapper',
+      },
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(Li, null, ' Never'),
+        React.createElement(
+          Li,
+          {
+            color: 'red',
+          },
+          'gonna',
+        ),
+        React.createElement(
+          Li,
+          {
+            dancing: true,
+          },
+          'let',
+        ),
+        React.createElement(
+          Li,
+          {
+            highlight: true,
+          },
+          'you',
+        ),
+        React.createElement(Li, null, 'down'),
+      ),
+    ),
+  );
+```
+
+If you find this code difficult to follow you're not alone, and you will
+understand why the React team decided to use JSX instead.
+
+Now, notice how each component is a function calling another function, and each
+new component is the third argument for the `React.createElement` function.
+Whenever you write a component, it's useful to keep in mind that it's a normal
+JavaScript function.
+
+An important feature of React is that a component can have many children but
+only one parent. I found this a confusing until I realized it's the same logic
+HTML has, where each element must be inside other elements and can have many
+children. You can notice this in the code above, where there's only one parent
+`div` containing all the children.
 
 ### component's props are the same as a function's arguments
 
-We use arguments to pass information to the function when calling it, it's a way
-to share information between two separate entities.
+When using a function we can use arguments to share information with that
+function. For React components we call these arguments `props` (funny story, I
+didn't realize props is short for _properties_ for a long time).
 
-For React components we call these arguments `props` (funny story, it took me a
-long time to realize props was short for _properties_). Under the hood props
-behave _exactly_ like function arguments, the differences are that we interact
-with them through the nicer interface of JSX, and that React gives especial
-functionality to props such as `children` or `ref`.
+Under the hood props behave _exactly_ like function arguments, the differences
+are that we interact with them through the nicer interface of JSX, and that
+React gives extra functionality to props such as `children`.
 
-### Creating a mental model
+## Creating a mental model around functions
 
-Let's bundle up all this knowledge together and craft a mental model to
-intuitively understand functions!
+Using this knowledge let's craft a mental model to intuitively understand
+functions!
 
 When I think about a function I imagine it as a box, and that box will do
-something whenever it's used/called.
+something whenever it's called. It could return a value or not:
 
---- a simple graphic with 2 + 2 = 4 return 4 in a box ---
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+console.log(sum(10, 20)); // 30
+
+function logSum(a, b) {
+  console.log(a + b); // 30
+}
+```
 
 Since a component is a fancy function, that makes a component a box as well,
 with `props` as the ingredients the box needs to create the output.
 
-https://lh3.googleusercontent.com/proxy/aGxUBL4uzZaGghiO3gNJx9LbFpaJHrjNMGbn67Y7WfnGF_DekKxfpmhWfXoLqkGhJUDS9bZIz1zlzKjqAZyOyX6AY0b_nEeJVfGuX-_AUW6pKBDQ2HjyPPHX2SXLeGsTk0Zn3CuEf-2E2NXgaTFM-os
-https://cdn.dribbble.com/users/1986644/screenshots/4141673/dribbble_gsn118_cardboard_box.png
+![A plus B in a box with props explaining a mental model for JavaScript functions](../images/mental-models-part-1/a-plus-b-box.png ' ')
 
-When a component is executed, it will run whatever logic it has, if it has any,
-and return JSX. That JSX can be composed of pure elements/tags that turn into
-HTML, or other components that will, in turn, be executed.
+When a component is executed it will run whatever logic it has, if any, and
+evaluate its JSX. Any tags will become HTML and any component will be executed,
+and the process is repeated until reaching the last component in the chain of
+children.
 
-Since a component can have many children, but only one parent, I imagine
-multiple components, one inside another, as a set of boxes. Each box must be
-contained within a bigger box and can have many smaller boxes inside.
+Since a component can have many children but only one parent I imagine multiple
+components as a set of boxes, one inside another . Each box must be contained
+within a bigger box and can have many smaller boxes inside.
 
---- Image of boxes inside boxes ---
+![One big box with many smaller boxes inside and text saying "it's a box in another box"](../images/mental-models-part-1/box-inside-box.jpg ' ')
+
+TK
 
 But the mental model of a box representing a component is not complete without
 understanding how it can interact with other boxes.
