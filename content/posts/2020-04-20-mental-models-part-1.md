@@ -230,55 +230,57 @@ within a bigger box and can have many smaller boxes inside.
 
 ![One big box with many smaller boxes inside and text saying "it's a box in another box"](../images/mental-models-part-1/box-inside-box.jpg ' ')
 
-TK
-
 But the mental model of a box representing a component is not complete without
 understanding how it can interact with other boxes.
 
 ## How To Think About Closures
 
 Closures are a core concept in JavaScript. They enable complex functionality in
-the language, so they're important to understand.
+the language, they're super important to understand in order to have a good
+mental model around React.
 
 They're also one of the features newcomers struggle with the most, so instead of
-explaining the technicalities, I'll demonstrate my mental model of them which
-simplifies them dramatically.
+explaining the technicalities I'll demonstrate the mental model I have around
+closures.
 
---- Add a visual of a closure being a box ---
+The basic description of a closure is that it's a function. I imagine it as a
+box that keeps what's inside of it from spilling out, while allowing the things
+outside of it from entering, like a semi-permeable box. But spilling out where?
 
-I imagine a closure as a box that keeps what's inside of it from spilling out,
-while allowing the things outside of it from entering, like a semi-permeable
-box.
+While the closure itself is a box, any closure will be inside bigger boxes, with
+the outermost box being the Window object.
 
-Let's go into more detail.
+![A box describing a mental model of a javascript closure, showing Window, scripts and React apps](../images/mental-models-part-1/closures-mental-model.png ' ')
 
 ### But what _is_ a closure?
 
 A closure is a feature of JavaScript functions. If you're using a function,
 you're using a closure.
 
-A function is a box, so a closure is also a box. Since each function can contain
-many other function inside of it (and the same goes for components), then the
-closure becomes the ability of the box to use the information outside of it,
-while keeping the information inside of it from "spilling out", or being used by
-the parent or container box.
+As I've mentioned, a function is a box and that makes a closure a box too.
+Considering that each function can contain many others inside of it, then the
+closure is ability of a function to use the information outside of it, while
+keeping the information it has inside from "spilling out", or being used by the
+outer function.
+
+Speaking in terms of my mental model: I imagine the functions as boxes within
+boxes, and each smaller box can see the information of the outer box, or parent,
+but the big box cannot see the smaller one's information. That's as simple and
+accurate an explanation of closures as I can make.
 
 --- Show an image of sharing between boxes ---
 
-That's why I imagine the boxes as _open_ boxes. The child (inner box) can see
-the parent's information, but the parent (outer/container box) can't see or use
-the child's.
-
-That's the core concept of closures, and although simple, it can be exploited to
-create some powerful mechanics. React takes full advantage of them.
-
-For example, a React component is a closure, a box. You can only pass props down
-from parent to child, but a child cannot pass information upward to a parent.
+Closures are important because they can be exploited to create some powerful
+mechanics and React takes full advantage of this.
 
 ### Closures in React
 
-A great example of closures in React components is updating a parent's state in
-a child component. You've probably done this without realizing you were messing
+Each React component is also a closure. You can only pass props down from parent
+to child and the parent cannot see what's inside the child, this is an intended
+feature to make our app's data flow simpler to trace.
+
+A great example of closures in React is updating a parent's state through a
+child component and you've probably done this without realizing you were messing
 around with closures.
 
 To start, we know the parent can't access the child's information directly, but
