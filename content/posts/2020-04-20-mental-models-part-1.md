@@ -250,7 +250,7 @@ outside of it from entering, like a semi-permeable box. But spilling out where?
 While the closure itself is a box, any closure will be inside bigger boxes, with
 the outermost box being the Window object.
 
-![A box describing a mental model of a javascript closure, showing Window, scripts and React apps](../images/mental-models-part-1/closures-mental-model.png ' ')
+![A box describing a mental model of a javascript closure, showing Window, scripts and React apps](../images/mental-models-part-1/closures-window.jpg 'The window object encapsulates everything else')
 
 ### But what _is_ a closure?
 
@@ -268,19 +268,21 @@ boxes, and each smaller box can see the information of the outer box, or parent,
 but the big box cannot see the smaller one's information. That's as simple and
 accurate an explanation of closures as I can make.
 
---- Show an image of sharing between boxes ---
+![Visual representation of closures and the sharing of information between functions in a mental model](../images/mental-models-part-1/closures-detailed-example.jpg "Each function can only access its own information and the parent's")
 
 Closures are important because they can be exploited to create some powerful
 mechanics and React takes full advantage of this.
 
 ### Closures in React
 
-Each React component is also a closure. You can only pass props down from parent
-to child and the parent cannot see what's inside the child, this is an intended
-feature to make our app's data flow simpler to trace.
+Each React component is also a closure. Within components you can only pass
+props down from parent to child and the parent cannot see what's inside the
+child, this is an intended feature to make our app's data flow simpler to trace.
+In order to find where data comes from, we usually need to go up the tree to
+find which parent is sending it down.
 
 A great example of closures in React is updating a parent's state through a
-child component and you've probably done this without realizing you were messing
+child component. You've probably done this without realizing you were messing
 around with closures.
 
 To start, we know the parent can't access the child's information directly, but
@@ -288,44 +290,67 @@ the child can access the parent's. So we send down that info from parent to
 child through `props`. In this case, the information takes the shape of a
 function that updates the parent's state.
 
-Once something happens, a click or an event, the child can use that function,
-and the parent's state will be updated.
+```javascript
+const Parent = () => {
+  const [count, setCount] = useState(0);
 
---- Show code about a handle function ---
+  return (
+    <div>
+      The count is {count}
+      <div>
+        <ChildButtons onClick={setCount} count={count} />
+      </div>
+    </div>
+  );
+};
 
-This makes it seem as if the parent had access to the child's information
-somehow, but it can't. To go around this limitation we take advantage of the
-fact that in closures the child can access the parent's state instead, and we
-leave the work of updating it to the child.
+const ChildButtons = props => (
+  <div>
+    <button onClick={() => props.onClick(props.count + 1)}>
+      Increase count
+    </button>
+    <button onClick={() => props.onClick(props.count - 1)}>
+      Decrease count
+    </button>
+  </div>
+);
+```
 
-We've discussed state in components, but how do they affect our mental model?
+When an `onClick` happens in a `button`, that will execute the function received
+from props `props.onClick`, and update the value using `props.count`.
+
+The insight here lies in the way we're updating a parent's state through a
+child, in this case the `props.onClick` function. The reason this works is
+because the function was _declared_ within the `Parent` component's scope,
+within its closure, so it will have access to the parent's information. Once
+that function is called in a child, it still lives in same closure.
+
+This can be hard to grasp, so the way I imagine it is as a "tunnel" between
+closures. Each has its own scope, but we can create a way-one communication
+tunnel that connects both.
+
+Once we understand how closures affect our components, we can take the next big
+step: React state.
 
 ## Fitting React's State Into Our Mental Model
 
-When we use a component React executes and renders it into HTML. It can render
-different HTML based on two things: the props the component received and the
-state it has.
+React's philosophy is simple: it handles _when_ and _how_ to render elements,
+and developers control the _what_ to render. State is our tool to decide that
+what.
 
-With state, we can control when React should re-render a component and therefore
-re-execute all the code within. We do this to show new, updated information to
-the user.
-
-The idea at the core of React is simple and elegant: let it handle all rendering
-so it can make it efficient and easy to deal with. After all, our apps' purpose
-is to show something to the end-user. It does this by offering a simple API:
-state.
+When state changes, its component renders and therefore re-executes all the code
+within. We do this to show new, updated information to the user.
 
 In my mental model state is like an especial property inside the box. It's
 independent of everything else that happens within it. It will get a default
-value on the first render and always be up to date with the latest value. That's
-the biggest difference between variables and state.
-
---- Image of state in the box ---
+value on the first render and always be up to date with the latest value.
 
 Each variable and function is created on every render, which means their values
 are also brand new. Even if a variable's value never changes, it is recalculated
 and reassigned every time. That's not the case with state, it only changes when
 there's a request for it to change via a `set` state event.
+
+TK --- Image of state in the box ---
 
 State follows a simple rule: Whenever it changes it will re-rendered the
 component and its children. Props follow the same logic, if a prop changes, the
