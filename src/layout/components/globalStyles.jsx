@@ -79,7 +79,7 @@ const GlobalStyles = () => {
 
         // Code pre styling
         :not(pre) > code[class*='language-'] {
-          padding: 4px 6px;
+          padding: 3px 5px;
         }
 
         :not(pre) > code[class*='language-'],
@@ -89,6 +89,10 @@ const GlobalStyles = () => {
 
         pre[class*='language-'] {
           margin-bottom: 2rem;
+        }
+
+        pre span {
+          color: #f1f1f1;
         }
       `}
     />
