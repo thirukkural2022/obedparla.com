@@ -112,11 +112,7 @@ export const RickRoll = () => (
   <div>
     <div className='wrapper'>
       <ul>
-        <Li> Never</Li>
-        <Li color={'red'}>gonna</Li>
-        <Li dancing>let</Li>
-        <Li highlight>you</Li>
-        <Li>down</Li>
+        <Li color={'red'}>Never give you up</Li>
       </ul>
     </div>
   </div>
@@ -125,9 +121,7 @@ export const RickRoll = () => (
 
 Which is then into the following by Babel:
 
-```jsx
-import React from 'react';
-
+```javascript
 const Li = props => React.createElement('li', props, props.children);
 
 export const RickRoll = () =>
@@ -142,29 +136,13 @@ export const RickRoll = () =>
       React.createElement(
         'ul',
         null,
-        React.createElement(Li, null, ' Never'),
         React.createElement(
           Li,
           {
             color: 'red',
           },
-          'gonna',
+          'Never give you up',
         ),
-        React.createElement(
-          Li,
-          {
-            dancing: true,
-          },
-          'let',
-        ),
-        React.createElement(
-          Li,
-          {
-            highlight: true,
-          },
-          'you',
-        ),
-        React.createElement(Li, null, 'down'),
       ),
     ),
   );
@@ -250,7 +228,7 @@ outside of it from entering, like a semi-permeable box. But spilling out where?
 While the closure itself is a box, any closure will be inside bigger boxes, with
 the outermost box being the Window object.
 
-![A box describing a mental model of a javascript closure, showing Window, scripts and React apps](../images/mental-models-part-1/closures-window.jpg 'The window object encapsulates everything else')
+![A box describing a mental model of a javascript closure, showing Window, scripts and React apps](../images/mental-models-part-1/closures_window.jpg 'The window object encapsulates everything else')
 
 ### But what _is_ a closure?
 
@@ -350,18 +328,18 @@ are also brand new. Even if a variable's value never changes, it is recalculated
 and reassigned every time. That's not the case with state, it only changes when
 there's a request for it to change via a `set` state event.
 
-TK --- Image of state in the box ---
+![React component state visualized as a part of a bigger box with props coming in from outside](../images/mental-models-part-1/state-in-box.jpg 'State is a special, independent part of the box; with props coming from outside')
 
 State follows a simple rule: Whenever it changes it will re-rendered the
 component and its children. Props follow the same logic, if a prop changes, the
 component will re-render, however, we can control state by modifying it, props
 are more static and usually change as a reaction to a state change.
 
-## Rendering Mental Model: how to think about React's hardest part
+## The Rendering Mental Model: understanding React's magic
 
 I consider rendering to be React's most confusing part because a lot of things
-happen during rendering that isn't obvious by looking at the code. That's why
-having a clear mental model helps.
+happen during rendering that sometimes isn't obvious by looking at the code.
+That's why having a clear mental model helps.
 
 The way I imagine rendering with my imaginary boxes is two-fold: the first
 render brings the box into existence, that's when the state is initialized. The
@@ -369,47 +347,54 @@ second part is when it re-renders, that's the box being recycled, most of it is
 brand new but some important elements of it remain namely state.
 
 On every render everything inside a component is created, including variables
-and functions, that's why we can have variables storing calculation results.
-They will be recalculated on the next render. It's also why functions are not
-reliable since their reference—their value per se—also changes.
+and functions, that's why we can have variables storing a calculation's results,
+since they will be recalculated on the every render. It's also why functions are
+not reliable as values, due to their reference (the function's value, per se)
+being different every render.
 
---- show basic code that relies on some state to render something ---
+```javascript
+const Thumbnail = props => (
+  <div>
+    {props.withIcon && <AmazingIcon />}
+    <img src={props.imgUrl} alt={props.alt} />
+  </div>
+);
+```
 
 The above will give a different result depending on the props the component
-receives. Whenever props or state changes, a new render happens and code inside
-a component is executed again.
+receives. The reason React _must_ re-render on every prop change is because it
+wants to keep the user up to date with the latest information.
 
-However, the state doesn't change, it is maintained across renders. That's why
-the box is "recycled" instead of created brand new every time. Internally, React
-is keeping track of each box, making sure its state is always consistent. That's
-how React knows when to update a component, because when state changes it knows
-to which component it belonged to.
+However, the state doesn't change on re-renders, it's value is maintained.
+That's why the box is "recycled" instead of created brand new every time.
+Internally, React is keeping track of each box and making sure its state is
+always consistent. That's how React knows when to update a component.
+
+![Mental model of a React component re-rendering when props change](../images/mental-models-part-1/react-rendering-mental-model.jpg "When props (or state) changes, a new render happens and the component's output can change")
 
 By imagining a box being recycled I can understand what's going on inside of it.
 For simple components, it's easy to grasp, but the more complex a component
 becomes, the more props it receives, the more state it maintains, the more
 useful a clear mental model becomes.
 
-## The final mental model. Putting it all together.
+## A complete React mental model: Putting it all together.
 
 Now that I've explained all the different parts of the puzzle separately, let's
 put it all together. Here's the complete mental model I use for React
 components, directly translated from how I imagine them into words.
 
-I imagine a React component as a box.
+I imagine a React component as a box that contains all of its information within
+its walls, including its children, which are more boxes.
 
---- A box ---
+![Basic representation of a React component as a mental model using boxes](../images/mental-models-part-1/react-mental-model-basic-2.jpg 'The basic representation of a React component')
 
-The box contains all of its information within its walls, as well as all its
-children.
+And like a box in the real world, it can have other boxes inside of it and these
+boxes can, in turn, contain more boxes. That way each box/component must have a
+single parent, and a parent can have many children.
 
-A box, like a box in the real world, can have other boxes inside of it and these
-boxes can, in turn, contain more boxes. In this way, each box/component must
-have a single parent, and a parent can have many children.
-
-The boxes are self-contained, semi-permeable. They never leak anything from
-inside to outside, but they can use information from the outside as if it was
-belonging to them.
+The boxes are semi-permeable, meaning they never leak anything to the outside
+but can use information from the outside like if it belonged to them. I imagine
+like this to represent how closures works in JavaScript.
 
 In React the way to share information between components is called `props`, the
 same idea applies to function and then it's called `arguments`, they both work
