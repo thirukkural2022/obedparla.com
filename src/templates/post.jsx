@@ -35,7 +35,7 @@ const PostTemplate = props => {
         </SpacingContainer>
 
         <SpacingContainer marginBottom='40px'>
-          <PostInfo date={fancyDate} timeToRead={postNode.timeToRead} />
+          <PostInfo timeToRead={postNode.timeToRead} />
           <small>
             {' - '}
             {post.categories.map((category, index) => (
@@ -50,6 +50,8 @@ const PostTemplate = props => {
         </SpacingContainer>
         <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
         <hr />
+        <em>Last updated: {fancyDate}</em>
+
         <NewsletterIframe margin={'0 0 1.4rem'} />
 
         <div className='post-meta'>

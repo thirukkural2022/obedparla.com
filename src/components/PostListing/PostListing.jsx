@@ -29,7 +29,7 @@ const PostListing = ({ postList, isBig }) => {
                   </ListItemHeader>
                 </StyledLink>
                 {post.excerpt && <Excerpt>{post.excerpt}</Excerpt>}
-                <PostInfo date={post.date} timeToRead={post.timeToRead} />
+                <PostInfo timeToRead={post.timeToRead} />
               </PostItemContent>
             </PostItem>
           );
