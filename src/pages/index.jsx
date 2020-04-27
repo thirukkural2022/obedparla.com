@@ -22,6 +22,27 @@ const H2 = styled.h2`
   display: inline-block;
 `;
 
+const About = styled.section`
+  display: flex;
+  justify-content: center;
+
+  @media (${({ theme }) => theme.media.smallMobile}) {
+    flex-wrap: wrap;
+  }
+`;
+
+const ImgWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  @media (${({ theme }) => theme.media.smallMobile}) {
+    img {
+      max-width: 150px;
+    }
+  }
+`;
+
 const IndexPage = props => {
   const emoji = useRandomEmoji();
   const latestPostsEdges = props.data.latest.edges;
@@ -36,14 +57,19 @@ const IndexPage = props => {
         <div className='posts-container'>
           <Helmet title={siteTitle} />
           <SEO />
-          <div>
-            <h1>Hey, I'm Obed! {emoji}</h1>
-            <SpacingContainer as={'p'} marginBottom={'4px'}>
-              I'm a JavaScript Engineer, bookworm and writer. Welcome to my
-              place on the internet, where you'll find candid thoughts about
-              books, web development and life's questions.
-            </SpacingContainer>
-          </div>
+          <About>
+            <ImgWrapper>
+              <img src='/images/myself.png' alt='Obed Parlapiano portrait' />
+            </ImgWrapper>
+            <div>
+              <h1>Hey, I'm Obed! {emoji}</h1>
+              <SpacingContainer as={'p'} marginBottom={'4px'}>
+                I'm a JavaScript Engineer, bookworm and writer. Welcome to my
+                place on the internet, where you'll find candid thoughts about
+                books, web development and life's questions.
+              </SpacingContainer>
+            </div>
+          </About>
           <Link to='/about/'>
             <SpacingContainer as={'small'} margin={0}>
               Who are you, again?
