@@ -2,6 +2,7 @@ const commonsStyles = {
   media: {
     desktop: 'min-width: 762px',
     mobile: 'max-width: 761px',
+    smallMobile: 'max-width: 580px',
   },
   containerSize: '700px',
   containerSpace: 'var(--container-space)',
