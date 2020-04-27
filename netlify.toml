@@ -5,3 +5,5 @@
   NODE_VERSION = "12.13.0"
   YARN_VERSION = "1.19.1"
   YARN_FLAGS = "--no-ignore-optional"
+[[plugins]]
+package = "netlify-plugin-gatsby-cache"
