@@ -60,6 +60,10 @@ const GlobalStyles = () => {
           color: ${theme.highlightColor};
         }
 
+        a.anchor svg {
+          fill: ${theme.textColor};
+        }
+
         blockquote {
           border-left: 0.2rem solid ${theme.highlightColor};
           padding-left: 1.5rem;
@@ -75,6 +79,28 @@ const GlobalStyles = () => {
             ? 'rgba(241, 241, 241, 0.8)'
             : 'rgba(0, 0, 0, 0.60)'};
           margin-top: 5px;
+        }
+
+        hr {
+          background: ${theme.textColor};
+        }
+
+        // Code pre styling
+        :not(pre) > code[class*='language-'] {
+          padding: 3px 5px;
+        }
+
+        :not(pre) > code[class*='language-'],
+        pre[class*='language-'] {
+          border-radius: 6px;
+        }
+
+        pre[class*='language-'] {
+          margin-bottom: 2rem;
+        }
+
+        pre span {
+          color: #f1f1f1;
         }
       `}
     />
