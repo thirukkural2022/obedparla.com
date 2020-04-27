@@ -1,7 +1,7 @@
 ---
 title: 'A visual guide to React Mental models'
 author: 'Obed Parlapiano'
-date: '2020-04-20'
+date: '2020-04-26'
 categories:
   - code
   - popular
@@ -9,10 +9,9 @@ tags: ''
 cover: '../images/mental-models-part-1/mental-models-react.png'
 ---
 
-mental-models-react.png I've learned that the biggest difference between someone
-that has mastered a language, framework or tool and someone who hasn't lies in
-the _mental models_ they use. One person will have a clear and advanced one and
-the other will not.
+I've learned that the biggest difference between someone that has mastered a
+language, framework or tool and someone who hasn't lies in the _mental models_
+they use. One person will have a clear and advanced one and the other will not.
 
 By having a good mental model you can intuitively understand complex problems
 and device solutions much faster than if you had to find a solution with a
@@ -68,6 +67,8 @@ React helps us build complex, interactive UIs more easily than ever before. It
 also encourages us to write code in a certain way, guiding us to create apps
 that are simpler to navigate and understand.
 
+![An abstract model inside a mind looking at the React logo](../images/mental-models-part-1/react-mental-model-illustration.jpg ' ')
+
 React itself is a mental model with a simple idea at its core: encapsulate
 portions of your app that rely on similar logic and UI and React will make sure
 that portion is always up kept up to date.
@@ -119,7 +120,7 @@ export const RickRoll = () => (
 );
 ```
 
-Which is then into the following by Babel:
+Which compiled into pure JavaScript by Babel:
 
 ```javascript
 const Li = props => React.createElement('li', props, props.children);
@@ -195,7 +196,7 @@ function logSum(a, b) {
 Since a component is a fancy function, that makes a component a box as well,
 with `props` as the ingredients the box needs to create the output.
 
-![A plus B in a box with props explaining a mental model for JavaScript functions](../images/mental-models-part-1/a-plus-b-box.png ' ')
+![A plus B in a box with props explaining a mental model for JavaScript functions](../images/mental-models-part-1/a-plus-b-box.jpg ' ')
 
 When a component is executed it will run whatever logic it has, if any, and
 evaluate its JSX. Any tags will become HTML and any component will be executed,
@@ -246,7 +247,7 @@ boxes, and each smaller box can see the information of the outer box, or parent,
 but the big box cannot see the smaller one's information. That's as simple and
 accurate an explanation of closures as I can make.
 
-![Visual representation of closures and the sharing of information between functions in a mental model](../images/mental-models-part-1/closures-detailed-example.jpg "Each function can only access its own information and the parent's")
+![Visual representation of closures and the sharing of information between functions in a mental model, from a box view and from a tree view](../images/mental-models-part-1/data-flow.jpg "Each function can only access its own information and the parent's")
 
 Closures are important because they can be exploited to create some powerful
 mechanics and React takes full advantage of this.
@@ -386,11 +387,11 @@ components, directly translated from how I imagine them into words.
 I imagine a React component as a box that contains all of its information within
 its walls, including its children, which are more boxes.
 
-![Basic representation of a React component as a mental model using boxes](../images/mental-models-part-1/react-mental-model-basic-2.jpg 'The basic representation of a React component')
-
 And like a box in the real world, it can have other boxes inside of it and these
 boxes can, in turn, contain more boxes. That way each box/component must have a
 single parent, and a parent can have many children.
+
+![Basic representation of a React component as a mental model using boxes](../images/mental-models-part-1/react-mental-model-basic.jpg 'The basic representation of a React component')
 
 The boxes are semi-permeable, meaning they never leak anything to the outside
 but can use information from the outside like if it belonged to them. I imagine
@@ -407,6 +408,8 @@ other way around, and the way we share that information is through `props`.
 I imagine this directional sharing of information as boxes within boxes. With
 the inner-most box being able to absorb the parent's data.
 
+![ React Mental model of data sharing between components visualized as information flowing downward ](../images/mental-models-part-1/data-sharing-model.jpg 'Data is shared from parent to child')
+
 The box must first be created though, and this happens on `render`, where the
 default value is given to `state` and just like with functions, all the code
 within the component is executed. In my mental model, this is equivalent to the
@@ -414,15 +417,17 @@ box being _created_.
 
 Subsequent renders, or `rerenders`, execute all the code in the component again,
 recalculating variables, recreating functions and so on. Everything except for
-`state` is brand new on each render, which value is always maintained unless
-updated directly by a `set` method.
+`state` is brand new on each render. State's value is maintained across renders
+is updated only through a `set` method.
 
-In my mental model, I see rerendering as recycling the box since most of it is
+In my mental model, I see re-rendering as recycling the box since most of it is
 recreated, but it's still the same box due to React keeping track of the
 component's state.
 
-Whenever a box is recycled so are all the boxes within it, its children. This
-can happen because the component's state was modified or a prop changed.
+When a box is recycled all the boxes within it, its children, are also recycled.
+This can happen because the component's state was modified or a prop changed.
+
+![Mental model of a React component re-rendering when props or state change](../images/mental-models-part-1/react-rendering-mental-model-full.jpg)
 
 Remember that a state or prop changing means the information the user sees is
 outdated, and React always wants to keep the UI updated so it rerenders the
@@ -437,14 +442,14 @@ behind it and create some ways to imagine how your code works.
 
 ---
 
-This article was quite hard to write. I realized that I understand React
-intuitively and putting that understanding into words was challenging. I hope it
-was useful to you and it was as enjoyable to read as it was to write!
+I hope this article was useful to you and it was as enjoyable to read as it was
+to write! I realized that I understand React intuitively and putting that
+understanding into words was challenging.
 
 Some of the explanations given in this article are simplifications, for example
-more things are not re-executed on every render such as useEffect, useCallback,
-and useMemo hooks. My complete mental model is more complex than I could explain
-in a single article, to stay tuned for PART 2 and 3.
+more things are not re-executed on every render such as the useEffect,
+useCallback, and useMemo hooks. My complete mental model is more complex than I
+could explain in a single article, to stay tuned for PART 2 and 3.
 
 Part 2 will focus on an in-depth model of React's API, such as useMemo,
 useCallback and useEffect as well as how to use a mental model to improve your

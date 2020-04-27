@@ -81,6 +81,10 @@ const GlobalStyles = () => {
           margin-top: 5px;
         }
 
+        hr {
+          background: ${theme.textColor};
+        }
+
         // Code pre styling
         :not(pre) > code[class*='language-'] {
           padding: 3px 5px;
