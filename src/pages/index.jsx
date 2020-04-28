@@ -62,19 +62,19 @@ const IndexPage = props => {
               <img src='/images/myself.png' alt='Obed Parlapiano portrait' />
             </ImgWrapper>
             <div>
-              <h1>Hey, I'm Obed! {emoji}</h1>
+              <h1 css={{ marginTop: '10px' }}>Hey, I'm Obed! {emoji}</h1>
               <SpacingContainer as={'p'} marginBottom={'4px'}>
-                I'm a JavaScript Engineer, bookworm and writer. Welcome to my
-                place on the internet, where you'll find candid thoughts about
-                books, web development and life's questions.
+                I'm a JavaScript Engineer helping people learn modern web
+                development. I write in-depth articles about JavaScript, career,
+                and books.
               </SpacingContainer>
+              <Link to='/about/'>
+                <SpacingContainer as={'small'} margin={0}>
+                  Who are you, again?
+                </SpacingContainer>
+              </Link>
             </div>
           </About>
-          <Link to='/about/'>
-            <SpacingContainer as={'small'} margin={0}>
-              Who are you, again?
-            </SpacingContainer>
-          </Link>
 
           <section>
             <SpacingContainer marginBottom='18px'>
